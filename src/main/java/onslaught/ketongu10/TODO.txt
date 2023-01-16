@@ -1,0 +1,4 @@
+1) NBT writing for wars --DONE
+2) DEMOLISHERS --DONE
+3) NBT reading for entity --DONE
+4) config files in one directory

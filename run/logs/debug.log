@@ -1,0 +1,1484 @@
+[01:12:04] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[01:12:04] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[01:12:04] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[01:12:04] [main/DEBUG] [FML]: Injecting tracing printstreams for STDOUT/STDERR.
+[01:12:04] [main/INFO] [FML]: Forge Mod Loader version 14.23.5.2854 for Minecraft 1.12.2 loading
+[01:12:04] [main/INFO] [FML]: Java is OpenJDK 64-Bit Server VM, version 1.8.0_265, running on Windows 10:amd64:10.0, installed at C:\Users\Ork\.jdks\corretto-1.8.0_265\jre
+[01:12:04] [main/DEBUG] [FML]: Java classpath at launch is:
+[01:12:04] [main/DEBUG] [FML]:     D:\moding\Development\FakePlayer\build\classes\java\main
+[01:12:04] [main/DEBUG] [FML]:     D:\moding\Development\FakePlayer\build\resources\main
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\curse.maven\electroblobs-wizardry-265642\3864785_mapped_snapshot_20171003-1.12\3b410a90f1d62f7d0d931402bf2466ce89b57b9\electroblobs-wizardry-265642-3864785_mapped_snapshot_20171003-1.12.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\curse.maven\epic-siege-mod-229449\3356157_mapped_snapshot_20171003-1.12\7c3ac625b1b148026e84972d6d98df7f8dbe3577\epic-siege-mod-229449-3356157_mapped_snapshot_20171003-1.12.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\curse.maven\ancient-spellcraft-358124\4040921_mapped_snapshot_20171003-1.12\b867208a37d2d3760a46bd2e548ef6d2f53e4061\ancient-spellcraft-358124-4040921_mapped_snapshot_20171003-1.12.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\curse.maven\ancient-warfare-2-224602\3293318_mapped_snapshot_20171003-1.12\89cc242cdfb58730877121ece35aa2aec0974075\ancient-warfare-2-224602-3293318_mapped_snapshot_20171003-1.12.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.12.2-14.23.5.2854_mapped_snapshot_20171003-1.12\forge-1.12.2-14.23.5.2854_mapped_snapshot_20171003-1.12-recomp.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\forge_gradle\minecraft_repo\versions\1.12.2\client-extra.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\3.0.1\f7be08ec23c21485b9b5a1cf1654c2ec8c58168d\jsr305-3.0.1.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mergetool\1.0.13\c18446ec4d5814f447d7a79b314ba9a27cc8dbc8\mergetool-1.0.13-forge.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\forge_gradle\maven_downloader\de\oceanlabs\mcp\mcp_snapshot\20171003-1.12\mcp_snapshot-20171003-1.12.zip
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-debug-all\5.2\3354e11e2b34215f06dab629ab88e06aca477c19\asm-debug-all-5.2.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\net.minecraft\launchwrapper\1.12\111e7bea9c968cdb3d06ef4632bf7ff0824d0f36\launchwrapper-1.12.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.jline\jline\3.5.1\51800e9d7a13608894a5a28eed0f5c7fa2f300fb\jline-3.5.1.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\com.typesafe.akka\akka-actor_2.11\2.3.3\ed62e9fc709ca0f2ff1a3220daa8b70a2870078e\akka-actor_2.11-2.3.3.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\com.typesafe\config\1.2.1\f771f71fdae3df231bcd54d5ca2d57f0bf93f467\config-1.2.1.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-actors-migration_2.11\1.1.0\dfa8bc42b181d5b9f1a5dd147f8ae308b893eb6f\scala-actors-migration_2.11-1.1.0.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-compiler\2.11.1\56ea2e6c025e0821f28d73ca271218b8dd04926a\scala-compiler-2.11.1.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.scala-lang.plugins\scala-continuations-library_2.11\1.0.2_mc\e517c53a7e9acd6b1668c5a35eccbaa3bab9aac\scala-continuations-library_2.11-1.0.2_mc.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.scala-lang.plugins\scala-continuations-plugin_2.11.1\1.0.2_mc\f361a3283452c57fa30c1ee69448995de23c60f7\scala-continuations-plugin_2.11.1-1.0.2_mc.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-reflect\2.11.1\6580347e61cc7f8e802941e7fde40fa83b8badeb\scala-reflect-2.11.1.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-actors\2.11.0\8ccfb6541de179bb1c4d45cf414acee069b7f78b\scala-actors-2.11.0.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.scala-lang.modules\scala-xml_2.11\1.0.2\820fbca7e524b530fdadc594c39d49a21ea0337e\scala-xml_2.11-1.0.2.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.scala-lang.modules\scala-parser-combinators_2.11\1.0.1\f05d7345bf5a58924f2837c6c1f4d73a938e1ff0\scala-parser-combinators_2.11-1.0.1.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-library\2.11.1\e11da23da3eabab9f4777b9220e60d44c1aab6a\scala-library-2.11.1.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-parser-combinators_2.11\1.0.1\f05d7345bf5a58924f2837c6c1f4d73a938e1ff0\scala-parser-combinators_2.11-1.0.1.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-swing_2.11\1.0.1\b1cdd92bd47b1e1837139c1c53020e86bb9112ae\scala-swing_2.11-1.0.1.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-xml_2.11\1.0.2\7a80ec00aec122fba7cd4e0d4cdd87ff7e4cb6d0\scala-xml_2.11-1.0.2.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\lzma\lzma\0.0.1\521616dc7487b42bef0e803bd2fa3faf668101d7\lzma-0.0.1.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\java3d\vecmath\1.5.2\79846ba34cbd89e2422d74d53752f993dcc2ccaf\vecmath-1.5.2.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\net.sf.trove4j\trove4j\3.0.3\42ccaf4761f0dfdfa805c9e340d99a755907e2dd\trove4j-3.0.3.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.apache.maven\maven-artifact\3.5.3\7dc72b6d6d8a6dced3d294ed54c2cc3515ade9f4\maven-artifact-3.5.3.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\net.sf.jopt-simple\jopt-simple\5.0.4\4fdac2fbe92dfad86aa6e9301736f6b4342a3f5c\jopt-simple-5.0.4.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\net.minecraftforge\legacydev\0.2.3.1\f2cd4a8c9f09faf1c1e4a9a4c65df36e634f95db\legacydev-0.2.3.1-fatjar.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\com.mojang\patchy\1.3.9\eb8bb7b66fa0e2152b1b40b3856e82f7619439ee\patchy-1.3.9.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\oshi-project\oshi-core\1.1\9ddf7b048a8d701be231c0f4f95fd986198fd2d8\oshi-core-1.1.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\net.java.dev.jna\jna\4.4.0\cb208278274bf12ebdb56c61bd7407e6f774d65a\jna-4.4.0.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\net.java.dev.jna\platform\3.4.0\e3f70017be8100d3d6923f50b3d2ee17714e9c13\platform-3.4.0.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\com.ibm.icu\icu4j-core-mojang\51.2\63d216a9311cca6be337c1e458e587f99d382b84\icu4j-core-mojang-51.2.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\com.paulscode\codecjorbis\20101023\c73b5636faf089d9f00e8732a829577de25237ee\codecjorbis-20101023.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\com.paulscode\codecwav\20101023\12f031cfe88fef5c1dd36c563c0a3a69bd7261da\codecwav-20101023.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\com.paulscode\libraryjavasound\20101123\5c5e304366f75f9eaa2e8cca546a1fb6109348b3\libraryjavasound-20101123.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\com.paulscode\librarylwjglopenal\20100824\73e80d0794c39665aec3f62eee88ca91676674ef\librarylwjglopenal-20100824.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\com.paulscode\soundsystem\20120107\419c05fe9be71f792b2d76cfc9b67f1ed0fec7f6\soundsystem-20120107.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\io.netty\netty-all\4.1.9.Final\97860965d6a0a6b98e7f569f3f966727b8db75\netty-all-4.1.9.Final.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\com.google.guava\guava\21.0\3a3d111be1be1b745edfa7d91678a12d7ed38709\guava-21.0.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.apache.commons\commons-lang3\3.5\6c6c702c89bfff3cd9e80b04d668c5e190d588c6\commons-lang3-3.5.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\commons-io\commons-io\2.5\2852e6e05fbb95076fc091f6d1780f1f8fe35e0f\commons-io-2.5.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpclient\4.3.3\18f4247ff4572a074444572cee34647c43e7c9c7\httpclient-4.3.3.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\commons-codec\commons-codec\1.10\4b95f4897fa13f2cd904aee711aeafc0c5295cd8\commons-codec-1.10.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\net.java.jinput\jinput\2.0.5\39c7796b469a600f72380316f6b1f11db6c2c7c4\jinput-2.0.5.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\net.java.jutils\jutils\1.0.0\e12fe1fda814bd348c1579329c86943d2cd3c6a6\jutils-1.0.0.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.8.0\c4ba5371a29ac9b2ad6129b1d39ea38750043eff\gson-2.8.0.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\com.mojang\authlib\1.5.25\9834cdf236c22e84b946bba989e2f94ef5897c3c\authlib-1.5.25.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\com.mojang\realms\1.10.22\bd0dccebdf3744c75f1ca20063f16e8f7d5e663f\realms-1.10.22.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.apache.commons\commons-compress\1.8.1\a698750c16740fd5b3871425f4cb3bbaa87f529d\commons-compress-1.8.1.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\commons-logging\commons-logging\1.1.3\f6f66e966c70a83ffbdb6f17a0919eaf7c8aca7f\commons-logging-1.1.3.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpcore\4.3.2\31fbbff1ddbf98f3aa7377c94d33b0447c646b6e\httpcore-4.3.2.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\it.unimi.dsi\fastutil\7.1.0\9835253257524c1be7ab50c057aa2d418fb72082\fastutil-7.1.0.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.apache.logging.log4j\log4j-core\2.8.1\4ac28ff2f1ddf05dae3043a190451e8c46b73c31\log4j-core-2.8.1.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.apache.logging.log4j\log4j-api\2.8.1\e801d13612e22cad62a3f4f3fe7fdbe6334a8e72\log4j-api-2.8.1.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.lwjgl.lwjgl\lwjgl\2.9.4-nightly-20150209\697517568c68e78ae0b4544145af031c81082dfe\lwjgl-2.9.4-nightly-20150209.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.lwjgl.lwjgl\lwjgl_util\2.9.4-nightly-20150209\d51a7c040a721d13efdfbd34f8b257b2df882ad0\lwjgl_util-2.9.4-nightly-20150209.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.lwjgl.lwjgl\lwjgl-platform\2.9.4-nightly-20150209\b04f3ee8f5e43fa3b162981b50bb72fe1acabb33\lwjgl-platform-2.9.4-nightly-20150209.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.lwjgl.lwjgl\lwjgl-platform\2.9.4-nightly-20150209\b84d5102b9dbfabfeb5e43c7e2828d98a7fc80e0\lwjgl-platform-2.9.4-nightly-20150209-natives-windows.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\net.java.jinput\jinput-platform\2.0.5\385ee093e01f587f30ee1c8a2ee7d408fd732e16\jinput-platform-2.0.5-natives-windows.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\net.java.jinput\jinput-platform\2.0.5\7ff832a6eb9ab6a767f1ade2b548092d0fa64795\jinput-platform-2.0.5-natives-linux.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\net.java.jinput\jinput-platform\2.0.5\53f9c919f34d2ca9de8c51fc4e1e8282029a9232\jinput-platform-2.0.5-natives-osx.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\com.mojang\text2speech\1.10.3\48fd510879dff266c3815947de66e3d4809f8668\text2speech-1.10.3.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\com.mojang\text2speech\1.10.3\84a4b856389cc4f485275b1f63497a95a857a443\text2speech-1.10.3-natives-windows.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-util\6.2\a9690730f92cc79eeadc20e400ebb41eccce10b1\asm-util-6.2.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-analysis\6.2\c7d9a90d221cbb977848d2c777eb3aa7637e89df\asm-analysis-6.2.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-tree\6.2\61570e046111559f38d4e0e580c005f75988c0a6\asm-tree-6.2.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm\6.2\1b6c4ff09ce03f3052429139c2a68e295cae6604\asm-6.2.jar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.codehaus.plexus\plexus-utils\3.1.0\60eecb6f15abdb1c653ad80abaac6fe188b3feaa\plexus-utils-3.1.0.jar
+[01:12:04] [main/DEBUG] [FML]: Java library path at launch is:
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\.jdks\corretto-1.8.0_265\bin
+[01:12:04] [main/DEBUG] [FML]:     C:\WINDOWS\Sun\Java\bin
+[01:12:04] [main/DEBUG] [FML]:     C:\WINDOWS\system32
+[01:12:04] [main/DEBUG] [FML]:     C:\WINDOWS
+[01:12:04] [main/DEBUG] [FML]:     C:\Program Files (x86)\Common Files\Oracle\Java\javapath
+[01:12:04] [main/DEBUG] [FML]:     C:\ProgramData\Oracle\Java\javapath
+[01:12:04] [main/DEBUG] [FML]:     C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\
+[01:12:04] [main/DEBUG] [FML]:     C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\
+[01:12:04] [main/DEBUG] [FML]:     C:\Windows\system32
+[01:12:04] [main/DEBUG] [FML]:     C:\Windows
+[01:12:04] [main/DEBUG] [FML]:     C:\Windows\System32\Wbem
+[01:12:04] [main/DEBUG] [FML]:     C:\Windows\System32\WindowsPowerShell\v1.0\
+[01:12:04] [main/DEBUG] [FML]:     C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common
+[01:12:04] [main/DEBUG] [FML]:     C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL
+[01:12:04] [main/DEBUG] [FML]:     C:\Program Files\Intel\Intel(R) Management Engine Components\DAL
+[01:12:04] [main/DEBUG] [FML]:     C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT
+[01:12:04] [main/DEBUG] [FML]:     C:\Program Files\Intel\Intel(R) Management Engine Components\IPT
+[01:12:04] [main/DEBUG] [FML]:     C:\WINDOWS\system32
+[01:12:04] [main/DEBUG] [FML]:     C:\WINDOWS
+[01:12:04] [main/DEBUG] [FML]:     C:\WINDOWS\System32\Wbem
+[01:12:04] [main/DEBUG] [FML]:     C:\WINDOWS\System32\WindowsPowerShell\v1.0\
+[01:12:04] [main/DEBUG] [FML]:     C:\WINDOWS\System32\OpenSSH\
+[01:12:04] [main/DEBUG] [FML]:     C:\Program Files\Intel\WiFi\bin\
+[01:12:04] [main/DEBUG] [FML]:     C:\Program Files\Common Files\Intel\WirelessCommon\
+[01:12:04] [main/DEBUG] [FML]:     C:\Program Files (x86)\Common Files\Acronis\SnapAPI\
+[01:12:04] [main/DEBUG] [FML]:     C:\Program Files (x86)\Filestar
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\AppData\Roaming\Filestar\aliases
+[01:12:04] [main/DEBUG] [FML]:     C:\Program Files\Git\cmd
+[01:12:04] [main/DEBUG] [FML]:     C:\Program Files (x86)\MGLTools-1.5.7
+[01:12:04] [main/DEBUG] [FML]:     C:\Program Files\WorldPainter
+[01:12:04] [main/DEBUG] [FML]:     C:\Program Files (x86)\dotnet\
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\AppData\Local\Microsoft\WindowsApps
+[01:12:04] [main/DEBUG] [FML]:     C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2\bin
+[01:12:04] [main/DEBUG] [FML]:     
+[01:12:04] [main/DEBUG] [FML]:     C:\Users\Ork\AppData\Local\GitHubDesktop\bin
+[01:12:04] [main/DEBUG] [FML]:     C:\Program Files\JetBrains\PyCharm Community Edition 2022.2.4\bin
+[01:12:04] [main/DEBUG] [FML]:     
+[01:12:04] [main/DEBUG] [FML]:     .
+[01:12:04] [main/DEBUG] [FML]:     D:\moding\Development\FakePlayer\build\natives
+[01:12:04] [main/ERROR] [FML]: Apache Maven library folder was not in the format expected. Using default libraries directory.
+[01:12:04] [main/ERROR] [FML]: Full: C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.apache.maven\maven-artifact\3.5.3\7dc72b6d6d8a6dced3d294ed54c2cc3515ade9f4\maven-artifact-3.5.3.jar
+[01:12:04] [main/ERROR] [FML]: Trimmed: c:/users/ork/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.5.3/
+[01:12:04] [main/DEBUG] [FML]: Determined Minecraft Libraries Root: .\libraries
+[01:12:04] [main/DEBUG] [FML]: Cleaning up mods folder: .\mods
+[01:12:04] [main/DEBUG] [FML]: Examining file: CodeChickenLib_1.12.2_3.2.3.358_universal.jar
+[01:12:04] [main/INFO] [FML]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
+[01:12:04] [main/INFO] [FML]: Detected deobfuscated environment, loading log configs for colored console logs.
+[01:12:04] [main/DEBUG] [FML]: Instantiating coremod class FMLCorePlugin
+[01:12:04] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLCorePlugin (net.minecraftforge.fml.relauncher.FMLCorePlugin), we are in deobf and it's a forge core plugin
+[01:12:04] [main/DEBUG] [FML]: Added access transformer class net.minecraftforge.fml.common.asm.transformers.AccessTransformer to enqueued access transformers
+[01:12:04] [main/DEBUG] [FML]: Enqueued coremod FMLCorePlugin
+[01:12:04] [main/DEBUG] [FML]: Instantiating coremod class FMLForgePlugin
+[01:12:04] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLForgePlugin (net.minecraftforge.classloading.FMLForgePlugin), we are in deobf and it's a forge core plugin
+[01:12:04] [main/DEBUG] [FML]: Enqueued coremod FMLForgePlugin
+[01:12:04] [main/DEBUG] [FML]: All fundamental core mods are successfully located
+[01:12:04] [main/DEBUG] [FML]: Discovering coremods
+[01:12:04] [main/INFO] [FML]: Searching D:\moding\Development\FakePlayer\run\.\mods for mods
+[01:12:04] [main/DEBUG] [FML]:   Adding CodeChickenLib_1.12.2_3.2.3.358_universal.jar to the mod list
+[01:12:04] [main/DEBUG] [FML]: Examining for coremod candidacy CodeChickenLib_1.12.2_3.2.3.358_universal.jar
+[01:12:05] [main/DEBUG] [FML]: Not found coremod data in CodeChickenLib_1.12.2_3.2.3.358_universal.jar
+[01:12:05] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[01:12:05] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[01:12:05] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[01:12:05] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[01:12:05] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[01:12:05] [main/DEBUG] [FML]: Injecting coremod FMLCorePlugin \{net.minecraftforge.fml.relauncher.FMLCorePlugin\} class transformers
+[01:12:05] [main/TRACE] [FML]: Registering transformer net.minecraftforge.fml.common.asm.transformers.SideTransformer
+[01:12:05] [main/TRACE] [FML]: Registering transformer net.minecraftforge.fml.common.asm.transformers.EventSubscriptionTransformer
+[01:12:05] [main/TRACE] [FML]: Registering transformer net.minecraftforge.fml.common.asm.transformers.EventSubscriberTransformer
+[01:12:05] [main/TRACE] [FML]: Registering transformer net.minecraftforge.fml.common.asm.transformers.SoundEngineFixTransformer
+[01:12:05] [main/DEBUG] [FML]: Injection complete
+[01:12:05] [main/DEBUG] [FML]: Running coremod plugin for FMLCorePlugin \{net.minecraftforge.fml.relauncher.FMLCorePlugin\}
+[01:12:05] [main/DEBUG] [FML]: Running coremod plugin FMLCorePlugin
+[01:12:05] [main/DEBUG] [FML]: Loading deobfuscation resource D:\moding\Development\FakePlayer\build\createSrgToMcp\output.srg with 36076 records
+[01:12:07] [main/ERROR] [FML]: FML appears to be missing any signature data. This is not a good thing
+[01:12:07] [main/DEBUG] [FML]: Coremod plugin class FMLCorePlugin run successfully
+[01:12:07] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[01:12:07] [main/DEBUG] [FML]: Injecting coremod FMLForgePlugin \{net.minecraftforge.classloading.FMLForgePlugin\} class transformers
+[01:12:07] [main/DEBUG] [FML]: Injection complete
+[01:12:07] [main/DEBUG] [FML]: Running coremod plugin for FMLForgePlugin \{net.minecraftforge.classloading.FMLForgePlugin\}
+[01:12:07] [main/DEBUG] [FML]: Running coremod plugin FMLForgePlugin
+[01:12:07] [main/DEBUG] [FML]: Coremod plugin class FMLForgePlugin run successfully
+[01:12:07] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[01:12:07] [main/DEBUG] [FML]: Loaded 215 rules from AccessTransformer config file forge_at.cfg
+[01:12:07] [main/DEBUG] [FML]: Loaded 46 rules from AccessTransformer mod jar file .\mods\CodeChickenLib_1.12.2_3.2.3.358_universal.jar!META-INF/ccl_at.cfg
+
+[01:12:07] [main/DEBUG] [FML]: Validating minecraft
+[01:12:07] [main/DEBUG] [FML]: Minecraft validated, launching...
+[01:12:07] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
+[01:12:07] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
+[01:12:07] [main/INFO] [LaunchWrapper]: Launching wrapped minecraft {net.minecraft.client.main.Main}
+[01:12:08] [Client thread/INFO] [net.minecraft.client.Minecraft]: Setting user: Player468
+[01:12:10] [Client thread/DEBUG] [FML]: Creating vanilla freeze snapshot
+[01:12:10] [Client thread/DEBUG] [FML]: Vanilla freeze snapshot created
+[01:12:10] [Client thread/WARN] [net.minecraft.client.settings.GameSettings]: Skipping bad option: lastServer:
+[01:12:10] [Client thread/INFO] [net.minecraft.client.Minecraft]: LWJGL Version: 2.9.4
+[01:12:11] [Client thread/DEBUG] [FML]: Bar Finished: Loading Resource - LanguageManager took 0.002s
+[01:12:11] [Client thread/INFO] [FML]: -- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_265, Amazon.com Inc.
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Amazon.com Inc.
+	Memory: 692986416 bytes (660 MB) / 818413568 bytes (780 MB) up to 1875378176 bytes (1788 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: 
+	Loaded coremods (and transformers): 
+	GL info: ' Vendor: 'Intel' Version: '4.6.0 - Build 27.20.100.8477' Renderer: 'Intel(R) UHD Graphics 630'
+[01:12:11] [Client thread/INFO] [FML]: MinecraftForge v14.23.5.2854 Initialized
+[01:12:11] [Client thread/INFO] [FML]: Starts to replace vanilla recipe ingredients with ore ingredients.
+[01:12:11] [Client thread/INFO] [FML]: Invalid recipe found with multiple oredict ingredients in the same ingredient...
+[01:12:12] [Client thread/INFO] [FML]: Replaced 1227 ore ingredients
+[01:12:12] [Client thread/DEBUG] [FML]: File D:\moding\Development\FakePlayer\run\config\injectedDependencies.json not found. No dependencies injected
+[01:12:12] [Client thread/DEBUG] [FML]: Building injected Mod Containers [net.minecraftforge.fml.common.FMLContainer, net.minecraftforge.common.ForgeModContainer]
+[01:12:12] [Client thread/DEBUG] [FML]: Attempting to load mods contained in the minecraft jar file and associated classes
+[01:12:12] [Client thread/DEBUG] [FML]: Found a minecraft related directory at D:\moding\Development\FakePlayer\build\classes\java\main, examining for mod candidates
+[01:12:12] [Client thread/DEBUG] [FML]: Found a minecraft related directory at D:\moding\Development\FakePlayer\build\resources\main, examining for mod candidates
+[01:12:12] [Client thread/DEBUG] [FML]: Found a minecraft related file at C:\Users\Ork\.gradle\caches\modules-2\files-2.1\curse.maven\electroblobs-wizardry-265642\3864785_mapped_snapshot_20171003-1.12\3b410a90f1d62f7d0d931402bf2466ce89b57b9\electroblobs-wizardry-265642-3864785_mapped_snapshot_20171003-1.12.jar, examining for mod candidates
+[01:12:12] [Client thread/DEBUG] [FML]: Found a minecraft related file at C:\Users\Ork\.gradle\caches\modules-2\files-2.1\curse.maven\epic-siege-mod-229449\3356157_mapped_snapshot_20171003-1.12\7c3ac625b1b148026e84972d6d98df7f8dbe3577\epic-siege-mod-229449-3356157_mapped_snapshot_20171003-1.12.jar, examining for mod candidates
+[01:12:12] [Client thread/DEBUG] [FML]: Found a minecraft related file at C:\Users\Ork\.gradle\caches\modules-2\files-2.1\curse.maven\ancient-spellcraft-358124\4040921_mapped_snapshot_20171003-1.12\b867208a37d2d3760a46bd2e548ef6d2f53e4061\ancient-spellcraft-358124-4040921_mapped_snapshot_20171003-1.12.jar, examining for mod candidates
+[01:12:12] [Client thread/DEBUG] [FML]: Found a minecraft related file at C:\Users\Ork\.gradle\caches\modules-2\files-2.1\curse.maven\ancient-warfare-2-224602\3293318_mapped_snapshot_20171003-1.12\89cc242cdfb58730877121ece35aa2aec0974075\ancient-warfare-2-224602-3293318_mapped_snapshot_20171003-1.12.jar, examining for mod candidates
+[01:12:12] [Client thread/DEBUG] [FML]: Found a minecraft related file at C:\Users\Ork\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.12.2-14.23.5.2854_mapped_snapshot_20171003-1.12\forge-1.12.2-14.23.5.2854_mapped_snapshot_20171003-1.12-recomp.jar, examining for mod candidates
+[01:12:12] [Client thread/DEBUG] [FML]: Found a minecraft related file at C:\Users\Ork\.gradle\caches\forge_gradle\minecraft_repo\versions\1.12.2\client-extra.jar, examining for mod candidates
+[01:12:12] [Client thread/DEBUG] [FML]: Found a minecraft related file at C:\Users\Ork\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\3.0.1\f7be08ec23c21485b9b5a1cf1654c2ec8c58168d\jsr305-3.0.1.jar, examining for mod candidates
+[01:12:12] [Client thread/DEBUG] [FML]: Found a minecraft related file at C:\Users\Ork\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mergetool\1.0.13\c18446ec4d5814f447d7a79b314ba9a27cc8dbc8\mergetool-1.0.13-forge.jar, examining for mod candidates
+[01:12:12] [Client thread/DEBUG] [FML]: Found a minecraft related file at C:\Users\Ork\.gradle\caches\forge_gradle\maven_downloader\de\oceanlabs\mcp\mcp_snapshot\20171003-1.12\mcp_snapshot-20171003-1.12.zip, examining for mod candidates
+[01:12:12] [Client thread/DEBUG] [FML]: Found a minecraft related file at C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-debug-all\5.2\3354e11e2b34215f06dab629ab88e06aca477c19\asm-debug-all-5.2.jar, examining for mod candidates
+[01:12:12] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\Ork\.gradle\caches\modules-2\files-2.1\net.minecraft\launchwrapper\1.12\111e7bea9c968cdb3d06ef4632bf7ff0824d0f36\launchwrapper-1.12.jar
+[01:12:12] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.jline\jline\3.5.1\51800e9d7a13608894a5a28eed0f5c7fa2f300fb\jline-3.5.1.jar
+[01:12:12] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\Ork\.gradle\caches\modules-2\files-2.1\com.typesafe.akka\akka-actor_2.11\2.3.3\ed62e9fc709ca0f2ff1a3220daa8b70a2870078e\akka-actor_2.11-2.3.3.jar
+[01:12:12] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\Ork\.gradle\caches\modules-2\files-2.1\com.typesafe\config\1.2.1\f771f71fdae3df231bcd54d5ca2d57f0bf93f467\config-1.2.1.jar
+[01:12:12] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-actors-migration_2.11\1.1.0\dfa8bc42b181d5b9f1a5dd147f8ae308b893eb6f\scala-actors-migration_2.11-1.1.0.jar
+[01:12:12] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-compiler\2.11.1\56ea2e6c025e0821f28d73ca271218b8dd04926a\scala-compiler-2.11.1.jar
+[01:12:12] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.scala-lang.plugins\scala-continuations-library_2.11\1.0.2_mc\e517c53a7e9acd6b1668c5a35eccbaa3bab9aac\scala-continuations-library_2.11-1.0.2_mc.jar
+[01:12:12] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.scala-lang.plugins\scala-continuations-plugin_2.11.1\1.0.2_mc\f361a3283452c57fa30c1ee69448995de23c60f7\scala-continuations-plugin_2.11.1-1.0.2_mc.jar
+[01:12:12] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-reflect\2.11.1\6580347e61cc7f8e802941e7fde40fa83b8badeb\scala-reflect-2.11.1.jar
+[01:12:12] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-actors\2.11.0\8ccfb6541de179bb1c4d45cf414acee069b7f78b\scala-actors-2.11.0.jar
+[01:12:12] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.scala-lang.modules\scala-xml_2.11\1.0.2\820fbca7e524b530fdadc594c39d49a21ea0337e\scala-xml_2.11-1.0.2.jar
+[01:12:12] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.scala-lang.modules\scala-parser-combinators_2.11\1.0.1\f05d7345bf5a58924f2837c6c1f4d73a938e1ff0\scala-parser-combinators_2.11-1.0.1.jar
+[01:12:12] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-library\2.11.1\e11da23da3eabab9f4777b9220e60d44c1aab6a\scala-library-2.11.1.jar
+[01:12:12] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-parser-combinators_2.11\1.0.1\f05d7345bf5a58924f2837c6c1f4d73a938e1ff0\scala-parser-combinators_2.11-1.0.1.jar
+[01:12:12] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-swing_2.11\1.0.1\b1cdd92bd47b1e1837139c1c53020e86bb9112ae\scala-swing_2.11-1.0.1.jar
+[01:12:12] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-xml_2.11\1.0.2\7a80ec00aec122fba7cd4e0d4cdd87ff7e4cb6d0\scala-xml_2.11-1.0.2.jar
+[01:12:12] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\Ork\.gradle\caches\modules-2\files-2.1\lzma\lzma\0.0.1\521616dc7487b42bef0e803bd2fa3faf668101d7\lzma-0.0.1.jar
+[01:12:12] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\Ork\.gradle\caches\modules-2\files-2.1\java3d\vecmath\1.5.2\79846ba34cbd89e2422d74d53752f993dcc2ccaf\vecmath-1.5.2.jar
+[01:12:12] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\Ork\.gradle\caches\modules-2\files-2.1\net.sf.trove4j\trove4j\3.0.3\42ccaf4761f0dfdfa805c9e340d99a755907e2dd\trove4j-3.0.3.jar
+[01:12:12] [Client thread/DEBUG] [FML]: Found a minecraft related file at C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.apache.maven\maven-artifact\3.5.3\7dc72b6d6d8a6dced3d294ed54c2cc3515ade9f4\maven-artifact-3.5.3.jar, examining for mod candidates
+[01:12:12] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\Ork\.gradle\caches\modules-2\files-2.1\net.sf.jopt-simple\jopt-simple\5.0.4\4fdac2fbe92dfad86aa6e9301736f6b4342a3f5c\jopt-simple-5.0.4.jar
+[01:12:12] [Client thread/DEBUG] [FML]: Found a minecraft related file at C:\Users\Ork\.gradle\caches\modules-2\files-2.1\net.minecraftforge\legacydev\0.2.3.1\f2cd4a8c9f09faf1c1e4a9a4c65df36e634f95db\legacydev-0.2.3.1-fatjar.jar, examining for mod candidates
+[01:12:12] [Client thread/DEBUG] [FML]: Found a minecraft related file at C:\Users\Ork\.gradle\caches\modules-2\files-2.1\com.mojang\patchy\1.3.9\eb8bb7b66fa0e2152b1b40b3856e82f7619439ee\patchy-1.3.9.jar, examining for mod candidates
+[01:12:12] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\Ork\.gradle\caches\modules-2\files-2.1\oshi-project\oshi-core\1.1\9ddf7b048a8d701be231c0f4f95fd986198fd2d8\oshi-core-1.1.jar
+[01:12:12] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\Ork\.gradle\caches\modules-2\files-2.1\net.java.dev.jna\jna\4.4.0\cb208278274bf12ebdb56c61bd7407e6f774d65a\jna-4.4.0.jar
+[01:12:12] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\Ork\.gradle\caches\modules-2\files-2.1\net.java.dev.jna\platform\3.4.0\e3f70017be8100d3d6923f50b3d2ee17714e9c13\platform-3.4.0.jar
+[01:12:12] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\Ork\.gradle\caches\modules-2\files-2.1\com.ibm.icu\icu4j-core-mojang\51.2\63d216a9311cca6be337c1e458e587f99d382b84\icu4j-core-mojang-51.2.jar
+[01:12:12] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\Ork\.gradle\caches\modules-2\files-2.1\com.paulscode\codecjorbis\20101023\c73b5636faf089d9f00e8732a829577de25237ee\codecjorbis-20101023.jar
+[01:12:12] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\Ork\.gradle\caches\modules-2\files-2.1\com.paulscode\codecwav\20101023\12f031cfe88fef5c1dd36c563c0a3a69bd7261da\codecwav-20101023.jar
+[01:12:12] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\Ork\.gradle\caches\modules-2\files-2.1\com.paulscode\libraryjavasound\20101123\5c5e304366f75f9eaa2e8cca546a1fb6109348b3\libraryjavasound-20101123.jar
+[01:12:12] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\Ork\.gradle\caches\modules-2\files-2.1\com.paulscode\librarylwjglopenal\20100824\73e80d0794c39665aec3f62eee88ca91676674ef\librarylwjglopenal-20100824.jar
+[01:12:12] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\Ork\.gradle\caches\modules-2\files-2.1\com.paulscode\soundsystem\20120107\419c05fe9be71f792b2d76cfc9b67f1ed0fec7f6\soundsystem-20120107.jar
+[01:12:12] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\Ork\.gradle\caches\modules-2\files-2.1\io.netty\netty-all\4.1.9.Final\97860965d6a0a6b98e7f569f3f966727b8db75\netty-all-4.1.9.Final.jar
+[01:12:12] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\Ork\.gradle\caches\modules-2\files-2.1\com.google.guava\guava\21.0\3a3d111be1be1b745edfa7d91678a12d7ed38709\guava-21.0.jar
+[01:12:12] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.apache.commons\commons-lang3\3.5\6c6c702c89bfff3cd9e80b04d668c5e190d588c6\commons-lang3-3.5.jar
+[01:12:12] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\Ork\.gradle\caches\modules-2\files-2.1\commons-io\commons-io\2.5\2852e6e05fbb95076fc091f6d1780f1f8fe35e0f\commons-io-2.5.jar
+[01:12:12] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpclient\4.3.3\18f4247ff4572a074444572cee34647c43e7c9c7\httpclient-4.3.3.jar
+[01:12:12] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\Ork\.gradle\caches\modules-2\files-2.1\commons-codec\commons-codec\1.10\4b95f4897fa13f2cd904aee711aeafc0c5295cd8\commons-codec-1.10.jar
+[01:12:12] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\Ork\.gradle\caches\modules-2\files-2.1\net.java.jinput\jinput\2.0.5\39c7796b469a600f72380316f6b1f11db6c2c7c4\jinput-2.0.5.jar
+[01:12:12] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\Ork\.gradle\caches\modules-2\files-2.1\net.java.jutils\jutils\1.0.0\e12fe1fda814bd348c1579329c86943d2cd3c6a6\jutils-1.0.0.jar
+[01:12:12] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\Ork\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.8.0\c4ba5371a29ac9b2ad6129b1d39ea38750043eff\gson-2.8.0.jar
+[01:12:12] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\Ork\.gradle\caches\modules-2\files-2.1\com.mojang\authlib\1.5.25\9834cdf236c22e84b946bba989e2f94ef5897c3c\authlib-1.5.25.jar
+[01:12:12] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\Ork\.gradle\caches\modules-2\files-2.1\com.mojang\realms\1.10.22\bd0dccebdf3744c75f1ca20063f16e8f7d5e663f\realms-1.10.22.jar
+[01:12:12] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.apache.commons\commons-compress\1.8.1\a698750c16740fd5b3871425f4cb3bbaa87f529d\commons-compress-1.8.1.jar
+[01:12:12] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\Ork\.gradle\caches\modules-2\files-2.1\commons-logging\commons-logging\1.1.3\f6f66e966c70a83ffbdb6f17a0919eaf7c8aca7f\commons-logging-1.1.3.jar
+[01:12:12] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpcore\4.3.2\31fbbff1ddbf98f3aa7377c94d33b0447c646b6e\httpcore-4.3.2.jar
+[01:12:12] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\Ork\.gradle\caches\modules-2\files-2.1\it.unimi.dsi\fastutil\7.1.0\9835253257524c1be7ab50c057aa2d418fb72082\fastutil-7.1.0.jar
+[01:12:12] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.apache.logging.log4j\log4j-core\2.8.1\4ac28ff2f1ddf05dae3043a190451e8c46b73c31\log4j-core-2.8.1.jar
+[01:12:12] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.apache.logging.log4j\log4j-api\2.8.1\e801d13612e22cad62a3f4f3fe7fdbe6334a8e72\log4j-api-2.8.1.jar
+[01:12:12] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.lwjgl.lwjgl\lwjgl\2.9.4-nightly-20150209\697517568c68e78ae0b4544145af031c81082dfe\lwjgl-2.9.4-nightly-20150209.jar
+[01:12:12] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.lwjgl.lwjgl\lwjgl_util\2.9.4-nightly-20150209\d51a7c040a721d13efdfbd34f8b257b2df882ad0\lwjgl_util-2.9.4-nightly-20150209.jar
+[01:12:12] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.lwjgl.lwjgl\lwjgl-platform\2.9.4-nightly-20150209\b04f3ee8f5e43fa3b162981b50bb72fe1acabb33\lwjgl-platform-2.9.4-nightly-20150209.jar
+[01:12:12] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.lwjgl.lwjgl\lwjgl-platform\2.9.4-nightly-20150209\b84d5102b9dbfabfeb5e43c7e2828d98a7fc80e0\lwjgl-platform-2.9.4-nightly-20150209-natives-windows.jar
+[01:12:12] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\Ork\.gradle\caches\modules-2\files-2.1\net.java.jinput\jinput-platform\2.0.5\385ee093e01f587f30ee1c8a2ee7d408fd732e16\jinput-platform-2.0.5-natives-windows.jar
+[01:12:12] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\Ork\.gradle\caches\modules-2\files-2.1\net.java.jinput\jinput-platform\2.0.5\7ff832a6eb9ab6a767f1ade2b548092d0fa64795\jinput-platform-2.0.5-natives-linux.jar
+[01:12:12] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\Ork\.gradle\caches\modules-2\files-2.1\net.java.jinput\jinput-platform\2.0.5\53f9c919f34d2ca9de8c51fc4e1e8282029a9232\jinput-platform-2.0.5-natives-osx.jar
+[01:12:12] [Client thread/DEBUG] [FML]: Found a minecraft related file at C:\Users\Ork\.gradle\caches\modules-2\files-2.1\com.mojang\text2speech\1.10.3\48fd510879dff266c3815947de66e3d4809f8668\text2speech-1.10.3.jar, examining for mod candidates
+[01:12:12] [Client thread/DEBUG] [FML]: Found a minecraft related file at C:\Users\Ork\.gradle\caches\modules-2\files-2.1\com.mojang\text2speech\1.10.3\84a4b856389cc4f485275b1f63497a95a857a443\text2speech-1.10.3-natives-windows.jar, examining for mod candidates
+[01:12:12] [Client thread/DEBUG] [FML]: Found a minecraft related file at C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-util\6.2\a9690730f92cc79eeadc20e400ebb41eccce10b1\asm-util-6.2.jar, examining for mod candidates
+[01:12:12] [Client thread/DEBUG] [FML]: Found a minecraft related file at C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-analysis\6.2\c7d9a90d221cbb977848d2c777eb3aa7637e89df\asm-analysis-6.2.jar, examining for mod candidates
+[01:12:12] [Client thread/DEBUG] [FML]: Found a minecraft related file at C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-tree\6.2\61570e046111559f38d4e0e580c005f75988c0a6\asm-tree-6.2.jar, examining for mod candidates
+[01:12:12] [Client thread/DEBUG] [FML]: Found a minecraft related file at C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm\6.2\1b6c4ff09ce03f3052429139c2a68e295cae6604\asm-6.2.jar, examining for mod candidates
+[01:12:12] [Client thread/DEBUG] [FML]: Found a minecraft related file at C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.codehaus.plexus\plexus-utils\3.1.0\60eecb6f15abdb1c653ad80abaac6fe188b3feaa\plexus-utils-3.1.0.jar, examining for mod candidates
+[01:12:12] [Client thread/DEBUG] [FML]: Minecraft jar mods loaded successfully
+[01:12:12] [Client thread/INFO] [FML]: Searching D:\moding\Development\FakePlayer\run\.\mods for mods
+[01:12:12] [Client thread/DEBUG] [FML]:   Adding CodeChickenLib_1.12.2_3.2.3.358_universal.jar to the mod list
+[01:12:12] [Client thread/DEBUG] [FML]: Found a candidate zip or jar file CodeChickenLib_1.12.2_3.2.3.358_universal.jar
+[01:12:12] [Client thread/DEBUG] [FML]: Examining directory main for potential mods
+[01:12:12] [Client thread/DEBUG] [FML]: No mcmod.info file found in directory main
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package fakeplayer
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package fakeplayer/ketongu10
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package fakeplayer/ketongu10/capabilities
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package fakeplayer/ketongu10/capabilities/loader
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package fakeplayer/ketongu10/capabilities/units
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package fakeplayer/ketongu10/capability
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package fakeplayer/ketongu10/commands
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package fakeplayer/ketongu10/commands/autopilot
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package fakeplayer/ketongu10/commands/forceToMove
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package fakeplayer/ketongu10/commands/teleport
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package fakeplayer/ketongu10/config
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package fakeplayer/ketongu10/enchants
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package fakeplayer/ketongu10/energy
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package fakeplayer/ketongu10/entity
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package fakeplayer/ketongu10/entity/diamondArrow
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package fakeplayer/ketongu10/entity/FakePlayer
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package fakeplayer/ketongu10/entity/lightningBall
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package fakeplayer/ketongu10/entity/magiball
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package fakeplayer/ketongu10/entity/test
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package fakeplayer/ketongu10/events
+[01:12:12] [Client thread/DEBUG] [FML]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (Onslaught) - loading
+[01:12:12] [Client thread/TRACE] [FML]: Parsed dependency info for fakeplayer: Requirements: [ebwizardry] After:[ebwizardry] Before:[]
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package fakeplayer/ketongu10/init
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package fakeplayer/ketongu10/keyBinds
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package fakeplayer/ketongu10/network
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package fakeplayer/ketongu10/network/packets
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package fakeplayer/ketongu10/objects
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package fakeplayer/ketongu10/objects/blocks
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package fakeplayer/ketongu10/objects/blocks/crops
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package fakeplayer/ketongu10/objects/blocks/fluids
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package fakeplayer/ketongu10/objects/blocks/item
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package fakeplayer/ketongu10/objects/blocks/silver_chest
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package fakeplayer/ketongu10/objects/blocks/silver_chest_na
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package fakeplayer/ketongu10/objects/blocks/silver_furnace
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package fakeplayer/ketongu10/objects/blocks/silver_furnace/slots
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package fakeplayer/ketongu10/objects/blocks/slab
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package fakeplayer/ketongu10/objects/blocks/world
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package fakeplayer/ketongu10/objects/items
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package fakeplayer/ketongu10/objects/items/armor
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package fakeplayer/ketongu10/objects/items/staffs
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package fakeplayer/ketongu10/objects/items/tools
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package fakeplayer/ketongu10/proxy
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package fakeplayer/ketongu10/recipes
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package fakeplayer/ketongu10/tabs
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package fakeplayer/ketongu10/util
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package fakeplayer/ketongu10/util/handlers
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package fakeplayer/ketongu10/util/interfaces
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package fakeplayer/ketongu10/war
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package fakeplayer/ketongu10/war/AI
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package fakeplayer/ketongu10/world
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package fakeplayer/ketongu10/world/endTemplate
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package fakeplayer/ketongu10/world/gen
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package fakeplayer/ketongu10/world/netherTemplate
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package fakeplayer/ketongu10/world/overworldTemplate
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package fakeplayer/ketongu10/world/test
+[01:12:12] [Client thread/DEBUG] [FML]: Examining directory main for potential mods
+[01:12:12] [Client thread/DEBUG] [FML]: Found an mcmod.info file in directory main
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package assets
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package assets/fakeplayer
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package assets/fakeplayer/blockstates
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package assets/fakeplayer/lang
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package assets/fakeplayer/loot_tables
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package assets/fakeplayer/loot_tables/entity
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package assets/fakeplayer/loot_tables/entity/test
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package assets/fakeplayer/models
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package assets/fakeplayer/models/block
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package assets/fakeplayer/models/item
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package assets/fakeplayer/recipes
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package assets/fakeplayer/sounds
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package assets/fakeplayer/sounds/entity
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package assets/fakeplayer/sounds/entity/test
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package assets/fakeplayer/textures
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package assets/fakeplayer/textures/blocks
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package assets/fakeplayer/textures/entity
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package assets/fakeplayer/textures/entity/arrows
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package assets/fakeplayer/textures/entity/test
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package assets/fakeplayer/textures/gui
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package assets/fakeplayer/textures/items
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package assets/fakeplayer/textures/models
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package assets/fakeplayer/textures/models/armor
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package assets/fakeplayer/textures/tab
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package assets/minecraft
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package assets/minecraft/textures
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package assets/minecraft/textures/gui
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package assets/minecraft/textures/gui/container
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package assets/minecraft/textures/gui/container/creative_inventory
+[01:12:12] [Client thread/TRACE] [FML]: Recursing into package assets/minecraft/textures/painting
+[01:12:12] [Client thread/DEBUG] [FML]: Examining file electroblobs-wizardry-265642-3864785_mapped_snapshot_20171003-1.12.jar for potential mods
+[01:12:12] [Client thread/TRACE] [FML]: Located mcmod.info file in file electroblobs-wizardry-265642-3864785_mapped_snapshot_20171003-1.12.jar
+[01:12:12] [Client thread/DEBUG] [FML]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (electroblob.wizardry.Wizardry) - loading
+[01:12:12] [Client thread/TRACE] [FML]: Parsed dependency info for ebwizardry: Requirements: [forge@[14.23.5.2847,)] After:[forge@[14.23.5.2847,), jei@[4.15.0,), baubles@[1.5.2,), antiqueatlas@[4.6,)] Before:[]
+[01:12:12] [Client thread/DEBUG] [FML]: Examining file epic-siege-mod-229449-3356157_mapped_snapshot_20171003-1.12.jar for potential mods
+[01:12:12] [Client thread/TRACE] [FML]: Located mcmod.info file in file epic-siege-mod-229449-3356157_mapped_snapshot_20171003-1.12.jar
+[01:12:12] [Client thread/DEBUG] [FML]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (funwayguy.epicsiegemod.core.ESM) - loading
+[01:12:12] [Client thread/TRACE] [FML]: Parsed dependency info for epicsiegemod: Requirements: [] After:[] Before:[]
+[01:12:12] [Client thread/DEBUG] [FML]: Examining file ancient-spellcraft-358124-4040921_mapped_snapshot_20171003-1.12.jar for potential mods
+[01:12:12] [Client thread/TRACE] [FML]: Located mcmod.info file in file ancient-spellcraft-358124-4040921_mapped_snapshot_20171003-1.12.jar
+[01:12:12] [Client thread/DEBUG] [FML]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (com.windanesz.ancientspellcraft.AncientSpellcraft) - loading
+[01:12:12] [Client thread/TRACE] [FML]: Parsed dependency info for ancientspellcraft: Requirements: [ebwizardry@[4.3.7,4.4)] After:[ebwizardry@[4.3.7,4.4), jei@[4.15.0,), artemislib] Before:[]
+[01:12:12] [Client thread/DEBUG] [FML]: Examining file ancient-warfare-2-224602-3293318_mapped_snapshot_20171003-1.12.jar for potential mods
+[01:12:12] [Client thread/TRACE] [FML]: Located mcmod.info file in file ancient-warfare-2-224602-3293318_mapped_snapshot_20171003-1.12.jar
+[01:12:12] [Client thread/DEBUG] [FML]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (net.shadowmage.ancientwarfare.automation.AncientWarfareAutomation) - loading
+[01:12:12] [Client thread/TRACE] [FML]: Parsed dependency info for ancientwarfareautomation: Requirements: [ancientwarfare] After:[ancientwarfare, redstoneflux, buildcraftcore] Before:[]
+[01:12:12] [Client thread/DEBUG] [FML]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (net.shadowmage.ancientwarfare.core.AncientWarfareCore) - loading
+[01:12:12] [Client thread/TRACE] [FML]: Parsed dependency info for ancientwarfare: Requirements: [forge@[14.23.5.2816,), codechickenlib@[3.2.3,)] After:[codechickenlib@[3.2.3,)] Before:[]
+[01:12:12] [Client thread/DEBUG] [FML]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (net.shadowmage.ancientwarfare.npc.AncientWarfareNPC) - loading
+[01:12:12] [Client thread/TRACE] [FML]: Parsed dependency info for ancientwarfarenpc: Requirements: [ancientwarfare] After:[ancientwarfare] Before:[]
+[01:12:12] [Client thread/DEBUG] [FML]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (net.shadowmage.ancientwarfare.structure.AncientWarfareStructure) - loading
+[01:12:12] [Client thread/TRACE] [FML]: Parsed dependency info for ancientwarfarestructure: Requirements: [ancientwarfare] After:[ancientwarfare] Before:[]
+[01:12:13] [Client thread/DEBUG] [FML]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (net.shadowmage.ancientwarfare.vehicle.AncientWarfareVehicles) - loading
+[01:12:13] [Client thread/TRACE] [FML]: Parsed dependency info for ancientwarfarevehicle: Requirements: [ancientwarfare] After:[ancientwarfare] Before:[]
+[01:12:13] [Client thread/DEBUG] [FML]: Examining file forge-1.12.2-14.23.5.2854_mapped_snapshot_20171003-1.12-recomp.jar for potential mods
+[01:12:13] [Client thread/DEBUG] [FML]: The mod container forge-1.12.2-14.23.5.2854_mapped_snapshot_20171003-1.12-recomp.jar appears to be missing an mcmod.info file
+[01:12:13] [Client thread/DEBUG] [FML]: Examining file client-extra.jar for potential mods
+[01:12:13] [Client thread/DEBUG] [FML]: The mod container client-extra.jar appears to be missing an mcmod.info file
+[01:12:13] [Client thread/DEBUG] [FML]: Examining file jsr305-3.0.1.jar for potential mods
+[01:12:13] [Client thread/DEBUG] [FML]: The mod container jsr305-3.0.1.jar appears to be missing an mcmod.info file
+[01:12:13] [Client thread/DEBUG] [FML]: Examining file mergetool-1.0.13-forge.jar for potential mods
+[01:12:13] [Client thread/DEBUG] [FML]: The mod container mergetool-1.0.13-forge.jar appears to be missing an mcmod.info file
+[01:12:13] [Client thread/DEBUG] [FML]: Examining file mcp_snapshot-20171003-1.12.zip for potential mods
+[01:12:13] [Client thread/DEBUG] [FML]: The mod container mcp_snapshot-20171003-1.12.zip appears to be missing an mcmod.info file
+[01:12:13] [Client thread/DEBUG] [FML]: Examining file asm-debug-all-5.2.jar for potential mods
+[01:12:13] [Client thread/DEBUG] [FML]: The mod container asm-debug-all-5.2.jar appears to be missing an mcmod.info file
+[01:12:13] [Client thread/DEBUG] [FML]: Examining file maven-artifact-3.5.3.jar for potential mods
+[01:12:13] [Client thread/DEBUG] [FML]: The mod container maven-artifact-3.5.3.jar appears to be missing an mcmod.info file
+[01:12:13] [Client thread/DEBUG] [FML]: Examining file legacydev-0.2.3.1-fatjar.jar for potential mods
+[01:12:13] [Client thread/DEBUG] [FML]: The mod container legacydev-0.2.3.1-fatjar.jar appears to be missing an mcmod.info file
+[01:12:13] [Client thread/DEBUG] [FML]: Examining file patchy-1.3.9.jar for potential mods
+[01:12:13] [Client thread/DEBUG] [FML]: The mod container patchy-1.3.9.jar appears to be missing an mcmod.info file
+[01:12:13] [Client thread/DEBUG] [FML]: Examining file text2speech-1.10.3.jar for potential mods
+[01:12:13] [Client thread/DEBUG] [FML]: The mod container text2speech-1.10.3.jar appears to be missing an mcmod.info file
+[01:12:13] [Client thread/DEBUG] [FML]: Examining file text2speech-1.10.3-natives-windows.jar for potential mods
+[01:12:13] [Client thread/DEBUG] [FML]: The mod container text2speech-1.10.3-natives-windows.jar appears to be missing an mcmod.info file
+[01:12:13] [Client thread/DEBUG] [FML]: Examining file asm-util-6.2.jar for potential mods
+[01:12:13] [Client thread/DEBUG] [FML]: The mod container asm-util-6.2.jar appears to be missing an mcmod.info file
+[01:12:13] [Client thread/ERROR] [FML]: Unable to read a class file correctly
+java.lang.IllegalArgumentException: null
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:185) ~[asm-debug-all-5.2.jar:5.2]
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:168) ~[asm-debug-all-5.2.jar:5.2]
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:439) ~[asm-debug-all-5.2.jar:5.2]
+	at net.minecraftforge.fml.common.discovery.asm.ASMModParser.<init>(ASMModParser.java:57) [ASMModParser.class:?]
+	at net.minecraftforge.fml.common.discovery.JarDiscoverer.findClassesASM(JarDiscoverer.java:102) [JarDiscoverer.class:?]
+	at net.minecraftforge.fml.common.discovery.JarDiscoverer.discover(JarDiscoverer.java:77) [JarDiscoverer.class:?]
+	at net.minecraftforge.fml.common.discovery.ContainerType.findMods(ContainerType.java:47) [ContainerType.class:?]
+	at net.minecraftforge.fml.common.discovery.ModCandidate.explore(ModCandidate.java:74) [ModCandidate.class:?]
+	at net.minecraftforge.fml.common.discovery.ModDiscoverer.identifyMods(ModDiscoverer.java:93) [ModDiscoverer.class:?]
+	at net.minecraftforge.fml.common.Loader.identifyMods(Loader.java:427) [Loader.class:?]
+	at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:568) [Loader.class:?]
+	at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:232) [FMLClientHandler.class:?]
+	at net.minecraft.client.Minecraft.init(Minecraft.java:467) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:378) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:118) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_265]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_265]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_265]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_265]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_265]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_265]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_265]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_265]
+	at net.minecraftforge.legacydev.Main.start(Main.java:86) [legacydev-0.2.3.1-fatjar.jar:0.2.3.1+4+372be23]
+	at net.minecraftforge.legacydev.MainClient.main(MainClient.java:29) [legacydev-0.2.3.1-fatjar.jar:0.2.3.1+4+372be23]
+[01:12:13] [Client thread/ERROR] [FML]: There was a problem reading the entry module-info.class in the jar C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-util\6.2\a9690730f92cc79eeadc20e400ebb41eccce10b1\asm-util-6.2.jar - probably a corrupt zip
+net.minecraftforge.fml.common.LoaderException: java.lang.IllegalArgumentException
+
+	at net.minecraftforge.fml.common.discovery.asm.ASMModParser.<init>(ASMModParser.java:63) ~[ASMModParser.class:?]
+	at net.minecraftforge.fml.common.discovery.JarDiscoverer.findClassesASM(JarDiscoverer.java:102) [JarDiscoverer.class:?]
+	at net.minecraftforge.fml.common.discovery.JarDiscoverer.discover(JarDiscoverer.java:77) [JarDiscoverer.class:?]
+	at net.minecraftforge.fml.common.discovery.ContainerType.findMods(ContainerType.java:47) [ContainerType.class:?]
+	at net.minecraftforge.fml.common.discovery.ModCandidate.explore(ModCandidate.java:74) [ModCandidate.class:?]
+	at net.minecraftforge.fml.common.discovery.ModDiscoverer.identifyMods(ModDiscoverer.java:93) [ModDiscoverer.class:?]
+	at net.minecraftforge.fml.common.Loader.identifyMods(Loader.java:427) [Loader.class:?]
+	at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:568) [Loader.class:?]
+	at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:232) [FMLClientHandler.class:?]
+	at net.minecraft.client.Minecraft.init(Minecraft.java:467) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:378) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:118) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_265]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_265]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_265]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_265]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_265]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_265]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_265]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_265]
+	at net.minecraftforge.legacydev.Main.start(Main.java:86) [legacydev-0.2.3.1-fatjar.jar:0.2.3.1+4+372be23]
+	at net.minecraftforge.legacydev.MainClient.main(MainClient.java:29) [legacydev-0.2.3.1-fatjar.jar:0.2.3.1+4+372be23]
+Caused by: java.lang.IllegalArgumentException
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:185) ~[asm-debug-all-5.2.jar:5.2]
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:168) ~[asm-debug-all-5.2.jar:5.2]
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:439) ~[asm-debug-all-5.2.jar:5.2]
+	at net.minecraftforge.fml.common.discovery.asm.ASMModParser.<init>(ASMModParser.java:57) ~[ASMModParser.class:?]
+	... 23 more
+[01:12:13] [Client thread/WARN] [FML]: Zip file asm-util-6.2.jar failed to read properly, it will be ignored
+net.minecraftforge.fml.common.LoaderException: java.lang.IllegalArgumentException
+
+	at net.minecraftforge.fml.common.discovery.asm.ASMModParser.<init>(ASMModParser.java:63) ~[ASMModParser.class:?]
+	at net.minecraftforge.fml.common.discovery.JarDiscoverer.findClassesASM(JarDiscoverer.java:102) ~[JarDiscoverer.class:?]
+	at net.minecraftforge.fml.common.discovery.JarDiscoverer.discover(JarDiscoverer.java:77) [JarDiscoverer.class:?]
+	at net.minecraftforge.fml.common.discovery.ContainerType.findMods(ContainerType.java:47) [ContainerType.class:?]
+	at net.minecraftforge.fml.common.discovery.ModCandidate.explore(ModCandidate.java:74) [ModCandidate.class:?]
+	at net.minecraftforge.fml.common.discovery.ModDiscoverer.identifyMods(ModDiscoverer.java:93) [ModDiscoverer.class:?]
+	at net.minecraftforge.fml.common.Loader.identifyMods(Loader.java:427) [Loader.class:?]
+	at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:568) [Loader.class:?]
+	at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:232) [FMLClientHandler.class:?]
+	at net.minecraft.client.Minecraft.init(Minecraft.java:467) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:378) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:118) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_265]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_265]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_265]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_265]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_265]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_265]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_265]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_265]
+	at net.minecraftforge.legacydev.Main.start(Main.java:86) [legacydev-0.2.3.1-fatjar.jar:0.2.3.1+4+372be23]
+	at net.minecraftforge.legacydev.MainClient.main(MainClient.java:29) [legacydev-0.2.3.1-fatjar.jar:0.2.3.1+4+372be23]
+Caused by: java.lang.IllegalArgumentException
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:185) ~[asm-debug-all-5.2.jar:5.2]
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:168) ~[asm-debug-all-5.2.jar:5.2]
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:439) ~[asm-debug-all-5.2.jar:5.2]
+	at net.minecraftforge.fml.common.discovery.asm.ASMModParser.<init>(ASMModParser.java:57) ~[ASMModParser.class:?]
+	... 23 more
+[01:12:13] [Client thread/DEBUG] [FML]: Examining file asm-analysis-6.2.jar for potential mods
+[01:12:13] [Client thread/DEBUG] [FML]: The mod container asm-analysis-6.2.jar appears to be missing an mcmod.info file
+[01:12:13] [Client thread/ERROR] [FML]: Unable to read a class file correctly
+java.lang.IllegalArgumentException: null
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:185) ~[asm-debug-all-5.2.jar:5.2]
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:168) ~[asm-debug-all-5.2.jar:5.2]
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:439) ~[asm-debug-all-5.2.jar:5.2]
+	at net.minecraftforge.fml.common.discovery.asm.ASMModParser.<init>(ASMModParser.java:57) [ASMModParser.class:?]
+	at net.minecraftforge.fml.common.discovery.JarDiscoverer.findClassesASM(JarDiscoverer.java:102) [JarDiscoverer.class:?]
+	at net.minecraftforge.fml.common.discovery.JarDiscoverer.discover(JarDiscoverer.java:77) [JarDiscoverer.class:?]
+	at net.minecraftforge.fml.common.discovery.ContainerType.findMods(ContainerType.java:47) [ContainerType.class:?]
+	at net.minecraftforge.fml.common.discovery.ModCandidate.explore(ModCandidate.java:74) [ModCandidate.class:?]
+	at net.minecraftforge.fml.common.discovery.ModDiscoverer.identifyMods(ModDiscoverer.java:93) [ModDiscoverer.class:?]
+	at net.minecraftforge.fml.common.Loader.identifyMods(Loader.java:427) [Loader.class:?]
+	at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:568) [Loader.class:?]
+	at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:232) [FMLClientHandler.class:?]
+	at net.minecraft.client.Minecraft.init(Minecraft.java:467) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:378) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:118) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_265]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_265]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_265]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_265]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_265]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_265]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_265]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_265]
+	at net.minecraftforge.legacydev.Main.start(Main.java:86) [legacydev-0.2.3.1-fatjar.jar:0.2.3.1+4+372be23]
+	at net.minecraftforge.legacydev.MainClient.main(MainClient.java:29) [legacydev-0.2.3.1-fatjar.jar:0.2.3.1+4+372be23]
+[01:12:13] [Client thread/ERROR] [FML]: There was a problem reading the entry module-info.class in the jar C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-analysis\6.2\c7d9a90d221cbb977848d2c777eb3aa7637e89df\asm-analysis-6.2.jar - probably a corrupt zip
+net.minecraftforge.fml.common.LoaderException: java.lang.IllegalArgumentException
+
+	at net.minecraftforge.fml.common.discovery.asm.ASMModParser.<init>(ASMModParser.java:63) ~[ASMModParser.class:?]
+	at net.minecraftforge.fml.common.discovery.JarDiscoverer.findClassesASM(JarDiscoverer.java:102) [JarDiscoverer.class:?]
+	at net.minecraftforge.fml.common.discovery.JarDiscoverer.discover(JarDiscoverer.java:77) [JarDiscoverer.class:?]
+	at net.minecraftforge.fml.common.discovery.ContainerType.findMods(ContainerType.java:47) [ContainerType.class:?]
+	at net.minecraftforge.fml.common.discovery.ModCandidate.explore(ModCandidate.java:74) [ModCandidate.class:?]
+	at net.minecraftforge.fml.common.discovery.ModDiscoverer.identifyMods(ModDiscoverer.java:93) [ModDiscoverer.class:?]
+	at net.minecraftforge.fml.common.Loader.identifyMods(Loader.java:427) [Loader.class:?]
+	at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:568) [Loader.class:?]
+	at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:232) [FMLClientHandler.class:?]
+	at net.minecraft.client.Minecraft.init(Minecraft.java:467) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:378) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:118) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_265]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_265]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_265]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_265]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_265]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_265]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_265]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_265]
+	at net.minecraftforge.legacydev.Main.start(Main.java:86) [legacydev-0.2.3.1-fatjar.jar:0.2.3.1+4+372be23]
+	at net.minecraftforge.legacydev.MainClient.main(MainClient.java:29) [legacydev-0.2.3.1-fatjar.jar:0.2.3.1+4+372be23]
+Caused by: java.lang.IllegalArgumentException
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:185) ~[asm-debug-all-5.2.jar:5.2]
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:168) ~[asm-debug-all-5.2.jar:5.2]
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:439) ~[asm-debug-all-5.2.jar:5.2]
+	at net.minecraftforge.fml.common.discovery.asm.ASMModParser.<init>(ASMModParser.java:57) ~[ASMModParser.class:?]
+	... 23 more
+[01:12:13] [Client thread/WARN] [FML]: Zip file asm-analysis-6.2.jar failed to read properly, it will be ignored
+net.minecraftforge.fml.common.LoaderException: java.lang.IllegalArgumentException
+
+	at net.minecraftforge.fml.common.discovery.asm.ASMModParser.<init>(ASMModParser.java:63) ~[ASMModParser.class:?]
+	at net.minecraftforge.fml.common.discovery.JarDiscoverer.findClassesASM(JarDiscoverer.java:102) ~[JarDiscoverer.class:?]
+	at net.minecraftforge.fml.common.discovery.JarDiscoverer.discover(JarDiscoverer.java:77) [JarDiscoverer.class:?]
+	at net.minecraftforge.fml.common.discovery.ContainerType.findMods(ContainerType.java:47) [ContainerType.class:?]
+	at net.minecraftforge.fml.common.discovery.ModCandidate.explore(ModCandidate.java:74) [ModCandidate.class:?]
+	at net.minecraftforge.fml.common.discovery.ModDiscoverer.identifyMods(ModDiscoverer.java:93) [ModDiscoverer.class:?]
+	at net.minecraftforge.fml.common.Loader.identifyMods(Loader.java:427) [Loader.class:?]
+	at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:568) [Loader.class:?]
+	at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:232) [FMLClientHandler.class:?]
+	at net.minecraft.client.Minecraft.init(Minecraft.java:467) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:378) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:118) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_265]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_265]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_265]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_265]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_265]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_265]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_265]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_265]
+	at net.minecraftforge.legacydev.Main.start(Main.java:86) [legacydev-0.2.3.1-fatjar.jar:0.2.3.1+4+372be23]
+	at net.minecraftforge.legacydev.MainClient.main(MainClient.java:29) [legacydev-0.2.3.1-fatjar.jar:0.2.3.1+4+372be23]
+Caused by: java.lang.IllegalArgumentException
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:185) ~[asm-debug-all-5.2.jar:5.2]
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:168) ~[asm-debug-all-5.2.jar:5.2]
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:439) ~[asm-debug-all-5.2.jar:5.2]
+	at net.minecraftforge.fml.common.discovery.asm.ASMModParser.<init>(ASMModParser.java:57) ~[ASMModParser.class:?]
+	... 23 more
+[01:12:13] [Client thread/DEBUG] [FML]: Examining file asm-tree-6.2.jar for potential mods
+[01:12:13] [Client thread/DEBUG] [FML]: The mod container asm-tree-6.2.jar appears to be missing an mcmod.info file
+[01:12:13] [Client thread/ERROR] [FML]: Unable to read a class file correctly
+java.lang.IllegalArgumentException: null
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:185) ~[asm-debug-all-5.2.jar:5.2]
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:168) ~[asm-debug-all-5.2.jar:5.2]
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:439) ~[asm-debug-all-5.2.jar:5.2]
+	at net.minecraftforge.fml.common.discovery.asm.ASMModParser.<init>(ASMModParser.java:57) [ASMModParser.class:?]
+	at net.minecraftforge.fml.common.discovery.JarDiscoverer.findClassesASM(JarDiscoverer.java:102) [JarDiscoverer.class:?]
+	at net.minecraftforge.fml.common.discovery.JarDiscoverer.discover(JarDiscoverer.java:77) [JarDiscoverer.class:?]
+	at net.minecraftforge.fml.common.discovery.ContainerType.findMods(ContainerType.java:47) [ContainerType.class:?]
+	at net.minecraftforge.fml.common.discovery.ModCandidate.explore(ModCandidate.java:74) [ModCandidate.class:?]
+	at net.minecraftforge.fml.common.discovery.ModDiscoverer.identifyMods(ModDiscoverer.java:93) [ModDiscoverer.class:?]
+	at net.minecraftforge.fml.common.Loader.identifyMods(Loader.java:427) [Loader.class:?]
+	at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:568) [Loader.class:?]
+	at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:232) [FMLClientHandler.class:?]
+	at net.minecraft.client.Minecraft.init(Minecraft.java:467) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:378) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:118) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_265]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_265]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_265]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_265]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_265]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_265]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_265]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_265]
+	at net.minecraftforge.legacydev.Main.start(Main.java:86) [legacydev-0.2.3.1-fatjar.jar:0.2.3.1+4+372be23]
+	at net.minecraftforge.legacydev.MainClient.main(MainClient.java:29) [legacydev-0.2.3.1-fatjar.jar:0.2.3.1+4+372be23]
+[01:12:13] [Client thread/ERROR] [FML]: There was a problem reading the entry module-info.class in the jar C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-tree\6.2\61570e046111559f38d4e0e580c005f75988c0a6\asm-tree-6.2.jar - probably a corrupt zip
+net.minecraftforge.fml.common.LoaderException: java.lang.IllegalArgumentException
+
+	at net.minecraftforge.fml.common.discovery.asm.ASMModParser.<init>(ASMModParser.java:63) ~[ASMModParser.class:?]
+	at net.minecraftforge.fml.common.discovery.JarDiscoverer.findClassesASM(JarDiscoverer.java:102) [JarDiscoverer.class:?]
+	at net.minecraftforge.fml.common.discovery.JarDiscoverer.discover(JarDiscoverer.java:77) [JarDiscoverer.class:?]
+	at net.minecraftforge.fml.common.discovery.ContainerType.findMods(ContainerType.java:47) [ContainerType.class:?]
+	at net.minecraftforge.fml.common.discovery.ModCandidate.explore(ModCandidate.java:74) [ModCandidate.class:?]
+	at net.minecraftforge.fml.common.discovery.ModDiscoverer.identifyMods(ModDiscoverer.java:93) [ModDiscoverer.class:?]
+	at net.minecraftforge.fml.common.Loader.identifyMods(Loader.java:427) [Loader.class:?]
+	at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:568) [Loader.class:?]
+	at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:232) [FMLClientHandler.class:?]
+	at net.minecraft.client.Minecraft.init(Minecraft.java:467) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:378) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:118) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_265]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_265]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_265]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_265]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_265]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_265]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_265]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_265]
+	at net.minecraftforge.legacydev.Main.start(Main.java:86) [legacydev-0.2.3.1-fatjar.jar:0.2.3.1+4+372be23]
+	at net.minecraftforge.legacydev.MainClient.main(MainClient.java:29) [legacydev-0.2.3.1-fatjar.jar:0.2.3.1+4+372be23]
+Caused by: java.lang.IllegalArgumentException
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:185) ~[asm-debug-all-5.2.jar:5.2]
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:168) ~[asm-debug-all-5.2.jar:5.2]
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:439) ~[asm-debug-all-5.2.jar:5.2]
+	at net.minecraftforge.fml.common.discovery.asm.ASMModParser.<init>(ASMModParser.java:57) ~[ASMModParser.class:?]
+	... 23 more
+[01:12:13] [Client thread/WARN] [FML]: Zip file asm-tree-6.2.jar failed to read properly, it will be ignored
+net.minecraftforge.fml.common.LoaderException: java.lang.IllegalArgumentException
+
+	at net.minecraftforge.fml.common.discovery.asm.ASMModParser.<init>(ASMModParser.java:63) ~[ASMModParser.class:?]
+	at net.minecraftforge.fml.common.discovery.JarDiscoverer.findClassesASM(JarDiscoverer.java:102) ~[JarDiscoverer.class:?]
+	at net.minecraftforge.fml.common.discovery.JarDiscoverer.discover(JarDiscoverer.java:77) [JarDiscoverer.class:?]
+	at net.minecraftforge.fml.common.discovery.ContainerType.findMods(ContainerType.java:47) [ContainerType.class:?]
+	at net.minecraftforge.fml.common.discovery.ModCandidate.explore(ModCandidate.java:74) [ModCandidate.class:?]
+	at net.minecraftforge.fml.common.discovery.ModDiscoverer.identifyMods(ModDiscoverer.java:93) [ModDiscoverer.class:?]
+	at net.minecraftforge.fml.common.Loader.identifyMods(Loader.java:427) [Loader.class:?]
+	at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:568) [Loader.class:?]
+	at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:232) [FMLClientHandler.class:?]
+	at net.minecraft.client.Minecraft.init(Minecraft.java:467) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:378) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:118) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_265]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_265]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_265]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_265]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_265]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_265]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_265]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_265]
+	at net.minecraftforge.legacydev.Main.start(Main.java:86) [legacydev-0.2.3.1-fatjar.jar:0.2.3.1+4+372be23]
+	at net.minecraftforge.legacydev.MainClient.main(MainClient.java:29) [legacydev-0.2.3.1-fatjar.jar:0.2.3.1+4+372be23]
+Caused by: java.lang.IllegalArgumentException
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:185) ~[asm-debug-all-5.2.jar:5.2]
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:168) ~[asm-debug-all-5.2.jar:5.2]
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:439) ~[asm-debug-all-5.2.jar:5.2]
+	at net.minecraftforge.fml.common.discovery.asm.ASMModParser.<init>(ASMModParser.java:57) ~[ASMModParser.class:?]
+	... 23 more
+[01:12:13] [Client thread/DEBUG] [FML]: Examining file asm-6.2.jar for potential mods
+[01:12:13] [Client thread/DEBUG] [FML]: The mod container asm-6.2.jar appears to be missing an mcmod.info file
+[01:12:13] [Client thread/ERROR] [FML]: Unable to read a class file correctly
+java.lang.IllegalArgumentException: null
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:185) ~[asm-debug-all-5.2.jar:5.2]
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:168) ~[asm-debug-all-5.2.jar:5.2]
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:439) ~[asm-debug-all-5.2.jar:5.2]
+	at net.minecraftforge.fml.common.discovery.asm.ASMModParser.<init>(ASMModParser.java:57) [ASMModParser.class:?]
+	at net.minecraftforge.fml.common.discovery.JarDiscoverer.findClassesASM(JarDiscoverer.java:102) [JarDiscoverer.class:?]
+	at net.minecraftforge.fml.common.discovery.JarDiscoverer.discover(JarDiscoverer.java:77) [JarDiscoverer.class:?]
+	at net.minecraftforge.fml.common.discovery.ContainerType.findMods(ContainerType.java:47) [ContainerType.class:?]
+	at net.minecraftforge.fml.common.discovery.ModCandidate.explore(ModCandidate.java:74) [ModCandidate.class:?]
+	at net.minecraftforge.fml.common.discovery.ModDiscoverer.identifyMods(ModDiscoverer.java:93) [ModDiscoverer.class:?]
+	at net.minecraftforge.fml.common.Loader.identifyMods(Loader.java:427) [Loader.class:?]
+	at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:568) [Loader.class:?]
+	at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:232) [FMLClientHandler.class:?]
+	at net.minecraft.client.Minecraft.init(Minecraft.java:467) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:378) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:118) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_265]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_265]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_265]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_265]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_265]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_265]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_265]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_265]
+	at net.minecraftforge.legacydev.Main.start(Main.java:86) [legacydev-0.2.3.1-fatjar.jar:0.2.3.1+4+372be23]
+	at net.minecraftforge.legacydev.MainClient.main(MainClient.java:29) [legacydev-0.2.3.1-fatjar.jar:0.2.3.1+4+372be23]
+[01:12:13] [Client thread/ERROR] [FML]: There was a problem reading the entry module-info.class in the jar C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm\6.2\1b6c4ff09ce03f3052429139c2a68e295cae6604\asm-6.2.jar - probably a corrupt zip
+net.minecraftforge.fml.common.LoaderException: java.lang.IllegalArgumentException
+
+	at net.minecraftforge.fml.common.discovery.asm.ASMModParser.<init>(ASMModParser.java:63) ~[ASMModParser.class:?]
+	at net.minecraftforge.fml.common.discovery.JarDiscoverer.findClassesASM(JarDiscoverer.java:102) [JarDiscoverer.class:?]
+	at net.minecraftforge.fml.common.discovery.JarDiscoverer.discover(JarDiscoverer.java:77) [JarDiscoverer.class:?]
+	at net.minecraftforge.fml.common.discovery.ContainerType.findMods(ContainerType.java:47) [ContainerType.class:?]
+	at net.minecraftforge.fml.common.discovery.ModCandidate.explore(ModCandidate.java:74) [ModCandidate.class:?]
+	at net.minecraftforge.fml.common.discovery.ModDiscoverer.identifyMods(ModDiscoverer.java:93) [ModDiscoverer.class:?]
+	at net.minecraftforge.fml.common.Loader.identifyMods(Loader.java:427) [Loader.class:?]
+	at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:568) [Loader.class:?]
+	at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:232) [FMLClientHandler.class:?]
+	at net.minecraft.client.Minecraft.init(Minecraft.java:467) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:378) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:118) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_265]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_265]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_265]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_265]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_265]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_265]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_265]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_265]
+	at net.minecraftforge.legacydev.Main.start(Main.java:86) [legacydev-0.2.3.1-fatjar.jar:0.2.3.1+4+372be23]
+	at net.minecraftforge.legacydev.MainClient.main(MainClient.java:29) [legacydev-0.2.3.1-fatjar.jar:0.2.3.1+4+372be23]
+Caused by: java.lang.IllegalArgumentException
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:185) ~[asm-debug-all-5.2.jar:5.2]
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:168) ~[asm-debug-all-5.2.jar:5.2]
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:439) ~[asm-debug-all-5.2.jar:5.2]
+	at net.minecraftforge.fml.common.discovery.asm.ASMModParser.<init>(ASMModParser.java:57) ~[ASMModParser.class:?]
+	... 23 more
+[01:12:13] [Client thread/WARN] [FML]: Zip file asm-6.2.jar failed to read properly, it will be ignored
+net.minecraftforge.fml.common.LoaderException: java.lang.IllegalArgumentException
+
+	at net.minecraftforge.fml.common.discovery.asm.ASMModParser.<init>(ASMModParser.java:63) ~[ASMModParser.class:?]
+	at net.minecraftforge.fml.common.discovery.JarDiscoverer.findClassesASM(JarDiscoverer.java:102) ~[JarDiscoverer.class:?]
+	at net.minecraftforge.fml.common.discovery.JarDiscoverer.discover(JarDiscoverer.java:77) [JarDiscoverer.class:?]
+	at net.minecraftforge.fml.common.discovery.ContainerType.findMods(ContainerType.java:47) [ContainerType.class:?]
+	at net.minecraftforge.fml.common.discovery.ModCandidate.explore(ModCandidate.java:74) [ModCandidate.class:?]
+	at net.minecraftforge.fml.common.discovery.ModDiscoverer.identifyMods(ModDiscoverer.java:93) [ModDiscoverer.class:?]
+	at net.minecraftforge.fml.common.Loader.identifyMods(Loader.java:427) [Loader.class:?]
+	at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:568) [Loader.class:?]
+	at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:232) [FMLClientHandler.class:?]
+	at net.minecraft.client.Minecraft.init(Minecraft.java:467) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:378) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:118) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_265]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_265]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_265]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_265]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_265]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_265]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_265]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_265]
+	at net.minecraftforge.legacydev.Main.start(Main.java:86) [legacydev-0.2.3.1-fatjar.jar:0.2.3.1+4+372be23]
+	at net.minecraftforge.legacydev.MainClient.main(MainClient.java:29) [legacydev-0.2.3.1-fatjar.jar:0.2.3.1+4+372be23]
+Caused by: java.lang.IllegalArgumentException
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:185) ~[asm-debug-all-5.2.jar:5.2]
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:168) ~[asm-debug-all-5.2.jar:5.2]
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:439) ~[asm-debug-all-5.2.jar:5.2]
+	at net.minecraftforge.fml.common.discovery.asm.ASMModParser.<init>(ASMModParser.java:57) ~[ASMModParser.class:?]
+	... 23 more
+[01:12:13] [Client thread/DEBUG] [FML]: Examining file plexus-utils-3.1.0.jar for potential mods
+[01:12:13] [Client thread/DEBUG] [FML]: The mod container plexus-utils-3.1.0.jar appears to be missing an mcmod.info file
+[01:12:13] [Client thread/DEBUG] [FML]: Examining file CodeChickenLib_1.12.2_3.2.3.358_universal.jar for potential mods
+[01:12:13] [Client thread/TRACE] [FML]: Located mcmod.info file in file CodeChickenLib_1.12.2_3.2.3.358_universal.jar
+[01:12:13] [Client thread/DEBUG] [FML]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (codechicken.lib.CodeChickenLib) - loading
+[01:12:13] [Client thread/TRACE] [FML]: Parsed dependency info for codechickenlib: Requirements: [forge@[14.23.4.2718,)] After:[forge@[14.23.4.2718,)] Before:[]
+[01:12:13] [Client thread/DEBUG] [FML]: Attempting to load the file version.properties from CodeChickenLib_1.12.2_3.2.3.358_universal.jar to locate a version number for mod codechickenlib
+[01:12:13] [Client thread/WARN] [FML]: Mod codechickenlib is missing the required element 'version' and a version.properties file could not be found. Falling back to metadata version 3.2.3.358
+[01:12:13] [Client thread/INFO] [FML]: Forge Mod Loader has identified 14 mods to load
+[01:12:13] [Client thread/DEBUG] [FML]: Found API funwayguy.epicsiegemod.api (owned by epicsiegemod providing EpicSiegeMod|API) embedded in epicsiegemod
+[01:12:13] [Client thread/DEBUG] [FML]: Creating API container dummy for API EpicSiegeMod|API: owner: epicsiegemod, dependents: []
+[01:12:13] [Client thread/TRACE] [FML]: Received a system property request ''
+[01:12:13] [Client thread/TRACE] [FML]: System property request managing the state of 0 mods
+[01:12:13] [Client thread/DEBUG] [FML]: After merging, found state information for 0 mods
+[01:12:13] [Client thread/DEBUG] [FML]: Mod Forge Mod Loader is missing a pack.mcmeta file, substituting a dummy one
+[01:12:13] [Client thread/DEBUG] [FML]: Mod Minecraft Forge is missing a pack.mcmeta file, substituting a dummy one
+[01:12:13] [Client thread/DEBUG] [FML]: Enabling mod fakeplayer
+[01:12:13] [Client thread/DEBUG] [FML]: Mod Fake Player is missing a pack.mcmeta file, substituting a dummy one
+[01:12:13] [Client thread/DEBUG] [FML]: Enabling mod ebwizardry
+[01:12:13] [Client thread/DEBUG] [FML]: Enabling mod epicsiegemod
+[01:12:13] [Client thread/DEBUG] [FML]: Mod Epic Siege Mod is missing a pack.mcmeta file, substituting a dummy one
+[01:12:13] [Client thread/DEBUG] [FML]: Enabling mod ancientspellcraft
+[01:12:13] [Client thread/DEBUG] [FML]: Enabling mod ancientwarfareautomation
+[01:12:13] [Client thread/DEBUG] [FML]: Mod Ancient Warfare Automation is missing a pack.mcmeta file, substituting a dummy one
+[01:12:13] [Client thread/DEBUG] [FML]: Enabling mod ancientwarfare
+[01:12:13] [Client thread/DEBUG] [FML]: Mod Ancient Warfare Core is missing a pack.mcmeta file, substituting a dummy one
+[01:12:13] [Client thread/DEBUG] [FML]: Enabling mod ancientwarfarenpc
+[01:12:13] [Client thread/DEBUG] [FML]: Mod Ancient Warfare NPCs is missing a pack.mcmeta file, substituting a dummy one
+[01:12:13] [Client thread/DEBUG] [FML]: Enabling mod ancientwarfarestructure
+[01:12:13] [Client thread/DEBUG] [FML]: Mod Ancient Warfare Structures is missing a pack.mcmeta file, substituting a dummy one
+[01:12:13] [Client thread/DEBUG] [FML]: Enabling mod ancientwarfarevehicle
+[01:12:13] [Client thread/DEBUG] [FML]: Mod Ancient Warfare Vehicles is missing a pack.mcmeta file, substituting a dummy one
+[01:12:13] [Client thread/DEBUG] [FML]: Enabling mod codechickenlib
+[01:12:13] [Client thread/DEBUG] [FML]: Mod CodeChicken Lib is missing a pack.mcmeta file, substituting a dummy one
+[01:12:13] [Client thread/TRACE] [FML]: Verifying mod requirements are satisfied
+[01:12:13] [Client thread/TRACE] [FML]: All mod requirements are satisfied
+[01:12:13] [Client thread/TRACE] [FML]: Sorting mods into an ordered list
+[01:12:13] [Client thread/TRACE] [FML]: Mod sorting completed successfully
+[01:12:13] [Client thread/DEBUG] [FML]: Mod sorting data
+[01:12:13] [Client thread/DEBUG] [FML]: 	ebwizardry(Electroblob's Wizardry:4.3.7): electroblobs-wizardry-265642-3864785_mapped_snapshot_20171003-1.12.jar (required-after:forge@[14.23.5.2847,);after:jei@[4.15.0,);after:baubles@[1.5.2,);after:antiqueatlas@[4.6,))
+[01:12:13] [Client thread/DEBUG] [FML]: 	fakeplayer(Fake Player:1.0): main (required-after:ebwizardry)
+[01:12:13] [Client thread/DEBUG] [FML]: 	epicsiegemod(Epic Siege Mod:13.169): epic-siege-mod-229449-3356157_mapped_snapshot_20171003-1.12.jar ()
+[01:12:13] [Client thread/DEBUG] [FML]: 	ancientspellcraft(AncientSpellcraft:1.12.2-v1.5.4): ancient-spellcraft-358124-4040921_mapped_snapshot_20171003-1.12.jar (required-after:ebwizardry@[4.3.7,4.4);after:jei@[4.15.0,);after:artemislib)
+[01:12:13] [Client thread/DEBUG] [FML]: 	codechickenlib(CodeChicken Lib:3.2.3.358): CodeChickenLib_1.12.2_3.2.3.358_universal.jar (required-after:forge@[14.23.4.2718,))
+[01:12:13] [Client thread/DEBUG] [FML]: 	ancientwarfare(Ancient Warfare Core:1.12.2-2.7.0.1038): ancient-warfare-2-224602-3293318_mapped_snapshot_20171003-1.12.jar (required:forge@[14.23.5.2816,);required-after:codechickenlib@[3.2.3,);)
+[01:12:13] [Client thread/DEBUG] [FML]: 	ancientwarfareautomation(Ancient Warfare Automation:1.12.2-2.7.0.1038): ancient-warfare-2-224602-3293318_mapped_snapshot_20171003-1.12.jar (required-after:ancientwarfare;after:redstoneflux;after:buildcraftcore)
+[01:12:13] [Client thread/DEBUG] [FML]: 	ancientwarfarenpc(Ancient Warfare NPCs:1.12.2-2.7.0.1038): ancient-warfare-2-224602-3293318_mapped_snapshot_20171003-1.12.jar (required-after:ancientwarfare)
+[01:12:13] [Client thread/DEBUG] [FML]: 	ancientwarfarestructure(Ancient Warfare Structures:1.12.2-2.7.0.1038): ancient-warfare-2-224602-3293318_mapped_snapshot_20171003-1.12.jar (required-after:ancientwarfare)
+[01:12:13] [Client thread/DEBUG] [FML]: 	ancientwarfarevehicle(Ancient Warfare Vehicles:1.12.2-2.7.0.1038): ancient-warfare-2-224602-3293318_mapped_snapshot_20171003-1.12.jar (required-after:ancientwarfare)
+[01:12:13] [Client thread/DEBUG] [FML]: 	EpicSiegeMod|API(API: EpicSiegeMod|API:1.0): epic-siege-mod-229449-3356157_mapped_snapshot_20171003-1.12.jar ()
+[01:12:13] [Client thread/DEBUG] [FML]: Loading @Config anotation data
+[01:12:13] [Thread-3/INFO] [FML]: Using sync timing. 200 frames of Display.update took 68666600 nanos
+[01:12:13] [Client thread/TRACE] [FML]: Sending event FMLConstructionEvent to mod minecraft
+[01:12:13] [Client thread/TRACE] [FML]: Sent event FMLConstructionEvent to mod minecraft
+[01:12:13] [Client thread/DEBUG] [FML]: Bar Step: Construction - Minecraft took 0.002s
+[01:12:13] [Client thread/TRACE] [FML]: Sending event FMLConstructionEvent to mod mcp
+[01:12:13] [Client thread/TRACE] [FML]: Sent event FMLConstructionEvent to mod mcp
+[01:12:13] [Client thread/DEBUG] [FML]: Bar Step: Construction - Minecraft Coder Pack took 0.000s
+[01:12:13] [Client thread/TRACE] [FML]: Sending event FMLConstructionEvent to mod FML
+[01:12:14] [Client thread/TRACE] [FML]: Mod FML is using network checker : Invoking method checkModLists
+[01:12:14] [Client thread/TRACE] [FML]: Testing mod FML to verify it accepts its own version in a remote connection
+[01:12:14] [Client thread/TRACE] [FML]: The mod FML accepts its own version (8.0.99.99)
+[01:12:14] [Client thread/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, fakeplayer, ebwizardry, epicsiegemod, ancientspellcraft, ancientwarfareautomation, ancientwarfare, ancientwarfarenpc, ancientwarfarestructure, ancientwarfarevehicle, codechickenlib] at CLIENT
+[01:12:14] [Client thread/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, fakeplayer, ebwizardry, epicsiegemod, ancientspellcraft, ancientwarfareautomation, ancientwarfare, ancientwarfarenpc, ancientwarfarestructure, ancientwarfarevehicle, codechickenlib] at SERVER
+[01:12:14] [Client thread/TRACE] [FML]: Sent event FMLConstructionEvent to mod FML
+[01:12:14] [Client thread/DEBUG] [FML]: Bar Step: Construction - Forge Mod Loader took 0.545s
+[01:12:14] [Client thread/TRACE] [FML]: Sending event FMLConstructionEvent to mod forge
+[01:12:14] [Client thread/DEBUG] [forge]: Loading Vanilla annotations: null
+[01:12:14] [Client thread/DEBUG] [forge]: Preloading CrashReport Classes
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/client/Minecraft$10
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/client/Minecraft$11
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/client/Minecraft$12
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/client/Minecraft$13
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/client/Minecraft$14
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/client/Minecraft$2
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/client/Minecraft$3
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/client/Minecraft$4
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/client/Minecraft$5
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/client/Minecraft$6
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/client/Minecraft$7
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/client/Minecraft$8
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/client/Minecraft$9
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/client/multiplayer/WorldClient$1
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/client/multiplayer/WorldClient$2
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/client/multiplayer/WorldClient$3
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/client/multiplayer/WorldClient$4
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/client/particle/ParticleManager$1
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/client/particle/ParticleManager$2
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/client/particle/ParticleManager$3
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/client/particle/ParticleManager$4
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/client/renderer/EntityRenderer$2
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/client/renderer/EntityRenderer$3
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/client/renderer/EntityRenderer$4
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/client/renderer/RenderGlobal$1
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/client/renderer/RenderItem$1
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/client/renderer/RenderItem$2
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/client/renderer/RenderItem$3
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/client/renderer/RenderItem$4
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/client/renderer/texture/TextureAtlasSprite$1
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/client/renderer/texture/TextureManager$1
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/client/renderer/texture/TextureMap$1
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/client/renderer/texture/TextureMap$2
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/client/renderer/texture/TextureMap$3
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/crash/CrashReport$1
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/crash/CrashReport$2
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/crash/CrashReport$3
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/crash/CrashReport$4
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/crash/CrashReport$5
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/crash/CrashReport$6
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/crash/CrashReport$7
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/crash/CrashReportCategory$1
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/crash/CrashReportCategory$2
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/crash/CrashReportCategory$3
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/crash/CrashReportCategory$4
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/crash/CrashReportCategory$5
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/entity/Entity$2
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/entity/Entity$3
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/entity/Entity$4
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/entity/Entity$5
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/entity/EntityTracker$1
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/entity/player/InventoryPlayer$1
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/nbt/NBTTagCompound$1
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/nbt/NBTTagCompound$2
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/network/NetHandlerPlayServer$3
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/network/NetworkSystem$6
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/server/MinecraftServer$2
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/server/MinecraftServer$3
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/server/dedicated/DedicatedServer$3
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/server/dedicated/DedicatedServer$4
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/server/integrated/IntegratedServer$1
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/server/integrated/IntegratedServer$2
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/tileentity/CommandBlockBaseLogic$1
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/tileentity/CommandBlockBaseLogic$2
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/tileentity/TileEntity$1
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/tileentity/TileEntity$2
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/tileentity/TileEntity$3
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/world/World$1
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/world/World$2
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/world/World$3
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/world/World$4
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/world/World$5
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/world/chunk/Chunk$1
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/world/gen/structure/MapGenStructure$1
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/world/gen/structure/MapGenStructure$2
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/world/gen/structure/MapGenStructure$3
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/world/storage/WorldInfo$10
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/world/storage/WorldInfo$2
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/world/storage/WorldInfo$3
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/world/storage/WorldInfo$4
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/world/storage/WorldInfo$5
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/world/storage/WorldInfo$6
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/world/storage/WorldInfo$7
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/world/storage/WorldInfo$8
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraft/world/storage/WorldInfo$9
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraftforge/common/util/TextTable
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraftforge/common/util/TextTable$Alignment
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraftforge/common/util/TextTable$Column
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraftforge/common/util/TextTable$Row
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraftforge/fml/client/SplashProgress$1
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraftforge/fml/common/FMLCommonHandler$1
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraftforge/fml/common/ICrashCallable
+[01:12:14] [Client thread/DEBUG] [forge]: 	net/minecraftforge/fml/common/Loader$1
+[01:12:14] [Client thread/TRACE] [FML]: Mod forge is using network checker : No network checking performed
+[01:12:14] [Client thread/TRACE] [FML]: Testing mod forge to verify it accepts its own version in a remote connection
+[01:12:14] [Client thread/TRACE] [FML]: The mod forge accepts its own version (14.23.5.2854)
+[01:12:14] [Client thread/DEBUG] [FML]: Attempting to inject @Config classes into forge for type INSTANCE
+[01:12:14] [Client thread/TRACE] [FML]: Sent event FMLConstructionEvent to mod forge
+[01:12:14] [Client thread/DEBUG] [FML]: Bar Step: Construction - Minecraft Forge took 0.110s
+[01:12:14] [Client thread/TRACE] [FML]: Sending event FMLConstructionEvent to mod ebwizardry
+[01:12:14] [Client thread/TRACE] [FML]: Mod ebwizardry is using network checker : Accepting version 4.3.7
+[01:12:14] [Client thread/TRACE] [FML]: Testing mod ebwizardry to verify it accepts its own version in a remote connection
+[01:12:14] [Client thread/TRACE] [FML]: The mod ebwizardry accepts its own version (4.3.7)
+[01:12:14] [Client thread/DEBUG] [FML]: Attempting to inject @SidedProxy classes into ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Attempting to inject @EventBusSubscriber classes into the eventbus for ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.spell.MindTrick for mod ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.spell.MindTrick
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.spell.FontOfMana for mod ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.spell.FontOfMana
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.client.model.BakedModelGenerateOverrides for mod ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.client.model.BakedModelGenerateOverrides
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.util.AllyDesignationSystem for mod ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.util.AllyDesignationSystem
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.worldgen.WorldGenWizardryStructure for mod ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.worldgen.WorldGenWizardryStructure
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.misc.RecipeRechargeWithFlask for mod ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.misc.RecipeRechargeWithFlask
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.spell.WitherSkull for mod ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.spell.WitherSkull
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.spell.Charge for mod ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.spell.Charge
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.client.renderer.entity.layers.LayerSummonAnimation for mod ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.client.renderer.entity.layers.LayerSummonAnimation
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.client.particle.ParticleSnow for mod ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.client.particle.ParticleSnow
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.spell.CurseOfSoulbinding for mod ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.spell.CurseOfSoulbinding
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.block.BlockThorns for mod ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.block.BlockThorns
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.integration.DamageSafetyChecker for mod ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.integration.DamageSafetyChecker
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.registry.WizardryBlocks for mod ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.registry.WizardryBlocks
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.client.gui.GuiSpellDisplay for mod ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.client.gui.GuiSpellDisplay
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.spell.MarkSacrifice for mod ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.spell.MarkSacrifice
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.client.renderer.overlay.RenderTransportationUI for mod ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.client.renderer.overlay.RenderTransportationUI
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.data.WizardData for mod ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.data.WizardData
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.block.BlockCrystalFlower for mod ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.block.BlockCrystalFlower
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.spell.Resurrection for mod ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.spell.Resurrection
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.spell.LightningBolt for mod ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.spell.LightningBolt
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.spell.SixthSense for mod ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.spell.SixthSense
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.WizardryEventHandler for mod ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.WizardryEventHandler
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.client.particle.ParticleBlockHighlight for mod ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.client.particle.ParticleBlockHighlight
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.client.gui.GuiArcaneWorkbench for mod ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.client.gui.GuiArcaneWorkbench
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.potion.PotionFrostStep for mod ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.potion.PotionFrostStep
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.spell.SpellThrowable for mod ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.spell.SpellThrowable
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.data.SpellGlyphData for mod ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.data.SpellGlyphData
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.spell.Clairvoyance for mod ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.spell.Clairvoyance
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.spell.EmpoweringPresence for mod ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.spell.EmpoweringPresence
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.block.BlockBookshelf for mod ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.block.BlockBookshelf
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.item.IConjuredItem for mod ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.item.IConjuredItem
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.client.renderer.effect.RenderContainmentField for mod ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.client.renderer.effect.RenderContainmentField
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.spell.ArcaneLock for mod ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.spell.ArcaneLock
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.client.animation.PlayerAnimator for mod ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.client.animation.PlayerAnimator
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.client.WizardryClientEventHandler for mod ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.client.WizardryClientEventHandler
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.entity.construct.EntityBubble for mod ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.entity.construct.EntityBubble
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.spell.Spell for mod ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.spell.Spell
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.registry.WizardrySounds for mod ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.registry.WizardrySounds
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.spell.Transience for mod ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.spell.Transience
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.client.renderer.effect.RenderWings for mod ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.client.renderer.effect.RenderWings
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.entity.construct.EntityForcefield for mod ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.entity.construct.EntityForcefield
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.client.gui.GuiButtonResurrect for mod ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.client.gui.GuiButtonResurrect
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.entity.living.EntityIceWraith for mod ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.entity.living.EntityIceWraith
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.client.renderer.entity.RenderPossessingPlayer for mod ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.client.renderer.entity.RenderPossessingPlayer
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.client.particle.ParticleLeaf for mod ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.client.particle.ParticleLeaf
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.potion.CurseEnfeeblement for mod ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.potion.CurseEnfeeblement
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.entity.living.EntityLightningWraith for mod ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.entity.living.EntityLightningWraith
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.item.ItemLightningHammer for mod ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.item.ItemLightningHammer
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.client.particle.ParticleSpark for mod ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.client.particle.ParticleSpark
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.spell.Fangs for mod ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.spell.Fangs
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.client.particle.ParticlePath for mod ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.client.particle.ParticlePath
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.client.renderer.tileentity.RenderArcaneLock for mod ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.client.renderer.tileentity.RenderArcaneLock
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.spell.MindControl for mod ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.spell.MindControl
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.client.renderer.overlay.RenderBlinkEffect for mod ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.client.renderer.overlay.RenderBlinkEffect
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.client.renderer.overlay.RenderSixthSense for mod ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.client.renderer.overlay.RenderSixthSense
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.potion.PotionOakflesh for mod ebwizardry
+[01:12:15] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.potion.PotionOakflesh
+[01:12:15] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.registry.Spells for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.registry.Spells
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.client.renderer.effect.RenderMirage for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.client.renderer.effect.RenderMirage
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.client.particle.ParticleIce for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.client.particle.ParticleIce
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.entity.living.EntityEvilWizard for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.entity.living.EntityEvilWizard
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.potion.PotionDiamondflesh for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.potion.PotionDiamondflesh
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.enchantment.Imbuement for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.enchantment.Imbuement
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.entity.living.ISummonedCreature for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.entity.living.ISummonedCreature
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.entity.living.EntityWizard for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.entity.living.EntityWizard
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.registry.WizardryLoot for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.registry.WizardryLoot
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.client.particle.ParticleMagicFlame for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.client.particle.ParticleMagicFlame
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.registry.WizardryEntities for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.registry.WizardryEntities
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.block.BlockSpectral for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.block.BlockSpectral
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.client.ScreenShakeHandler for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.client.ScreenShakeHandler
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.client.renderer.entity.layers.LayerDisintegrateAnimation for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.client.renderer.entity.layers.LayerDisintegrateAnimation
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.util.IElementalDamage for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.util.IElementalDamage
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.data.DispenserCastingData for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.data.DispenserCastingData
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.data.SpellEmitterData for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.data.SpellEmitterData
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.entity.projectile.EntityLargeMagicFireball for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.entity.projectile.EntityLargeMagicFireball
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.client.particle.ParticleLightningPulse for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.client.particle.ParticleLightningPulse
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.registry.WizardryEnchantments for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.registry.WizardryEnchantments
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.client.audio.SoundLoop for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.client.audio.SoundLoop
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.client.particle.ParticleCloud for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.client.particle.ParticleCloud
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.potion.PotionFrost for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.potion.PotionFrost
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.spell.Enrage for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.spell.Enrage
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.spell.Possession for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.spell.Possession
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.client.renderer.effect.RenderShield for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.client.renderer.effect.RenderShield
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.potion.PotionSlowTime for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.potion.PotionSlowTime
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.integration.antiqueatlas.WizardryAntiqueAtlasIntegration for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.integration.antiqueatlas.WizardryAntiqueAtlasIntegration
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.entity.projectile.EntityMagicFireball for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.entity.projectile.EntityMagicFireball
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.spell.Intimidate for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.spell.Intimidate
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.item.ItemWand for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.item.ItemWand
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.misc.DonationPerksHandler for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.misc.DonationPerksHandler
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.client.renderer.effect.RenderDonationPerks for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.client.renderer.effect.RenderDonationPerks
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.client.particle.ParticleVine for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.client.particle.ParticleVine
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.client.gui.WizardTradeTweaksHandler for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.client.gui.WizardTradeTweaksHandler
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.client.renderer.effect.RenderShadowWard for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.client.renderer.effect.RenderShadowWard
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.client.particle.ParticleSparkle for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.client.particle.ParticleSparkle
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.client.model.WizardryModels for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.client.model.WizardryModels
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.item.ItemWizardArmour for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.item.ItemWizardArmour
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.client.particle.ParticleScorch for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.client.particle.ParticleScorch
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.potion.ISyncedPotion for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.potion.ISyncedPotion
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.client.renderer.tileentity.RenderMagicLight for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.client.renderer.tileentity.RenderMagicLight
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.potion.PotionDecay for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.potion.PotionDecay
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.registry.WizardryRecipes for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.registry.WizardryRecipes
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.client.renderer.overlay.RenderFrostOverlay for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.client.renderer.overlay.RenderFrostOverlay
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.potion.ICustomPotionParticles for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.potion.ICustomPotionParticles
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.client.WizardryControlHandler for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.client.WizardryControlHandler
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.item.ItemArtefact for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.item.ItemArtefact
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.misc.Forfeit for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.misc.Forfeit
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.registry.WizardryItems for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.registry.WizardryItems
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.client.renderer.overlay.RenderTargetPointers for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.client.renderer.overlay.RenderTargetPointers
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.spell.ArcaneJammer for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.spell.ArcaneJammer
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.registry.WizardryPotions for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.registry.WizardryPotions
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.client.gui.CustomCreativeSearchHandler for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.client.gui.CustomCreativeSearchHandler
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.spell.ShadowWard for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.spell.ShadowWard
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.potion.PotionContainment for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.potion.PotionContainment
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.potion.PotionIronflesh for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.potion.PotionIronflesh
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for electroblob.wizardry.spell.Paralysis for mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class electroblob.wizardry.spell.Paralysis
+[01:12:16] [Client thread/DEBUG] [FML]: Attempting to inject @Config classes into ebwizardry for type INSTANCE
+[01:12:16] [Client thread/TRACE] [FML]: Sent event FMLConstructionEvent to mod ebwizardry
+[01:12:16] [Client thread/DEBUG] [FML]: Bar Step: Construction - Electroblob's Wizardry took 2.081s
+[01:12:16] [Client thread/TRACE] [FML]: Sending event FMLConstructionEvent to mod fakeplayer
+[01:12:16] [Client thread/TRACE] [FML]: Mod fakeplayer is using network checker : Accepting version 1.0
+[01:12:16] [Client thread/TRACE] [FML]: Testing mod fakeplayer to verify it accepts its own version in a remote connection
+[01:12:16] [Client thread/TRACE] [FML]: The mod fakeplayer accepts its own version (1.0)
+[01:12:16] [Client thread/DEBUG] [FML]: Attempting to inject @SidedProxy classes into fakeplayer
+[01:12:16] [Client thread/DEBUG] [FML]: Attempting to inject @EventBusSubscriber classes into the eventbus for fakeplayer
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for RegistryHandler for mod fakeplayer
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class RegistryHandler
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for EnchantmentInit for mod fakeplayer
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class EnchantmentInit
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for StairChairEvent for mod fakeplayer
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class StairChairEvent
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for CapabilityEvent for mod fakeplayer
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class CapabilityEvent
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for ModCapabilities for mod fakeplayer
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class ModCapabilities
+[01:12:16] [Client thread/DEBUG] [FML]: Attempting to inject @Config classes into fakeplayer for type INSTANCE
+[01:12:16] [Client thread/TRACE] [FML]: Sent event FMLConstructionEvent to mod fakeplayer
+[01:12:16] [Client thread/DEBUG] [FML]: Bar Step: Construction - Fake Player took 0.050s
+[01:12:16] [Client thread/TRACE] [FML]: Sending event FMLConstructionEvent to mod epicsiegemod
+[01:12:16] [Client thread/TRACE] [FML]: Mod epicsiegemod is using network checker : Accepting version 13.169
+[01:12:16] [Client thread/TRACE] [FML]: Testing mod epicsiegemod to verify it accepts its own version in a remote connection
+[01:12:16] [Client thread/TRACE] [FML]: The mod epicsiegemod accepts its own version (13.169)
+[01:12:16] [Client thread/DEBUG] [FML]: Attempting to inject @SidedProxy classes into epicsiegemod
+[01:12:16] [Client thread/DEBUG] [FML]: Attempting to inject @EventBusSubscriber classes into the eventbus for epicsiegemod
+[01:12:16] [Client thread/DEBUG] [FML]: Attempting to inject @Config classes into epicsiegemod for type INSTANCE
+[01:12:16] [Client thread/TRACE] [FML]: Sent event FMLConstructionEvent to mod epicsiegemod
+[01:12:16] [Client thread/DEBUG] [FML]: Bar Step: Construction - Epic Siege Mod took 0.038s
+[01:12:16] [Client thread/TRACE] [FML]: Sending event FMLConstructionEvent to mod ancientspellcraft
+[01:12:16] [Client thread/TRACE] [FML]: Mod ancientspellcraft is using network checker : Accepting version 1.12.2-v1.5.4
+[01:12:16] [Client thread/TRACE] [FML]: Testing mod ancientspellcraft to verify it accepts its own version in a remote connection
+[01:12:16] [Client thread/TRACE] [FML]: The mod ancientspellcraft accepts its own version (1.12.2-v1.5.4)
+[01:12:16] [Client thread/DEBUG] [FML]: Attempting to inject @SidedProxy classes into ancientspellcraft
+[01:12:16] [Client thread/DEBUG] [FML]: Attempting to inject @EventBusSubscriber classes into the eventbus for ancientspellcraft
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.material.Devoritium for mod ancientspellcraft
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.material.Devoritium
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.tileentity.TileMageLight for mod ancientspellcraft
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.tileentity.TileMageLight
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.spell.HorseWhistle for mod ancientspellcraft
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.spell.HorseWhistle
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.block.BlockLightning for mod ancientspellcraft
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.block.BlockLightning
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.item.ItemIceShield for mod ancientspellcraft
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.item.ItemIceShield
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.spell.Covenant for mod ancientspellcraft
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.spell.Covenant
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.spell.StaticDome for mod ancientspellcraft
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.spell.StaticDome
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.potion.PotionSoulScorch for mod ancientspellcraft
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.potion.PotionSoulScorch
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.registry.ASEntities for mod ancientspellcraft
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.registry.ASEntities
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.client.ClientEventHandler for mod ancientspellcraft
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.client.ClientEventHandler
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.registry.ASRecipes for mod ancientspellcraft
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.registry.ASRecipes
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.spell.AstralTravel for mod ancientspellcraft
+[01:12:16] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.spell.AstralTravel
+[01:12:16] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.registry.ASItems for mod ancientspellcraft
+[01:12:17] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.registry.ASItems
+[01:12:17] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.worldgen.WorldgenAncientVault for mod ancientspellcraft
+[01:12:17] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.worldgen.WorldgenAncientVault
+[01:12:17] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.spell.LavaVision for mod ancientspellcraft
+[01:12:17] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.spell.LavaVision
+[01:12:17] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.item.ItemTheoryScroll for mod ancientspellcraft
+[01:12:17] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.item.ItemTheoryScroll
+[01:12:17] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.registry.ASSpells for mod ancientspellcraft
+[01:12:17] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.registry.ASSpells
+[01:12:17] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.Settings$EventHandler for mod ancientspellcraft
+[01:12:17] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.Settings$EventHandler
+[01:12:17] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.block.BlockMagicMushroom for mod ancientspellcraft
+[01:12:17] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.block.BlockMagicMushroom
+[01:12:17] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.item.ItemASArtefact for mod ancientspellcraft
+[01:12:17] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.item.ItemASArtefact
+[01:12:17] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.spell.BlockWeaving for mod ancientspellcraft
+[01:12:17] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.spell.BlockWeaving
+[01:12:17] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.client.renderer.RenderArcaneBarrierEventBased for mod ancientspellcraft
+[01:12:17] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.client.renderer.RenderArcaneBarrierEventBased
+[01:12:17] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.spell.ChargeAS for mod ancientspellcraft
+[01:12:17] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.spell.ChargeAS
+[01:12:17] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.client.renderer.RenderBubble for mod ancientspellcraft
+[01:12:17] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.client.renderer.RenderBubble
+[01:12:17] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.registry.Rituals for mod ancientspellcraft
+[01:12:17] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.registry.Rituals
+[01:12:17] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.registry.ASEnchantments for mod ancientspellcraft
+[01:12:17] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.registry.ASEnchantments
+[01:12:17] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.spell.DimensionalAnchor for mod ancientspellcraft
+[01:12:18] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.spell.DimensionalAnchor
+[01:12:18] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.registry.ASLoot for mod ancientspellcraft
+[01:12:18] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.registry.ASLoot
+[01:12:18] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.client.ASWizardTradeTweaksHandler for mod ancientspellcraft
+[01:12:18] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.client.ASWizardTradeTweaksHandler
+[01:12:18] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.client.renderer.RenderContingency for mod ancientspellcraft
+[01:12:18] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.client.renderer.RenderContingency
+[01:12:18] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.client.GuiRadialMenu for mod ancientspellcraft
+[01:12:18] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.client.GuiRadialMenu
+[01:12:18] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.spell.RunewordReach for mod ancientspellcraft
+[01:12:18] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.spell.RunewordReach
+[01:12:18] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.item.ItemTransmutationScroll for mod ancientspellcraft
+[01:12:18] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.item.ItemTransmutationScroll
+[01:12:18] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.potion.PotionBurrow for mod ancientspellcraft
+[01:12:18] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.potion.PotionBurrow
+[01:12:18] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.client.ClientProxy for mod ancientspellcraft
+[01:12:18] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.client.ClientProxy
+[01:12:18] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.item.ItemSageTome for mod ancientspellcraft
+[01:12:18] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.item.ItemSageTome
+[01:12:18] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.registry.ASBlocks for mod ancientspellcraft
+[01:12:18] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.registry.ASBlocks
+[01:12:18] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.client.particle.ParticleTimeKnot for mod ancientspellcraft
+[01:12:18] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.client.particle.ParticleTimeKnot
+[01:12:18] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.entity.construct.EntitySilencingSigil for mod ancientspellcraft
+[01:12:18] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.entity.construct.EntitySilencingSigil
+[01:12:18] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.item.ItemBattlemageSword for mod ancientspellcraft
+[01:12:18] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.item.ItemBattlemageSword
+[01:12:18] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.entity.construct.EntityArcaneBarrier for mod ancientspellcraft
+[01:12:18] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.entity.construct.EntityArcaneBarrier
+[01:12:18] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.client.ASModels for mod ancientspellcraft
+[01:12:18] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.client.ASModels
+[01:12:18] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.potion.PotionEagleEye for mod ancientspellcraft
+[01:12:18] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.potion.PotionEagleEye
+[01:12:18] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.client.ControlHandler for mod ancientspellcraft
+[01:12:18] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.client.ControlHandler
+[01:12:18] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.item.ItemUnsealingScroll for mod ancientspellcraft
+[01:12:18] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.item.ItemUnsealingScroll
+[01:12:18] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.registry.ASSounds for mod ancientspellcraft
+[01:12:18] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.registry.ASSounds
+[01:12:18] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.capability.DeathMarkCapability for mod ancientspellcraft
+[01:12:18] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.capability.DeathMarkCapability
+[01:12:18] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.entity.projectile.EntityAOEProjectile for mod ancientspellcraft
+[01:12:18] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.entity.projectile.EntityAOEProjectile
+[01:12:18] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.potion.PotionUnlimitedPower for mod ancientspellcraft
+[01:12:18] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.potion.PotionUnlimitedPower
+[01:12:18] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.worldgen.WorldGenBattlemageCamp for mod ancientspellcraft
+[01:12:18] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.worldgen.WorldGenBattlemageCamp
+[01:12:18] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.worldgen.WorldGenSageHill for mod ancientspellcraft
+[01:12:18] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.worldgen.WorldGenSageHill
+[01:12:18] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.worldgen.WorldGenAncientTemple for mod ancientspellcraft
+[01:12:18] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.worldgen.WorldGenAncientTemple
+[01:12:18] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.spell.MagmaShell for mod ancientspellcraft
+[01:12:18] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.spell.MagmaShell
+[01:12:18] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.spell.Magelight for mod ancientspellcraft
+[01:12:18] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.spell.Magelight
+[01:12:18] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.spell.Martyr for mod ancientspellcraft
+[01:12:18] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.spell.Martyr
+[01:12:18] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.registry.ASPotions for mod ancientspellcraft
+[01:12:18] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.registry.ASPotions
+[01:12:18] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.client.renderer.RenderTransportationPortalUI for mod ancientspellcraft
+[01:12:18] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.client.renderer.RenderTransportationPortalUI
+[01:12:18] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.spell.TimeKnot for mod ancientspellcraft
+[01:12:18] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.spell.TimeKnot
+[01:12:18] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.potion.PotionCurseWard for mod ancientspellcraft
+[01:12:18] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.potion.PotionCurseWard
+[01:12:18] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.spell.IClassSpell for mod ancientspellcraft
+[01:12:18] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.spell.IClassSpell
+[01:12:18] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.integration.antiqueatlas.ASAntiqueAtlasIntegration for mod ancientspellcraft
+[01:12:18] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.integration.antiqueatlas.ASAntiqueAtlasIntegration
+[01:12:18] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.handler.ASEventHandler for mod ancientspellcraft
+[01:12:18] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.handler.ASEventHandler
+[01:12:18] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.potion.PotionAstralProjection for mod ancientspellcraft
+[01:12:18] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.potion.PotionAstralProjection
+[01:12:18] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.worldgen.WorldGenBattlemageKeep for mod ancientspellcraft
+[01:12:18] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.worldgen.WorldGenBattlemageKeep
+[01:12:18] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.spell.EagleEye for mod ancientspellcraft
+[01:12:18] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.spell.EagleEye
+[01:12:18] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.spell.Burrow for mod ancientspellcraft
+[01:12:18] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.spell.Burrow
+[01:12:18] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.client.particle.ParticleSoulChain for mod ancientspellcraft
+[01:12:18] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.client.particle.ParticleSoulChain
+[01:12:18] [Client thread/DEBUG] [FML]: Registering @EventBusSubscriber for com.windanesz.ancientspellcraft.item.ItemAmnesiaScroll for mod ancientspellcraft
+[01:12:18] [Client thread/DEBUG] [FML]: Injected @EventBusSubscriber class com.windanesz.ancientspellcraft.item.ItemAmnesiaScroll
+[01:12:18] [Client thread/DEBUG] [FML]: Attempting to inject @Config classes into ancientspellcraft for type INSTANCE
+[01:12:18] [Client thread/TRACE] [FML]: Sent event FMLConstructionEvent to mod ancientspellcraft
+[01:12:18] [Client thread/DEBUG] [FML]: Bar Step: Construction - AncientSpellcraft took 1.521s
+[01:12:18] [Client thread/TRACE] [FML]: Sending event FMLConstructionEvent to mod codechickenlib
+[01:12:18] [Client thread/INFO] [STDOUT]: [net.minecraft.init.Bootstrap:printToSYSOUT:553]: ---- Minecraft Crash Report ----
+// I let you down. Sorry :(
+
+Time: 12/27/22 1:12 AM
+Description: There was a severe problem during mod loading that has caused the game to fail
+
+net.minecraftforge.fml.common.LoaderException: codechickenlib Failed to load new mod instance.
+	at net.minecraftforge.fml.common.FMLModContainer.constructMod(FMLModContainer.java:606)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:91)
+	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:150)
+	at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:76)
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:399)
+	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:71)
+	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:116)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:217)
+	at net.minecraftforge.fml.common.LoadController.sendEventToModContainer(LoadController.java:219)
+	at net.minecraftforge.fml.common.LoadController.propogateStateMessage(LoadController.java:197)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:91)
+	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:150)
+	at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:76)
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:399)
+	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:71)
+	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:116)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:217)
+	at net.minecraftforge.fml.common.LoadController.distributeStateMessage(LoadController.java:136)
+	at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:595)
+	at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:232)
+	at net.minecraft.client.Minecraft.init(Minecraft.java:467)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:378)
+	at net.minecraft.client.main.Main.main(Main.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraftforge.legacydev.Main.start(Main.java:86)
+	at net.minecraftforge.legacydev.MainClient.main(MainClient.java:29)
+Caused by: java.lang.NullPointerException
+	at java.io.File.<init>(File.java:279)
+	at codechicken.lib.reflect.ObfMapping$MCPRemapper.getConfFiles(ObfMapping.java:97)
+	at codechicken.lib.reflect.ObfMapping$MCPRemapper.<init>(ObfMapping.java:117)
+	at codechicken.lib.reflect.ObfMapping.loadMCPRemapper(ObfMapping.java:165)
+	at codechicken.lib.reflect.ObfMapping.init(ObfMapping.java:182)
+	at codechicken.lib.CodeChickenLib.<init>(CodeChickenLib.java:44)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at java.lang.Class.newInstance(Class.java:442)
+	at net.minecraftforge.fml.common.ILanguageAdapter$JavaAdapter.getNewInstance(ILanguageAdapter.java:191)
+	at net.minecraftforge.fml.common.FMLModContainer.constructMod(FMLModContainer.java:601)
+	... 42 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_265, Amazon.com Inc.
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Amazon.com Inc.
+	Memory: 528623384 bytes (504 MB) / 865075200 bytes (825 MB) up to 1875378176 bytes (1788 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP 9.42 Powered by Forge 14.23.5.2854 14 mods loaded, 14 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State | ID                       | Version           | Source                                                                 | Signature                                |
+	|:----- |:------------------------ |:----------------- |:---------------------------------------------------------------------- |:---------------------------------------- |
+	| LC    | minecraft                | 1.12.2            | minecraft.jar                                                          | None                                     |
+	| LC    | mcp                      | 9.42              | minecraft.jar                                                          | None                                     |
+	| LC    | FML                      | 8.0.99.99         | forge-1.12.2-14.23.5.2854_mapped_snapshot_20171003-1.12-recomp.jar     | None                                     |
+	| LC    | forge                    | 14.23.5.2854      | forge-1.12.2-14.23.5.2854_mapped_snapshot_20171003-1.12-recomp.jar     | None                                     |
+	| LC    | ebwizardry               | 4.3.7             | electroblobs-wizardry-265642-3864785_mapped_snapshot_20171003-1.12.jar | None                                     |
+	| LC    | fakeplayer               | 1.0               | main                                                                   | None                                     |
+	| LC    | epicsiegemod             | 13.169            | epic-siege-mod-229449-3356157_mapped_snapshot_20171003-1.12.jar        | None                                     |
+	| LC    | ancientspellcraft        | 1.12.2-v1.5.4     | ancient-spellcraft-358124-4040921_mapped_snapshot_20171003-1.12.jar    | None                                     |
+	| LE    | codechickenlib           | 3.2.3.358         | CodeChickenLib_1.12.2_3.2.3.358_universal.jar                          | f1850c39b2516232a2108a7bd84d1cb5df93b261 |
+	| L     | ancientwarfare           | 1.12.2-2.7.0.1038 | ancient-warfare-2-224602-3293318_mapped_snapshot_20171003-1.12.jar     | None                                     |
+	| L     | ancientwarfareautomation | 1.12.2-2.7.0.1038 | ancient-warfare-2-224602-3293318_mapped_snapshot_20171003-1.12.jar     | None                                     |
+	| L     | ancientwarfarenpc        | 1.12.2-2.7.0.1038 | ancient-warfare-2-224602-3293318_mapped_snapshot_20171003-1.12.jar     | None                                     |
+	| L     | ancientwarfarestructure  | 1.12.2-2.7.0.1038 | ancient-warfare-2-224602-3293318_mapped_snapshot_20171003-1.12.jar     | None                                     |
+	| L     | ancientwarfarevehicle    | 1.12.2-2.7.0.1038 | ancient-warfare-2-224602-3293318_mapped_snapshot_20171003-1.12.jar     | None                                     |
+
+	Loaded coremods (and transformers): 
+	GL info: ' Vendor: 'Intel' Version: '4.6.0 - Build 27.20.100.8477' Renderer: 'Intel(R) UHD Graphics 630'
+[01:12:18] [Client thread/INFO] [STDOUT]: [net.minecraft.init.Bootstrap:printToSYSOUT:553]: #@!@# Game crashed! Crash report saved to: #@!@# D:\moding\Development\FakePlayer\run\.\crash-reports\crash-2022-12-27_01.12.18-client.txt

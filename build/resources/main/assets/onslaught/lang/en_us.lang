@@ -1,0 +1,8 @@
+//Tabs
+itemGroup.onslaughttab=Onslaught
+
+//Staffs
+item.unit_staff.name=Unit Staff
+
+//Text
+text.onslaught.start_war=declared war on

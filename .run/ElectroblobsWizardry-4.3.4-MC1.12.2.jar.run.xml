@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="ElectroblobsWizardry-4.3.4-MC1.12.2.jar" type="JarApplication">
+    <option name="JAR_PATH" value="$PROJECT_DIR$/libs/ElectroblobsWizardry-4.3.4-MC1.12.2.jar" />
+    <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+    <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+    <module name="Tutorial-Mod" />
+    <method v="2" />
+  </configuration>
+</component>

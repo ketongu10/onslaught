@@ -20,7 +20,7 @@ import java.util.Iterator;
 import static onslaught.ketongu10.util.handlers.ConfigHandler.TIME_BETWEEN_WAVES;
 
 @SideOnly(Side.CLIENT)
-public class BattleModeGui extends ModIngameGui {
+public class WarProgressGui extends ModIngameGui {
 
 	//public static final List<EntityIndicator> ENTITY_INDICATOR_RENDERERS = Lists.newArrayList();
 	public static final ResourceLocation BATTLE_ICON = new ResourceLocation(Reference.MOD_ID, "textures/gui/war_progress.png");
@@ -31,7 +31,7 @@ public class BattleModeGui extends ModIngameGui {
 	private boolean guiSliderToggle;
 	protected FontRenderer font;
 	
-	public BattleModeGui() {
+	public WarProgressGui() {
 
 		guiSlider = 1;
 		guiSliderToggle = false;
@@ -112,7 +112,7 @@ public class BattleModeGui extends ModIngameGui {
 		if(!blendEnabled)
 			GlStateManager.enableBlend();
 		
-		Minecraft.getMinecraft().getTextureManager().bindTexture(BattleModeGui.BATTLE_ICON);
+		Minecraft.getMinecraft().getTextureManager().bindTexture(WarProgressGui.BATTLE_ICON);
 
 		
 		double totalTime =(double)(((ClientWar)war).getTotalTime());//playerdata.getMaxStunArmor();
@@ -132,7 +132,7 @@ public class BattleModeGui extends ModIngameGui {
 			/**RED FRAME**/
 			if (time > war.startAfter) {
 				GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
-				Minecraft.getMinecraft().getTextureManager().bindTexture(BattleModeGui.BATTLE_ICON);
+				Minecraft.getMinecraft().getTextureManager().bindTexture(WarProgressGui.BATTLE_ICON);
 				drawModalRectWithCustomSizedTexture((int) ((width - 237 / 2)), 0 + shift * 11 + 3, 2.0F, 3, 237, 12, 255, 255);//120, 10//237
 			}
 
@@ -159,7 +159,7 @@ public class BattleModeGui extends ModIngameGui {
 			return r;
 		}
 
-		return BattleModeGui.HAT_ICON;
+		return WarProgressGui.HAT_ICON;
 	}
 	
 

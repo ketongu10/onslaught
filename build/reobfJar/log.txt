@@ -1,4 +1,4 @@
-Args: "--in-jar", "D:\moding\Development\Onslaught Ч копи€\build\libs\onslaught-1.0.jar", "--out-jar", "D:\moding\Development\Onslaught Ч копи€\build\reobfJar\output.jar", "--srg-in", "D:\moding\Development\Onslaught Ч копи€\build\createMcpToSrg\output.tsrg", "--live"
+Args: "--in-jar", "D:\moding\Development\Onslaught\build\libs\Onslaught-1.1.jar", "--out-jar", "D:\moding\Development\Onslaught\build\reobfJar\output.jar", "--srg-in", "D:\moding\Development\Onslaught\build\createMcpToSrg\output.tsrg", "--live"
 Classpath: C:\Users\Ork\.gradle\caches\forge_gradle\maven_downloader\net\md-5\SpecialSource\1.8.3\SpecialSource-1.8.3-shaded.jar
 Classpath: C:\Users\Ork\.gradle\caches\modules-2\files-2.1\curse.maven\electroblobs-wizardry-265642\3864785_mapped_snapshot_20171003-1.12\3b410a90f1d62f7d0d931402bf2466ce89b57b9\electroblobs-wizardry-265642-3864785_mapped_snapshot_20171003-1.12.jar
 Classpath: C:\Users\Ork\.gradle\caches\modules-2\files-2.1\curse.maven\epic-siege-mod-229449\3356157_mapped_snapshot_20171003-1.12\7c3ac625b1b148026e84972d6d98df7f8dbe3577\epic-siege-mod-229449-3356157_mapped_snapshot_20171003-1.12.jar
@@ -73,7 +73,7 @@ Classpath: C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-analy
 Classpath: C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-tree\6.2\61570e046111559f38d4e0e580c005f75988c0a6\asm-tree-6.2.jar
 Classpath: C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm\6.2\1b6c4ff09ce03f3052429139c2a68e295cae6604\asm-6.2.jar
 Classpath: C:\Users\Ork\.gradle\caches\modules-2\files-2.1\org.codehaus.plexus\plexus-utils\3.1.0\60eecb6f15abdb1c653ad80abaac6fe188b3feaa\plexus-utils-3.1.0.jar
-WorkDir: D:\moding\Development\Onslaught Ч копи€\build\reobfJar
+WorkDir: D:\moding\Development\Onslaught\build\reobfJar
 Main: net.md_5.specialsource.SpecialSource
 ====================================
 Loading mappings

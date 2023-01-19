@@ -1,6 +1,7 @@
 package onslaught.ketongu10.war.units;
 
 
+import net.minecraftforge.event.entity.EntityJoinWorldEvent;
 import onslaught.ketongu10.Onslaught;
 import onslaught.ketongu10.capabilities.ModCapabilities;
 import onslaught.ketongu10.capabilities.units.UnitCapability;
@@ -96,11 +97,13 @@ public abstract class UnitBase implements INBTSerializable<NBTTagCompound> {
                 double z = where.getZ();
                 e.setPositionAndRotation(x, y, z, e.rotationYaw, e.rotationPitch);
                 if (!MinecraftForge.EVENT_BUS.post(new LivingSpawnEvent(e, world, (float) x, (float) y, (float) z))) {
-                    this.world.spawnEntity(e);
                     e.onInitialSpawn(world.getDifficultyForLocation(new BlockPos(e)), (IEntityLivingData) null);
+                    this.world.spawnEntity(e);
+
                 } else {
                     alive--;
                 }
+
             }
         }
     }
@@ -212,13 +215,14 @@ public abstract class UnitBase implements INBTSerializable<NBTTagCompound> {
         } else {
             entityIn.targetTasks.addTask(1, new SiegeAIHurtByTarget((EntityCreature) entityIn, true, new Class[]{EntityPlayer.class}));
         }
-        for (Class e : FactionUnits.PlayerSoldiers) {
+        //entityIn.targetTasks.addTask(1, new SiegeAIHurtByTarget((EntityCreature) entityIn, true, new Class[]{EntityPlayer.class}));
+        /**for (Class e : FactionUnits.PlayerSoldiers) {
             if (e.isAssignableFrom(EntityPlayer.class)) {
                 entityIn.targetTasks.addTask(1, new EntityAINearestAttackableTarget((EntityCreature) entityIn, e, true));
             } else {
                 entityIn.targetTasks.addTask(2, new EntityAINearestAttackableTarget((EntityCreature) entityIn, e, true));
             }
-        }
+        }**/
     }
 
     public void lastOrder() {
@@ -265,7 +269,9 @@ public abstract class UnitBase implements INBTSerializable<NBTTagCompound> {
             }
         }
         nbttagcompound.setString("id", regname);
-        if (faction.equals("AW")) {
+
+
+        if (subfaction != null) {
             nbttagcompound.setString("factionName", subfaction);
         }
         Entity entity = AnvilChunkLoader.readWorldEntity(nbttagcompound, world,  false);

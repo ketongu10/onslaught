@@ -1,5 +1,6 @@
 package onslaught.ketongu10.war.AI;
 
+import net.minecraft.entity.monster.EntityZombie;
 import onslaught.ketongu10.capabilities.ModCapabilities;
 import funwayguy.epicsiegemod.config.props.CfgProps;
 import funwayguy.epicsiegemod.core.ESM;
@@ -23,9 +24,11 @@ public class SiegePillarUpAI extends EntityAIBase {
     private EntityLiving builder;
     public BlockPos target;
     private BlockPos blockPos;
+    private int digHeight;
 
     public SiegePillarUpAI(EntityLiving entity) {
         this.builder = entity;
+        this.digHeight = MathHelper.ceil(entity.height);
     }
     @Override
     public boolean shouldExecute() {
@@ -47,9 +50,10 @@ public class SiegePillarUpAI extends EntityAIBase {
                         canPlace = true;
                         break;
                     }
+
                 }
 
-                if (this.target.getY() - this.builder.posY < 16.0D && this.builder.world.getBlockState(tmpPos.add(0, -2, 0)).isNormalCube() && this.builder.world.getBlockState(tmpPos.add(0, -1, 0)).isNormalCube()) {
+                if (this.target.getY() - this.builder.posY < 16.0D && this.builder.world.getBlockState(tmpPos.add(0, -digHeight, 0)).isNormalCube() && this.builder.world.getBlockState(tmpPos.add(0, -1, 0)).isNormalCube()) {
                     if (this.builder.world.getBlockState(tmpPos.add(xOff, -1, 0)).getMaterial().isReplaceable()) {
                         tmpPos = tmpPos.add(xOff, -1, 0);
                     } else if (this.builder.world.getBlockState(tmpPos.add(0, -1, zOff)).getMaterial().isReplaceable()) {
@@ -61,7 +65,7 @@ public class SiegePillarUpAI extends EntityAIBase {
                     return false;
                 }
 
-                if (canPlace && !this.builder.world.getBlockState(tmpPos.add(0, 2, 0)).getMaterial().blocksMovement() && !this.builder.world.getBlockState(tmpPos.add(0, 2, 0)).getMaterial().blocksMovement()) {//???
+                if (canPlace && !this.builder.world.getBlockState(tmpPos.add(0, digHeight, 0)).getMaterial().blocksMovement() && !this.builder.world.getBlockState(tmpPos.add(0, digHeight, 0)).getMaterial().blocksMovement()) {//???
                     this.blockPos = tmpPos;
                     return true;
                 } else {

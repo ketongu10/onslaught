@@ -31,7 +31,7 @@ public class SiegeGriefAI extends MoveAI {
 
     @Override
     public boolean shouldExecute() {
-        if (this.ent.getRNG().nextInt(1) != 0 || this.ent.getAttackTarget() != null) {
+        if (this.ent.getRNG().nextInt(1) != 0 || cap.isFighting()) {
             return false;
         } else {
             if (cap.getTarget() == null) {
@@ -65,7 +65,7 @@ public class SiegeGriefAI extends MoveAI {
     }
     @Override
     public boolean shouldContinueExecuting() {
-        if (cap.getTarget() != null && this.ent.isEntityAlive() && this.ent.getRevengeTarget() == null && this.ent.getAttackTarget() == null) {
+        if (cap.getTarget() != null && this.ent.isEntityAlive() && !cap.isFighting() ) {
             IBlockState state = this.ent.world.getBlockState(cap.getTarget());
             ResourceLocation regName = (ResourceLocation)Block.REGISTRY.getNameForObject(state.getBlock());
             if (state.getBlock() != Blocks.AIR && (((List)CfgProps.GRIEF_BLOCKS.get(this.ent)).contains(regName.toString()) || state.getLightValue(this.ent.world, cap.getTarget()) > 0)) {

@@ -1,5 +1,8 @@
 package onslaught.ketongu10.war.units;
 
+import net.minecraft.entity.EntityFlying;
+import net.minecraft.entity.monster.EntityGhast;
+import net.minecraft.entity.monster.EntityZombie;
 import onslaught.ketongu10.war.AI.SiegeDiggingAI;
 import onslaught.ketongu10.war.AI.SiegeGriefAI;
 import onslaught.ketongu10.war.AI.SiegePillarUpAI;
@@ -29,11 +32,14 @@ public class UnitTroops extends UnitBase {
         }
         setNewLeader(this.isWarlord);
     }
+
     @Override
     protected void modifyAI(EntityLiving entityIn) {
         super.modifyAI(entityIn);
         entityIn.tasks.addTask(3, new SiegeGriefAI(entityIn));
-        entityIn.tasks.addTask(4, new SiegePillarUpAI(entityIn));
+        if (!(entityIn instanceof EntityFlying)) {
+            entityIn.tasks.addTask(4, new SiegePillarUpAI(entityIn));
+        }
         entityIn.tasks.addTask(4, new SiegeDiggingAI(entityIn));
     }
 

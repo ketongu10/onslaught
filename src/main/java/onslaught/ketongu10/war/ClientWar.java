@@ -35,7 +35,7 @@ public class ClientWar extends War{
             case SIEGE:
                 this.totalTime = startAfter+2*TIME_BETWEEN_WAVES;
                 return;
-            case APOCALIPSE:
+            case APOCALYPSE:
                 this.totalTime = startAfter+9*TIME_BETWEEN_WAVES;
                 return;
         }

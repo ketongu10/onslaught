@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
-Implementation-Title: Onslaught — копия
-Implementation-Version: 1.0
+Implementation-Title: Onslaught
+Implementation-Version: 1.1
 Specification-Vendor: examplemodsareus
 Specification-Title: examplemod
-Implementation-Timestamp: 2023-01-16T21:07:02+0300
+Implementation-Timestamp: 2023-01-19T21:10:09+0300
 Specification-Version: 1
 Implementation-Vendor: examplemodsareus
 

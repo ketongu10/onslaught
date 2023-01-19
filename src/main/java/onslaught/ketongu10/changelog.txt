@@ -1,8 +1,5 @@
 version 1.0
-    first success in chunk forceloading, added villager-chunkloader
-version 2.0
+    added chunkloading entities
     added UnitCap, unit types, war manager, WarCap, Vehicle using by AW factions
-version 3.0
     added NBT-saving of current state of wars, battles, units, unitCaps
-version 4.0
     added gui slider, added network manager

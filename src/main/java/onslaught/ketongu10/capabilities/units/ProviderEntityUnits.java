@@ -1,5 +1,7 @@
 package onslaught.ketongu10.capabilities.units;
 
+import com.windanesz.ancientspellcraft.entity.living.EntityEvilClassWizard;
+import com.windanesz.ancientspellcraft.entity.living.EntitySkeletonMageMinion;
 import electroblob.wizardry.entity.living.EntityEvilWizard;
 import onslaught.ketongu10.capabilities.ModCapabilities;
 import net.minecraft.entity.Entity;
@@ -17,6 +19,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Supplier;
 
+import static onslaught.ketongu10.util.handlers.ConfigHandler.*;
+
 public class ProviderEntityUnits implements ICapabilitySerializable<NBTTagCompound>, ICapabilityProvider {
     public static final Map<Class<? extends EntityLiving>, Supplier<UnitCapability<?>>> capabilityMap =
             new HashMap<Class<? extends EntityLiving>, Supplier<UnitCapability<?>>>();
@@ -26,12 +30,23 @@ public class ProviderEntityUnits implements ICapabilitySerializable<NBTTagCompou
         capabilityMap.put(EntitySkeleton.class, UnitCapability::new);
         capabilityMap.put(EntityZombie.class, UnitCapability::new);
         capabilityMap.put(EntityHusk.class, UnitCapability::new);
+        capabilityMap.put(EntityEvoker.class, UnitCapability::new);
         capabilityMap.put(EntityBlaze.class, UnitCapability::new);
         capabilityMap.put(EntityWitch.class, UnitCapability::new);
         capabilityMap.put(EntityWitherSkeleton.class, UnitCapability::new);
-        capabilityMap.put(EntityEvilWizard.class, UnitCapability::new);
-        if (Loader.isModLoaded("ancientwarfare")) {
-            capabilityMap.put(NpcFactionSpellcasterWizardry.class, UnitCapability::new);
+        if (EBWIZARDRY) {
+            capabilityMap.put(EntityEvilWizard.class, UnitCapability::new);
+            if (ANCIENT_SPELLCRAFT) {
+                capabilityMap.put(EntityEvilClassWizard.class, UnitCapability::new);
+                capabilityMap.put(EntitySkeletonMageMinion.class, UnitCapability::new);
+            }
+        }
+        if (ANCIENT_WARFARE) {
+            if (EBWIZARDRY) {
+                capabilityMap.put(NpcFactionSpellcasterWizardry.class, UnitCapability::new);
+            } else {
+                capabilityMap.put(NpcFactionSpellcaster.class, UnitCapability::new);
+            }
             capabilityMap.put(NpcFactionSoldier.class, UnitCapability::new);
             capabilityMap.put(NpcFactionSoldierElite.class, UnitCapability::new);
             capabilityMap.put(NpcFactionLeader.class, UnitCapability::new);

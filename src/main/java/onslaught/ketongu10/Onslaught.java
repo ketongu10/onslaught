@@ -65,8 +65,8 @@ public class Onslaught
 
 		RegistryHandler.initRegistries();
 		ProviderEntityUnits.makeMap();
-		BossList.setBossList();
-		FactionUnits.fillMap();
+		/**BossList.setBossList();
+		FactionUnits.fillMap();**/
 		Battle.fillWAVES();
 		proxy.init();
 	}
@@ -75,6 +75,8 @@ public class Onslaught
 	public void postInit(FMLPostInitializationEvent event)
 	{
 		RegistryHandler.postInitRegistries();
+		BossList.setBossList();
+		FactionUnits.fillMap();
 	}
 	
 	@EventHandler

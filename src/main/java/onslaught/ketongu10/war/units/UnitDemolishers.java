@@ -1,5 +1,6 @@
 package onslaught.ketongu10.war.units;
 
+import net.minecraft.entity.EntityFlying;
 import onslaught.ketongu10.war.AI.SiegeGriefAI;
 import onslaught.ketongu10.war.Battle;
 import onslaught.ketongu10.war.FactionUnits;
@@ -44,7 +45,9 @@ public class UnitDemolishers extends UnitBase {
     protected void modifyAI(EntityLiving entityIn) {
         super.modifyAI(entityIn);
         entityIn.tasks.addTask(3, new SiegeGriefAI(entityIn));
-        entityIn.tasks.addTask(4, new SiegePillarUpAI(entityIn));
+        if (!(entityIn instanceof EntityFlying)) {
+            entityIn.tasks.addTask(4, new SiegePillarUpAI(entityIn));
+        }
         entityIn.tasks.addTask(4, new SiegeDemolitionAI(entityIn));
     }
 }

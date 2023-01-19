@@ -1,5 +1,6 @@
 package onslaught.ketongu10.capabilities.units;
 
+import net.minecraft.entity.monster.EntitySkeleton;
 import onslaught.ketongu10.Onslaught;
 import onslaught.ketongu10.capabilities.ModCapabilities;
 import onslaught.ketongu10.capabilities.world.WarData;
@@ -21,6 +22,8 @@ import net.minecraftforge.common.util.INBTSerializable;
 
 import javax.annotation.Nullable;
 import java.util.UUID;
+
+import static onslaught.ketongu10.util.handlers.ConfigHandler.USE_CHUNKLOADING;
 
 public class UnitCapability <T extends EntityLiving> implements INBTSerializable<NBTTagCompound>, IUnitMember, IChunkLoaderEntity {
     public T orgEntity;
@@ -50,6 +53,11 @@ public class UnitCapability <T extends EntityLiving> implements INBTSerializable
             return targetcap.getUnit().battle.equals(this.unit.battle);
         }
         return false;
+
+    }
+
+    public boolean isFighting() {
+        return orgEntity.ticksExisted-orgEntity.getLastAttackedEntityTime()<200 || orgEntity.getRevengeTarget() !=null;
     }
 
     public void onEntityJoinWorld(World world) {
@@ -96,20 +104,24 @@ public class UnitCapability <T extends EntityLiving> implements INBTSerializable
     }
 
     public void setTicket(ForgeChunkManager.Ticket tk) {
-        if (this.chunkTicket != tk) {
-            releaseTicket();
-            if (tk != null) {
-                this.chunkTicket = tk;
-                forceTicketChunks();
+        if (USE_CHUNKLOADING) {
+            if (this.chunkTicket != tk) {
+                releaseTicket();
+                if (tk != null) {
+                    this.chunkTicket = tk;
+                    forceTicketChunks();
+                }
             }
         }
     }
 
     public void setupInitialTicket() {
-        this.chunkTicket = ForgeChunkManager.requestTicket(Onslaught.instance, orgEntity.world, ForgeChunkManager.Type.ENTITY);
-        if (this.chunkTicket != null) {
-            writeDataToTicket();
-            forceTicketChunks();
+        if (USE_CHUNKLOADING) {
+            this.chunkTicket = ForgeChunkManager.requestTicket(Onslaught.instance, orgEntity.world, ForgeChunkManager.Type.ENTITY);
+            if (this.chunkTicket != null) {
+                writeDataToTicket();
+                forceTicketChunks();
+            }
         }
     }
 

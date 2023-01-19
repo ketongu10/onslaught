@@ -29,6 +29,8 @@ public class ConfigHandler
 	public static int HOME_CHUNK_RADIUS = 2;
 	public static int AMBUSH_RADIUS = 2;
 
+	public static boolean USE_CHUNKLOADING = true;
+
 
 	public static final boolean EBWIZARDRY = Loader.isModLoaded("ebwizardry");
 	public static final boolean ANCIENT_WARFARE = Loader.isModLoaded("ancientwarfare");
@@ -43,6 +45,7 @@ public class ConfigHandler
 
 	//For developers
 	public static boolean SHOW_BI = false;
+
 	
 	public static void init(File file)
 	{
@@ -61,17 +64,21 @@ public class ConfigHandler
 		HOME_CHUNK_RADIUS = config.getInt("Home searching radius", category, 2, 1, 10, "In chunks. One chunk equals 16 blocks");
 		AMBUSH_RADIUS = config.getInt("Distance for ambush spawn", category, 2, 1, 10, "In chunks. One chunk equals 16 blocks");
 
+		category = "PERFORMANCE";
+		config.addCustomCategoryComment(category, "Usually Minecraft loads only a small number of chunks near to player. This mod uses chunk forceloading so some chunks update even if there is not any players nearby. Large number of wars can overload server side of Minecraft.");
+		SHOW_BI = config.getBoolean("Should use chunk forceloading?", category, true, "Set false to cancel forceloading.");
+
 		category = "For developers";
 		config.addCustomCategoryComment(category, "You can turn on showing battle info to cmd.");
-		SHOW_BI = config.getBoolean("Show battle info", category, false, "Only to check how mod works");
+		USE_CHUNKLOADING = config.getBoolean("Show battle info", category, false, "Only to check how mod works");
 
 		config.save();
 	}
 	
 	public static void registerConfig(FMLPreInitializationEvent event)
 	{
-		Onslaught.config = new File(event.getModConfigurationDirectory() + "/" + Reference.MOD_ID);
+		Onslaught.config = new File(event.getModConfigurationDirectory().getPath() /**+ "/" + Reference.MOD_ID**/);
 		Onslaught.config.mkdirs();
-		init(new File(Onslaught.config.getPath(), Reference.MOD_ID + ".cfg"));
+		init(new File(Onslaught.config.getPath(), Reference.NAME +" General"+ ".cfg"));
 	}
 }

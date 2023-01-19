@@ -1,6 +1,7 @@
 package onslaught.ketongu10.config;
 
 import com.google.common.collect.Lists;
+import net.minecraftforge.fml.common.Loader;
 import onslaught.ketongu10.util.Reference;
 import onslaught.ketongu10.war.War;
 import net.minecraftforge.common.config.Config;
@@ -119,8 +120,11 @@ public class FactionUnitsConfig {
 
             }
             if (config.factionName != null && config.registryName != null) {
+                for (int i=0;i<5;i++) {
+                    System.out.println();
+                }
                 System.out.println("=================FOUND BOSS "+config.factionName+" "+config.registryName);
-                for (int i=0;i<10;i++) {
+                for (int i=0;i<5;i++) {
                     System.out.println();
                 }
                 list.add(config);
@@ -160,7 +164,13 @@ public class FactionUnitsConfig {
             //config.names = getElementByName(childElements,"bossNames").get();
             IConfigElement element = getElementByName(childElements, "soldier");
             if (element != null && config.factionName != null) {
+                for (int i=0;i<5;i++) {
+                    System.out.println();
+                }
                 System.out.println("=================FOUND FACTION "+config.factionName);
+                for (int i=0;i<5;i++) {
+                    System.out.println();
+                }
                 List<IConfigElement> entity = element.getChildElements();
                 config.soldier.registryName = (String) getElementByName(entity, "registry_name").get();
                 config.soldier.tags = (String) getElementByName(entity, "nbt_tags").get();

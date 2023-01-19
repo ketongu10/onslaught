@@ -1,14 +1,15 @@
 package onslaught.ketongu10.war;
 
+import com.windanesz.ancientspellcraft.entity.living.EntityEvilClassWizard;
 import electroblob.wizardry.entity.living.EntityEvilWizard;
+import net.minecraft.entity.boss.EntityDragon;
+import net.minecraft.entity.monster.*;
 import onslaught.ketongu10.Onslaught;
 import onslaught.ketongu10.capabilities.units.ProviderEntityUnits;
 import onslaught.ketongu10.capabilities.units.UnitCapability;
 import onslaught.ketongu10.config.FactionUnitsConfig;
 import net.minecraft.entity.EntityList;
 import net.minecraft.entity.EntityLiving;
-import net.minecraft.entity.monster.EntityHusk;
-import net.minecraft.entity.monster.EntityWitch;
 import net.shadowmage.ancientwarfare.npc.entity.faction.*;
 
 import java.util.Arrays;
@@ -25,18 +26,32 @@ public class BossList {
 
     public static void setBossList() {
         classBossList.put(EntityHusk.class, new BossParameters("Evil", "minecraft:textures/items/bone.png"));
-        classBossList.put(EntityWitch.class, new BossParameters("Witches", "minecraft:textures/items/bone.png"));
+        classBossList.put(EntityWitch.class, new BossParameters("Witches", "minecraft:textures/items/spider_eye_fermented.png"));
+        classBossList.put(EntityIllusionIllager.class, new BossParameters("Illagers", "minecraft:textures/items/iron_axe.png"));
+        classBossList.put(EntityEvoker.class, new BossParameters("Illagers", "minecraft:textures/items/iron_axe.png"));
+        classBossList.put(EntityDragon.class, new BossParameters("End", "minecraft:textures/items/ender_pearl.png"));
         if (ANCIENT_WARFARE) {
-            classBossList.put(NpcFactionSpellcasterWizardry.class, new BossParameters("AW"));
-            classBossList.put(NpcFactionLeader.class, new BossParameters("AW"));
-            classBossList.put(NpcFactionLeaderElite.class, new BossParameters("AW"));
+            if (EBWIZARDRY) {
+                classBossList.put(NpcFactionSpellcasterWizardry.class, new BossParameters("AW", "minecraft:textures/items/iron_sword.png"));
+            } else {
+                classBossList.put(NpcFactionSpellcaster.class, new BossParameters("AW", "minecraft:textures/items/iron_sword.png"));
+            }
+            classBossList.put(NpcFactionLeader.class, new BossParameters("AW", "minecraft:textures/items/iron_sword.png"));
+            classBossList.put(NpcFactionLeaderElite.class, new BossParameters("AW", "minecraft:textures/items/iron_sword.png", "factionName", "\"orc\"", "WAAAGH"));
             bossNames.put("AWorc", Arrays.asList("Da boss Arch-Killa", "Da boss Nazdreg", "Gutrak Dethhead", "Mogdos Gilt-Toof", "Da boss Drogg"));
+            bossNames.put("WAAAGHorc", Arrays.asList("Da great Boss Zaghrakk", "Da great Boss Dregfang", "Big Boss Hruk", "Da great Boss Mogdos Gilt-Toof", "Da great Boss Drogg"));
         }
 
         if (EBWIZARDRY) {
-            classBossList.put(EntityEvilWizard.class, new BossParameters("Wizards", "onslaught:textures/gui/hat_icon.png", "element", "4", "Necromancer"));
+            if (ANCIENT_SPELLCRAFT) {
+                classBossList.put(EntityEvilWizard.class, new BossParameters("Wizards", "ebwizardry:textures/items/wizard_hat.png", "element", "4", "Necromancer"));
+                classBossList.put(EntityEvilClassWizard.class, new BossParameters("Wizards", "ebwizardry:textures/items/wizard_hat.png", "element", "4", "Necromancer"));
+            } else {
+                classBossList.put(EntityEvilWizard.class, new BossParameters("Wizards", "ebwizardry:textures/items/wizard_hat.png", "element", "4", "Necromancer"));
+            }
             bossNames.put("Necromancer", Arrays.asList("The Necromancer"));
             bossNames.put("Wizards", Arrays.asList("The great wizard Ogast", "The great wizard Uxium", "The great wizard Ilveshan", "The great wizard Qamarium", "The great wizard Cergon", "The great wizard Inorium", "The great wizard Alzahagan"));
+
         }
         addCustomBosses();
 

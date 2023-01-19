@@ -18,12 +18,14 @@ import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.WorldServer;
 import net.minecraftforge.common.util.FakePlayer;
 import net.minecraftforge.common.util.FakePlayerFactory;
+import onslaught.ketongu10.capabilities.units.UnitCapability;
 
 import java.util.List;
 
 public class SiegeDiggingAI extends EntityAIBase {
     private BlockPos target;
     private EntityLiving digger;
+    UnitCapability cap;
     private BlockPos curBlock;
     private int scanTick = 0;
     private int digTick = 0;
@@ -32,11 +34,12 @@ public class SiegeDiggingAI extends EntityAIBase {
 
     public SiegeDiggingAI(EntityLiving digger) {
         this.digger = digger;
+        this.cap = digger.getCapability(ModCapabilities.UNIT_CAPABILITY, null);
     }
 
     public boolean shouldExecute() {
-        this.target = this.digger.getCapability(ModCapabilities.UNIT_CAPABILITY, null).getTarget();
-        if (this.target != null && this.digger.getNavigator().noPath() && this.digger.getAttackTarget()==null) {
+        this.target = cap.getTarget();
+        if (this.target != null && this.digger.getNavigator().noPath() && !cap.isFighting()) {
             double dist = this.digger.getDistance(this.target.getX(), this.target.getY(), this.target.getZ());
             double navDist = (double)this.digger.getNavigator().getPathSearchRange();
             if (!(dist < 1.0D) && !(dist > navDist * navDist)) {
@@ -77,7 +80,7 @@ public class SiegeDiggingAI extends EntityAIBase {
     }
     @Override
     public boolean shouldContinueExecuting() {
-        return this.target != null && this.digger.getAttackTarget()==null && this.curBlock != null && this.digger.getDistanceSq(this.curBlock) <= 16.0D && this.canHarvest(this.digger, this.curBlock);
+        return this.target != null && !cap.isFighting() && this.curBlock != null && this.digger.getDistanceSq(this.curBlock) <= 16.0D && this.canHarvest(this.digger, this.curBlock);
     }
 
     @Override

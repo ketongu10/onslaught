@@ -15,27 +15,17 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 @SideOnly(Side.CLIENT)
 public class ClientEngine {
     public static ClientEngine INSTANCE;
-    public BattleModeGui gui;
+    public WarProgressGui gui;
 
 
     private EntityPlayer player;
 
     public ClientEngine() {
         INSTANCE = this;
-        gui = new BattleModeGui();
+        gui = new WarProgressGui();
     }
 
-    public void toggleActingMode() {
 
-    }
-
-    private void switchToMiningMode() {
-        this.gui.slideDown();
-    }
-
-    private void switchToBattleMode() {
-        this.gui.slideUp();
-    }
 
 
 
@@ -51,18 +41,13 @@ public class ClientEngine {
     public static class Events {
         @SubscribeEvent
         public static void renderGameOverlay(RenderGameOverlayEvent.Pre event) {
-            //System.out.println("..............................event works.....................................");
             if (event.getType() == RenderGameOverlayEvent.ElementType.HOTBAR) {
-                //EntityPlayer player = ClientEngine.INSTANCE.getPlayer();
                 EntityPlayer player = Minecraft.getMinecraft().player;
                 if(player.isSpectator()) return;
                 if (player != null) {
                     WarData cap = player.world.getCapability(ModCapabilities.WAR_DATA, null);
-
-                    //System.out.println("########################cap is " + cap == null + " ######################");
                     if (cap != null) {
                         if (Minecraft.isGuiEnabled()) {
-                            //System.out.println("########################IT WANTS TO RENDER######################");
                             ClientEngine.INSTANCE.gui.renderGui(player, (WarsManager) cap, event.getPartialTicks());
                         }
                     }

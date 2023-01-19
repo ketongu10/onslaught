@@ -1,4 +1,8 @@
 1) NBT writing for wars --DONE
 2) DEMOLISHERS --DONE
 3) NBT reading for entity --DONE
-4) config files in one directory
+4) config files in one directory -- +-DONE (NO DIR at all)
+5) fix block placing height for entity.height>2  --DONE
+6) give prop targets during battle
+7) create EntityBase AI attack
+8) fix horses --DONE

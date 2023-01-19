@@ -55,13 +55,12 @@ public class UnitCavalery extends UnitBase {
         }
         nbttagcompound.setString("id", regname);
         Entity entity;
-        if (faction.equals("AW")) {
-            //nbttagcompound.setString("factionName", subfaction);
-            //nbttagcompound.setBoolean("horseLives", true);
-            entity = AWNPCEntities.createNpc(world, "leader", "elite", subfaction);
-        } else {
-            entity = AnvilChunkLoader.readWorldEntity(nbttagcompound, world,  false);
+        if (subfaction != null) {
+            nbttagcompound.setString("factionName", subfaction);
+            nbttagcompound.setBoolean("horseLives", true);
         }
+        entity = AnvilChunkLoader.readWorldEntity(nbttagcompound, world,  false);
+
         if (entity != null) {
             this.alive++;
         }

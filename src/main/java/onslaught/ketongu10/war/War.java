@@ -82,8 +82,8 @@ public class War implements INBTSerializable<NBTTagCompound> {
                 return this::LongMarsh;
             case AMBUSH:
                 return this::Ambush;
-            case APOCALIPSE:
-                return this::Apocalipse;
+            case APOCALYPSE:
+                return this::Apocalypse;
         }
         return this::Patrol;
     }
@@ -133,17 +133,17 @@ public class War implements INBTSerializable<NBTTagCompound> {
         }
 
     }
-    protected void Apocalipse(int arrivingTime) {
+    protected void Apocalypse(int arrivingTime) {
         if (siegeStarted && !finishedBattles.isEmpty()) {
             for (Battle fb : finishedBattles) {
-                if (fb.battleType == Battle.BattleType.APOCALIPSE) {
+                if (fb.battleType == Battle.BattleType.APOCALYPSE) {
                     stopWar();
                     return;
                 }
             }
         }
         if (timer>arrivingTime && !siegeStarted && additionalConditions()) {
-            startNewBattle(Battle.BattleType.APOCALIPSE);
+            startNewBattle(Battle.BattleType.APOCALYPSE);
             siegeStarted = true;
             return;
         }
@@ -180,6 +180,10 @@ public class War implements INBTSerializable<NBTTagCompound> {
     }
 
     public void stopWar() {
+        for (Battle b: presentBattles) {
+            b.stopBattle();
+        }
+
         this.presentBattles.clear();
         this.finishedBattles.clear();
 
@@ -264,6 +268,7 @@ public class War implements INBTSerializable<NBTTagCompound> {
         if (par.tags != null) {
             for (String t: par.tags.keySet()) {
                 NBTBase tag = boss.serializeNBT().getTag(t);
+
                 if (tag != null && tag.toString().equals(par.tags.get(t).value)) {
                     str = par.tags.get(t).faction;
                 }
@@ -293,7 +298,7 @@ public class War implements INBTSerializable<NBTTagCompound> {
         return WarType.PATROL;
     }
     public enum WarType {
-        PATROL(0), AMBUSH(1),SIEGE(2), APOCALIPSE(3);
+        PATROL(0), AMBUSH(1),SIEGE(2), APOCALYPSE(3);
         final int id;
 
         WarType(int id)
@@ -312,7 +317,7 @@ public class War implements INBTSerializable<NBTTagCompound> {
             searchByName.put("PATROL", War.WarType.PATROL);
             searchByName.put("AMBUSH", War.WarType.AMBUSH);
             searchByName.put("SIEGE", War.WarType.SIEGE);
-            searchByName.put("APOCALYPSE", War.WarType.APOCALIPSE);
+            searchByName.put("APOCALYPSE", War.WarType.APOCALYPSE);
         }
 
         public static War.WarType findByName(String name) {

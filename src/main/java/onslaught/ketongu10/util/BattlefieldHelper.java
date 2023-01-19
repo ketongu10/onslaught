@@ -1,6 +1,5 @@
 package onslaught.ketongu10.util;
 
-import electroblob.wizardry.util.BlockUtils;
 import onslaught.ketongu10.war.Battle;
 import funwayguy.epicsiegemod.config.props.CfgProps;
 import net.minecraft.block.Block;
@@ -120,7 +119,7 @@ public final class BattlefieldHelper {
             BlockPos pos = new BlockPos(x, y, z);
             BlockPos newpos = BlockUtils.findNearbyFloorSpace(world, pos, 16, 32, false);
             battle.spawnPoint = newpos != null ? newpos : pos;
-            world.setBlockState(battle.spawnPoint, Blocks.BEACON.getDefaultState());
+            //world.setBlockState(battle.spawnPoint, Blocks.BEACON.getDefaultState());
         } else {
             BlockPos pos = battle.partOfWar.player.getPosition();
             BlockPos newpos = BlockUtils.findNearbyFloorSpace(world, pos, 32, 8, true);

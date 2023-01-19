@@ -69,7 +69,7 @@ public class Battle implements INBTSerializable<NBTTagCompound>{
                 this.wavesLeft = 3;
                 this.wavesTotal = 3;
                 return this::siege;
-            case APOCALIPSE:
+            case APOCALYPSE:
                 this.wavesLeft = 10;
                 this.wavesTotal = 10;
                 return this::apocalypse;
@@ -161,8 +161,9 @@ public class Battle implements INBTSerializable<NBTTagCompound>{
             updateBlockTargets();
             updateEntityTargets();
             checkPlayer();
-            printBattleInfo();
+            //printBattleInfo();
             checkUnits();
+            printStatistics();
 
         }
 
@@ -184,6 +185,34 @@ public class Battle implements INBTSerializable<NBTTagCompound>{
         if (!playerTerritoty.intersectsWith(p.getX()-16, p.getZ()-16, p.getX()+16, p.getZ()+16)) {
             partOfWar.player.sendMessage(new TextComponentTranslation(TextFormatting.RED+"Your home is under attack!!!"));
         }
+    }
+
+    public void printStatistics() {
+        int totalEnt = 0;
+        int hasAttack = 0;
+        int hasRev = 0;
+        int hasBlock = 0;
+        int both = 0;
+        for (UnitBase u:UNITS) {
+            for (EntityLiving e: u.entities) {
+                if (e != null) {
+                    totalEnt++;
+                    if (e.getAttackTarget() != null) {hasAttack++;}
+                    if (e.getRevengeTarget() != null) {hasRev++;}
+                    UnitCapability cap = e.getCapability(ModCapabilities.UNIT_CAPABILITY, null);
+                    if (cap!= null && cap.getTarget()!= null) {hasBlock++;}
+                    if (cap!= null && cap.getTarget()!= null && e.getAttackTarget() != null) {both++;}
+
+                }
+            }
+        }
+        print("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+        print("+++++++++++++ HAS ATTACK TARGET: "+hasAttack+" +++++++++++++++");
+        print("+++++++++++++ HAS REVENGE TARGET: "+hasRev+" +++++++++++++++");
+        print("+++++++++++++ HAS BLOCK TARGET: "+hasBlock+" +++++++++++++++");
+        print("+++++++++++++ HAS ATTACK & BLOCK TARGET: "+both+" +++++++++++++++");
+        print("+++++++++++++ TOTAL SOLDIERS: "+totalEnt+" +++++++++++++++");
+        print("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
     }
 
 
@@ -257,6 +286,7 @@ public class Battle implements INBTSerializable<NBTTagCompound>{
             if (i == 0) {
                 return;
             }
+
             for (UnitBase u : UNITS) {
                 if (u.type == FactionUnits.UnitType.HS) {
                     i = i > 0 ? --i : 0;
@@ -333,6 +363,7 @@ public class Battle implements INBTSerializable<NBTTagCompound>{
             unit.lastOrder();
         }
         this.finished = true;
+        this.partOfWar = null;
     }
 
     protected void prepareWave(int waveNum) {
@@ -437,9 +468,9 @@ public class Battle implements INBTSerializable<NBTTagCompound>{
     public static final List<Wave> WAVES = new ArrayList<Wave>();
     public static void fillWAVES() {
         WAVES.add(new Wave(1, 0, 0));
-        WAVES.add(new Wave(2, 1, 1, 0, 1,0,0,1));
-        WAVES.add(new Wave(2, 1, 1, 0, 1,0,0,0));
-        WAVES.add(new Wave(2, 1, 0, 0, 2, 0, 1, 0));
+        WAVES.add(new Wave(2, 1, 1, 1, 2,0,0,1));
+        WAVES.add(new Wave(2, 1, 1, 1, 2,0,0,0));
+        WAVES.add(new Wave(2, 1, 0, 1, 2, 0, 1, 0));
         //WAVES.add(new Wave(4, 2, 0, 4, 0, 0, 0));
         //WAVES.add(new Wave(8, 4, 0, 8, 0, 1, 0));
     }
@@ -465,7 +496,7 @@ public class Battle implements INBTSerializable<NBTTagCompound>{
     }
 
     public enum BattleType {
-        PATROL(0), AMBUSH(1), SIEGE(2), APOCALIPSE(3);
+        PATROL(0), AMBUSH(1), SIEGE(2), APOCALYPSE(3);
         final int id;
 
         BattleType(int id)
@@ -484,7 +515,7 @@ public class Battle implements INBTSerializable<NBTTagCompound>{
             searchByName.put("PATROL", BattleType.PATROL);
             searchByName.put("AMBUSH", BattleType.AMBUSH);
             searchByName.put("SIEGE", BattleType.SIEGE);
-            searchByName.put("APOCALYPSE", BattleType.APOCALIPSE);
+            searchByName.put("APOCALYPSE", BattleType.APOCALYPSE);
         }
 
         public static BattleType findByName(String name) {

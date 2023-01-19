@@ -1,6 +1,9 @@
 package onslaught.ketongu10.war;
 
+import com.windanesz.ancientspellcraft.entity.living.EntityClassWizard;
+import com.windanesz.ancientspellcraft.entity.living.EntityWizardMerchant;
 import electroblob.wizardry.entity.living.EntityWizard;
+import net.shadowmage.ancientwarfare.npc.entity.faction.NpcFactionMountedSoldier;
 import onslaught.ketongu10.Onslaught;
 import onslaught.ketongu10.capabilities.units.ProviderEntityUnits;
 import onslaught.ketongu10.capabilities.units.UnitCapability;
@@ -55,7 +58,7 @@ public class FactionUnits {
     public static void fillMap() {
 
         FactionSoldiers.put("Evil", new WarProperties(
-                "minecraft:zombie",
+                "minecraft:wither_skeleton",
                 "minecraft:wither_skeleton",
                 "minecraft:zombie",
                 "minecraft:stray",
@@ -65,16 +68,25 @@ public class FactionUnits {
                 "minecraft:husk",
                 "minecraft:husk",
                 "minecraft:zombie"));
+        FactionSoldiers.put("End", new WarProperties(true, War.WarType.AMBUSH, TOTAL_AMBUSH_TIME, new Warrior("minecraft:enderman")));
         FactionSoldiers.put("Witches", new WarProperties(false, War.WarType.AMBUSH, TOTAL_AMBUSH_TIME,new Warrior("minecraft:witch")));
+        FactionSoldiers.put("Illagers", new WarProperties(false, War.WarType.SIEGE, TIME_TO_SIEGE,
+                new Warrior("minecraft:vindication_illager"),
+                new Warrior("minecraft:vindication_illager"),
+                new Warrior("minecraft:vindication_illager"),
+                new Warrior("minecraft:vindication_illager"),
+                new Warrior("minecraft:vindication_illager"),
+                new Warrior("minecraft:vindication_illager"),
+                new Warrior("minecraft:evoketion_illager"),
+                new Warrior("minecraft:vindication_illager"),
+                new Warrior("minecraft:illusion_illager"),
+                new Warrior("minecraft:vindication_illager")));
 
         if (EBWIZARDRY) {
-            FactionSoldiers.put("Wizards", new WarProperties("ebwizardry:evil_wizard", "ebwizardry:evil_wizard", "ebwizardry:evil_wizard"));
-            PlayerSoldiers.add(EntityWizard.class);
-
             if (ANCIENT_SPELLCRAFT) {
                 FactionSoldiers.put("Necromancer", new WarProperties(true,War.WarType.SIEGE, TIME_TO_SIEGE,
                         new Warrior("ebwizardry:zombie_minion"),
-                        new Warrior("ebwizardry:zombie_minion"),
+                        new Warrior("ebwizardry:wither_skeleton_minion"),
                         new Warrior("ebwizardry:zombie_minion"),
                         new Warrior("ancientspellcraft:skeleton_mage_minion"),
                         new Warrior("ancientspellcraft:skeleton_mage_minion"),
@@ -83,15 +95,44 @@ public class FactionUnits {
                         new Warrior("ancientspellcraft:skeleton_mage_minion"),
                         new Warrior("ebwizardry:evil_wizard", "{element:4, CustomName:\"Necromancer\"}"),
                         new Warrior("ancientspellcraft:skeleton_mage_minion")));
+                FactionSoldiers.put("Wizards", new WarProperties("ancientspellcraft:evil_class_wizard", "ancientspellcraft:evil_class_wizard", "ancientspellcraft:evil_class_wizard"));
+                PlayerSoldiers.add(EntityClassWizard.class);
+                PlayerSoldiers.add(EntityWizardMerchant.class);
+            } else {
+                FactionSoldiers.put("Necromancer", new WarProperties(true,War.WarType.SIEGE, TIME_TO_SIEGE,
+                        new Warrior("ebwizardry:zombie_minion"),
+                        new Warrior("ebwizardry:wither_skeleton_minion"),
+                        new Warrior("ebwizardry:zombie_minion"),
+                        new Warrior("ebwizardry:zombie_minion"),
+                        new Warrior("ebwizardry:zombie_minion"),
+                        new Warrior("ebwizardry:skeleton_minion"),
+                        new Warrior("ebwizardry:skeleton_minion"),
+                        new Warrior("ebwizardry:wither_skeleton_minion"),
+                        new Warrior("ebwizardry:evil_wizard", "{element:4, CustomName:\"Necromancer\"}"),
+                        new Warrior("ebwizardry:wither_skeleton_minion")));
+                FactionSoldiers.put("Wizards", new WarProperties("ebwizardry:evil_wizard", "ebwizardry:evil_wizard", "ebwizardry:evil_wizard"));
             }
+            PlayerSoldiers.add(EntityWizard.class);
         }
 
-        if (/**Loader.isModLoaded("ancientwarfare")**/ ANCIENT_WARFARE) {
+        if (ANCIENT_WARFARE) {
             FactionSoldiers.put("AW", new WarProperties(false, War.WarType.SIEGE, TIME_TO_SIEGE,
                     new Warrior("ancientwarfarenpc:faction.soldier"),
                     new Warrior("ancientwarfarenpc:faction.soldier.elite"),
                     new Warrior("ancientwarfarenpc:faction.soldier.elite"),
-                    new Warrior("ancientwarfarenpc:faction.mounted.cavalry"),
+                    new Warrior("ancientwarfarenpc:faction.cavalry"),
+                    new Warrior("ancientwarfarenpc:faction.archer"),
+                    new Warrior("ancientwarfarenpc:faction.archer.elite"),
+                    new Warrior("ancientwarfarenpc:faction.spellcaster"),
+                    new Warrior("ancientwarfarenpc:faction.leader"),
+                    new Warrior("ancientwarfarenpc:faction.leader.elite"),
+                    new Warrior("ancientwarfarenpc:faction.siege_engineer")));
+
+            FactionSoldiers.put("WAAAGH", new WarProperties(false, War.WarType.APOCALYPSE, TIME_TO_SIEGE,
+                    new Warrior("ancientwarfarenpc:faction.soldier"),
+                    new Warrior("ancientwarfarenpc:faction.soldier.elite"),
+                    new Warrior("ancientwarfarenpc:faction.soldier.elite"),
+                    new Warrior("ancientwarfarenpc:faction.cavalry"),
                     new Warrior("ancientwarfarenpc:faction.archer"),
                     new Warrior("ancientwarfarenpc:faction.archer.elite"),
                     new Warrior("ancientwarfarenpc:faction.spellcaster"),
@@ -145,6 +186,10 @@ public class FactionUnits {
                 System.err.println(e);
             }
         }
+    }
+
+    public static void genCapabilityForSoldiers() {
+
     }
 
     public static void addCustomPlayerSoldiers() {
@@ -201,37 +246,6 @@ public class FactionUnits {
             this.hq = new Warrior(hq);
             this.hs = new Warrior(hs);
             this.warlord = new Warrior(warlord);
-
-            if (soldier != null && !ProviderEntityUnits.capabilityMap.containsKey(EntityList.getClassFromName(soldier))) {
-                ProviderEntityUnits.capabilityMap.put((Class<? extends EntityLiving>) EntityList.getClassFromName(soldier), UnitCapability::new);
-            }
-            if (elite != null && !ProviderEntityUnits.capabilityMap.containsKey(EntityList.getClassFromName(elite))) {
-                ProviderEntityUnits.capabilityMap.put((Class<? extends EntityLiving>) EntityList.getClassFromName(elite), UnitCapability::new);
-            }
-            if (demolishers != null && !ProviderEntityUnits.capabilityMap.containsKey(EntityList.getClassFromName(demolishers))) {
-                ProviderEntityUnits.capabilityMap.put((Class<? extends EntityLiving>) EntityList.getClassFromName(demolishers), UnitCapability::new);
-            }
-            /*if (cavalery != null && !ProviderEntityUnits.capabilityMap.containsKey(EntityList.getClassFromName(cavalery))) {
-                ProviderEntityUnits.capabilityMap.put((Class<? extends EntityLiving>) EntityList.getClassFromName(cavalery), UnitCapability::new);
-            }**/
-            if (archer != null && !ProviderEntityUnits.capabilityMap.containsKey(EntityList.getClassFromName(archer))) {
-                ProviderEntityUnits.capabilityMap.put((Class<? extends EntityLiving>) EntityList.getClassFromName(archer), UnitCapability::new);
-            }
-            if (sentry != null && !ProviderEntityUnits.capabilityMap.containsKey(EntityList.getClassFromName(sentry))) {
-                ProviderEntityUnits.capabilityMap.put((Class<? extends EntityLiving>) EntityList.getClassFromName(sentry), UnitCapability::new);
-            }
-            if (wizard != null && !ProviderEntityUnits.capabilityMap.containsKey(EntityList.getClassFromName(wizard))) {
-                ProviderEntityUnits.capabilityMap.put((Class<? extends EntityLiving>) EntityList.getClassFromName(wizard), UnitCapability::new);
-            }
-            if (hq != null && !ProviderEntityUnits.capabilityMap.containsKey(EntityList.getClassFromName(hq))) {
-                ProviderEntityUnits.capabilityMap.put((Class<? extends EntityLiving>) EntityList.getClassFromName(hq), UnitCapability::new);
-            }
-            if (warlord != null && !ProviderEntityUnits.capabilityMap.containsKey(EntityList.getClassFromName(warlord))) {
-                ProviderEntityUnits.capabilityMap.put((Class<? extends EntityLiving>) EntityList.getClassFromName(warlord), UnitCapability::new);
-            }
-            if (hs != null && !ProviderEntityUnits.capabilityMap.containsKey(EntityList.getClassFromName(hs))) {
-                ProviderEntityUnits.capabilityMap.put((Class<? extends EntityLiving>) EntityList.getClassFromName(hs), UnitCapability::new);
-            }
         }
 
         public WarProperties(String soldier, String elite,  String warlord) {
@@ -267,10 +281,20 @@ public class FactionUnits {
         public Warrior(String n, String t) {
             this.name = n;
             this.tags = t;
+            checkCapability(n);
         }
         public Warrior(String n) {
             this.name = n;
             this.tags = null;
+            checkCapability(n);
+        }
+        public void checkCapability(String regName) {
+            if (regName != null) {
+                Class clazz = EntityList.getClassFromName(regName);
+                if (clazz != null && !ProviderEntityUnits.capabilityMap.containsKey(clazz)) {
+                    ProviderEntityUnits.capabilityMap.put(clazz, UnitCapability::new);
+                }
+            }
         }
     }
     public static class Vehicles {

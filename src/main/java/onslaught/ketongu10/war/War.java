@@ -22,6 +22,7 @@ import net.minecraftforge.common.util.Constants;
 import net.minecraftforge.common.util.INBTSerializable;
 import net.shadowmage.ancientwarfare.npc.entity.faction.NpcFaction;
 
+import javax.annotation.Nullable;
 import java.util.*;
 import java.util.function.Consumer;
 
@@ -74,12 +75,34 @@ public class War implements INBTSerializable<NBTTagCompound> {
         this.world = w;
     }
 
+    public War(World w, EntityPlayer player, String faction, @Nullable String subfaction, UUID warId, WarType wtype, int delay, boolean sameDim) {
+        this.icon ="minecraft:textures/items/bone.png";
+        this.faction = faction;
+        this.subfaction = subfaction;
+        this.warType = wtype;
+        this.bossName = "TestName";
+        this.startAfter = delay;
+        this.player = player;
+        this.playerUUID = player.getUniqueID();
+        this.warUUID = warId;
+        this.world = w;
+        this.plot = getPlot();
+        this.timer = 0L;
+        if (!this.finished && warType!=WarType.AMBUSH) {
+            if (sameDim) {NetworkManager.sendToPlayer(new StartClientWar(this.serializeNBT(), this.warUUID), (EntityPlayerMP) player);}
+            player.sendMessage(new TextComponentTranslation(TextFormatting.RED + this.bossName + " " + "declared war on" + " " + player.getGameProfile().getName()));
+        }
+        if (!sameDim) {
+            this.player = null;
+        }
+    }
+
     protected Consumer<Integer> getPlot() {
         switch (this.warType) {
             case PATROL:
                 return this::Patrol;
             case SIEGE:
-                return this::LongMarsh;
+                return this::Siege;
             case AMBUSH:
                 return this::Ambush;
             case APOCALYPSE:
@@ -113,7 +136,7 @@ public class War implements INBTSerializable<NBTTagCompound> {
         }
 
     }
-    protected void LongMarsh(int arrivingTime) {
+    protected void Siege(int arrivingTime) {
         if (siegeStarted && !finishedBattles.isEmpty()) {
             for (Battle fb : finishedBattles) {
                 if (fb.battleType == Battle.BattleType.SIEGE) {
@@ -298,7 +321,7 @@ public class War implements INBTSerializable<NBTTagCompound> {
         return WarType.PATROL;
     }
     public enum WarType {
-        PATROL(0), AMBUSH(1),SIEGE(2), APOCALYPSE(3);
+        PATROL(0), AMBUSH(1),SIEGE(2), APOCALYPSE(3), LONGMARCH(4);
         final int id;
 
         WarType(int id)
@@ -318,6 +341,7 @@ public class War implements INBTSerializable<NBTTagCompound> {
             searchByName.put("AMBUSH", War.WarType.AMBUSH);
             searchByName.put("SIEGE", War.WarType.SIEGE);
             searchByName.put("APOCALYPSE", War.WarType.APOCALYPSE);
+            searchByName.put("LONGMARCH", War.WarType.LONGMARCH);
         }
 
         public static War.WarType findByName(String name) {

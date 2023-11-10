@@ -13,16 +13,18 @@ buildscript {
         maven {
             url "https://plugins.gradle.org/m2/"
         }
+
     }
     dependencies {
         classpath 'net.minecraftforge.gradle:ForgeGradle:3.+'
     }
 }
         
-apply plugin: 'net.minecraftforge.gradle'
+
 // Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
+apply plugin: 'net.minecraftforge.gradle'
 
 version = '1.1'
 group = 'com.yourname.loh' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
@@ -97,6 +99,7 @@ dependencies {
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
     minecraft 'net.minecraftforge:forge:1.12.2-14.23.5.2854'
     //compile "electroblobs-wizardry:ElectroblobsWizardry:4.3.4:MC1.12.2"
+    implementation fg.deobf("curse.maven:codechicken-lib-1-8-242818:${ccl_fileid}")
     implementation fg.deobf("curse.maven:electroblobs-wizardry-265642:${eb_cf_fileid}")
     implementation fg.deobf("curse.maven:epic-siege-mod-229449:${esm_cf_fileid}")
     implementation fg.deobf("curse.maven:ancient-spellcraft-358124:${as_cf_fileid}")

@@ -232,6 +232,8 @@ public abstract class UnitBase implements INBTSerializable<NBTTagCompound> {
             UnitCapability cap = e.getCapability(ModCapabilities.UNIT_CAPABILITY, null);
             if (cap != null) {
                 cap.releaseTicket();
+                cap.leaveUnit();
+
             }
         }
     }

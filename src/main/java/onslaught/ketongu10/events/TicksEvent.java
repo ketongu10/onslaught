@@ -1,5 +1,6 @@
 package onslaught.ketongu10.events;
 
+import net.minecraftforge.event.world.ChunkEvent;
 import onslaught.ketongu10.capabilities.ModCapabilities;
 import onslaught.ketongu10.capabilities.world.WarData;
 import onslaught.ketongu10.war.WarsManager;
@@ -22,6 +23,12 @@ public class TicksEvent {
                 ((WarsManager) cap).update();
             }
         }
+    }
+
+    @SubscribeEvent
+    public void ChunkLoadEvent(ChunkEvent.Load event) {
+
+
     }
 
 }

@@ -98,6 +98,11 @@ public class UnitCapability <T extends EntityLiving> implements INBTSerializable
         }
     }
 
+    public void leaveUnit() {
+        this.unit = null;
+        this.unitId = null;
+    }
+
     public void releaseTicket() {
         ForgeChunkManager.releaseTicket(chunkTicket);
         chunkTicket = null;

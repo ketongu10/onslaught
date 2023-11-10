@@ -7,6 +7,7 @@ import net.shadowmage.ancientwarfare.core.util.NBTHelper;
 
 public abstract class WarData implements INBTSerializable<NBTTagCompound> {
     public World world;
+
     public void onConstructed(World w) {
         this.world = w;
     }

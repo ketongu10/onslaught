@@ -1,7 +1,9 @@
 package onslaught.ketongu10.war;
 
+import net.minecraft.world.chunk.Chunk;
 import onslaught.ketongu10.capabilities.world.WarData;
 import onslaught.ketongu10.util.NBTHelpers;
+import onslaught.ketongu10.war.LongMarch.WarLongMarch;
 import onslaught.ketongu10.war.units.UnitBase;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.player.EntityPlayerMP;
@@ -19,12 +21,15 @@ public class WarsManager extends WarData {
     public List<UUID> finishedWars = new ArrayList<>();
     public List<EntityPlayerMP> players = new ArrayList<>(); //UUID!!!!!!!!!
     public Map<UUID, UnitBase> unitIDs = new HashMap();
+    public Map<War, Chunk> dislocations = new HashMap<>();
     public int test = 0;
     public Long tick = 0L;
 
     public static void fillMap() {
 
     }
+
+
 
     private UUID getNewID() {
         UUID newID = UUID.randomUUID();
@@ -64,6 +69,22 @@ public class WarsManager extends WarData {
             for (War war: playersWars.values()) {
                 war.removePlayerInfo(player);
             }
+        }
+    }
+
+    public void startLongMarch(EntityPlayerMP player, String faction, String subfaction,  int delay, int x1, int z1, int x2, int z2) {
+        if (this.players.contains(player)) {
+            print("===============NEW WAR STARTED==============");
+            UUID id = getNewID();
+            this.playersWars.put(id, new WarLongMarch(world, player, faction, subfaction,  id,  delay, x1, z1, x2, z2, player.dimension == 0));
+        }
+    }
+
+    public void startWarWithParameters(EntityPlayerMP player, War.WarType type,String faction, String subfaction,  int delay) {
+        if (this.players.contains(player)) {
+            print("===============NEW WAR STARTED==============");
+            UUID id = getNewID();
+            this.playersWars.put(id, new War(world, player,faction, subfaction,  id,  type, delay, player.dimension == 0));
         }
     }
 

@@ -28,7 +28,7 @@ import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 import net.minecraftforge.fml.common.network.simpleimpl.SimpleNetworkWrapper;
 import org.apache.logging.log4j.Logger;
 
-@Mod(modid = Reference.MOD_ID, version = Reference.VERSION, name = Reference.NAME, dependencies="required-after:epicsiegemod")
+@Mod(modid = Reference.MOD_ID, version = Reference.VERSION, name = Reference.NAME)//, dependencies="required-after:epicsiegemod")
 public class Onslaught
 {
 

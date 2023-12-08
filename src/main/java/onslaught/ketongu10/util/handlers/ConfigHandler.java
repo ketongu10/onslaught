@@ -44,7 +44,7 @@ public class ConfigHandler
 	}
 
 	//For developers
-	public static boolean SHOW_BI = false;
+	public static boolean SHOW_BI = true;
 
 	
 	public static void init(File file)

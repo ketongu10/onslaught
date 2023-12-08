@@ -21,7 +21,7 @@ public class WarsManager extends WarData {
     public List<UUID> finishedWars = new ArrayList<>();
     public List<EntityPlayerMP> players = new ArrayList<>(); //UUID!!!!!!!!!
     public Map<UUID, UnitBase> unitIDs = new HashMap();
-    public Map<War, Chunk> dislocations = new HashMap<>();
+    public Map<Chunk, List<War>> dislocations = new HashMap<>();
     public int test = 0;
     public Long tick = 0L;
 
@@ -111,6 +111,9 @@ public class WarsManager extends WarData {
         if (!world.isRemote) {
             this.tick++;
             if (this.tick % 100 == 0) {
+                for (Chunk c:this.dislocations.keySet()) {
+                    print(c.x+"  "+c.z);
+                }
                 //printWorldWarInfo();
             }
             /**for (War war : this.playersWars.values()) {
@@ -137,6 +140,24 @@ public class WarsManager extends WarData {
         }
     }
 
+    public void deployForces(Chunk ch, boolean shouldDeploy) {
+        if (!world.isRemote) {
+            List<War> wars = this.dislocations.get(ch);
+            if (wars != null) {
+                for (War w : wars) {
+                    w.siegeStarted = shouldDeploy;
+                    if (shouldDeploy) {
+                        System.out.println("||||||||||||||||||| HEHEHE SMB IS TO BE DEPLOYED AT "+ch.x+" "+ch.z+" |||||||||||||||||||");
+                    } else {
+                        System.out.println("||||||||||||||||||| SHIT SMB IS TO BE REMOVED AT "+ch.x+" "+ch.z+"  |||||||||||||||||||");
+                    }
+                    //System.out.println("||||||||||||||||||| HEHEHE SMB WAS DEPLOYED |||||||||||||||||||");
+                }
+            }
+        }
+
+    }
+
     public void printWorldWarInfo() {
         if (SHOW_BI) {
             System.out.println("|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||");
@@ -161,9 +182,9 @@ public class WarsManager extends WarData {
         playersWars.clear();
         finishedWars.clear();
         unitIDs.clear();
-
         Set<War> playerWarSet = NBTHelpers.getSet(tag.getTagList("playerWars", Constants.NBT.TAG_COMPOUND), n -> {
-            War war = new War(world);
+            War.WarType type = NBTHelpers.warTypeFromNBT((NBTTagCompound)n);
+            War war =  type != War.WarType.LONGMARCH ? new War(world) : new WarLongMarch(world);
             war.deserializeNBT((NBTTagCompound) n);
             return war;
         });

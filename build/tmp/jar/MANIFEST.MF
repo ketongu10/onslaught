@@ -3,7 +3,7 @@ Implementation-Title: EpicOnslaught
 Implementation-Version: 1.1
 Specification-Vendor: examplemodsareus
 Specification-Title: examplemod
-Implementation-Timestamp: 2023-11-10T00:56:20+0300
+Implementation-Timestamp: 2023-12-08T01:48:37+0300
 Specification-Version: 1
 Implementation-Vendor: examplemodsareus
 

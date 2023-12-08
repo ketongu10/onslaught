@@ -179,7 +179,7 @@ public class War implements INBTSerializable<NBTTagCompound> {
                 if (warType != WarType.AMBUSH) {
                     NetworkManager.sendToPlayer(new WarTimerUpdate(world, this.warUUID, this.timer - this.waiting), (EntityPlayerMP) this.player);
                 }
-                //printWarInfo();
+                printWarInfo();
             }
             for (Battle battle : this.presentBattles) {
                 if (!battle.finished) {
@@ -369,6 +369,7 @@ public class War implements INBTSerializable<NBTTagCompound> {
     @Override
     public NBTTagCompound serializeNBT() {
         NBTTagCompound tag = new NBTTagCompound();
+        tag.setString("warType", this.warType.toString());
         tag.setString("bossNameWar", this.bossName);
         tag.setString("icon", this.icon);
         tag.setString("factionWar", this.faction);
@@ -377,7 +378,6 @@ public class War implements INBTSerializable<NBTTagCompound> {
         }
         tag.setLong("timerWar", this.timer);
         tag.setInteger("startAfterWar", this.startAfter);
-        tag.setString("warType", this.warType.toString());
         tag.setUniqueId("playerUUID", this.playerUUID);
         tag.setUniqueId("warUUID", this.warUUID);
         tag.setBoolean("finished", this.finished);
@@ -389,6 +389,8 @@ public class War implements INBTSerializable<NBTTagCompound> {
     public void deserializeNBT(NBTTagCompound tag) {
         this.presentBattles.clear();
         this.finishedBattles.clear();
+
+        this.warType = NBTHelpers.warTypeFromNBT(tag);
         this.bossName = tag.getString("bossNameWar");
         this.icon = tag.getString("icon");
         this.faction = tag.getString("factionWar");
@@ -410,7 +412,5 @@ public class War implements INBTSerializable<NBTTagCompound> {
         for (Battle b : playerBattleSet) {
             this.presentBattles.add(b);
         }
-
-
     }
 }

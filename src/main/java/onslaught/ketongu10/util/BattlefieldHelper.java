@@ -1,5 +1,6 @@
 package onslaught.ketongu10.util;
 
+import net.minecraft.world.chunk.Chunk;
 import onslaught.ketongu10.war.Battle;
 import funwayguy.epicsiegemod.config.props.CfgProps;
 import net.minecraft.block.Block;
@@ -11,6 +12,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.gen.structure.StructureBoundingBox;
 import net.minecraftforge.fml.common.Loader;
+import onslaught.ketongu10.war.LongMarch.WarLongMarch;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -95,7 +97,16 @@ public final class BattlefieldHelper {
     }
 
     public static void chooseSpawnPoint(Battle battle, World world) {
-        if (!(battle.battleType == Battle.BattleType.AMBUSH)) {
+        if (battle.battleType == Battle.BattleType.MARCH) {
+            Chunk ch = ((WarLongMarch)battle.partOfWar).dislocation;
+            BlockPos pos = new BlockPos(ch.x*16+8, ch.getLowestHeight(), ch.z*16+8);
+            BlockPos newpos = BlockUtils.findNearbyFloorSpace(world, pos, 32, 8, true);
+            battle.spawnPoint = newpos != null ? newpos : pos;
+        } else if (battle.battleType == Battle.BattleType.AMBUSH) {
+            BlockPos pos = battle.partOfWar.player.getPosition();
+            BlockPos newpos = BlockUtils.findNearbyFloorSpace(world, pos, 32, 8, true);
+            battle.spawnPoint = newpos != null ? newpos : pos;
+        } else {
             int RANGE = 32;
             double rx = Math.random();
             int signX = Math.random() - 0.5D > 0 ? 1 : -1;
@@ -120,10 +131,6 @@ public final class BattlefieldHelper {
             BlockPos newpos = BlockUtils.findNearbyFloorSpace(world, pos, 16, 32, false);
             battle.spawnPoint = newpos != null ? newpos : pos;
             //world.setBlockState(battle.spawnPoint, Blocks.BEACON.getDefaultState());
-        } else {
-            BlockPos pos = battle.partOfWar.player.getPosition();
-            BlockPos newpos = BlockUtils.findNearbyFloorSpace(world, pos, 32, 8, true);
-            battle.spawnPoint = newpos != null ? newpos : pos;
         }
 
     }

@@ -1,5 +1,6 @@
 package onslaught.ketongu10.war;
 
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.world.chunk.Chunk;
 import onslaught.ketongu10.capabilities.world.WarData;
 import onslaught.ketongu10.util.NBTHelpers;
@@ -140,13 +141,15 @@ public class WarsManager extends WarData {
         }
     }
 
-    public void deployForces(Chunk ch, boolean shouldDeploy) {
+    public void deployForces(Chunk ch, EntityPlayerMP observer, boolean shouldDeploy) {
         if (!world.isRemote) {
             List<War> wars = this.dislocations.get(ch);
             if (wars != null) {
                 for (War w : wars) {
                     w.siegeStarted = shouldDeploy;
-                    if (shouldDeploy) {
+
+                    if (shouldDeploy && w.player == null) {
+                        w.player = observer;
                         System.out.println("||||||||||||||||||| HEHEHE SMB IS TO BE DEPLOYED AT "+ch.x+" "+ch.z+" |||||||||||||||||||");
                     } else {
                         System.out.println("||||||||||||||||||| SHIT SMB IS TO BE REMOVED AT "+ch.x+" "+ch.z+"  |||||||||||||||||||");

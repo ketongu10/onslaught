@@ -3,3 +3,8 @@ version 1.0
     added UnitCap, unit types, war manager, WarCap, Vehicle using by AW factions
     added NBT-saving of current state of wars, battles, units, unitCaps
     added gui slider, added network manager
+version 1.1
+    added config option to cancel forceloading
+    fixed AW cavalry preventing chunk saving
+    fixed PillarUpIAI for monsters with height > 2 blocks
+    fixed mobs not attacking when EpicFight loaded

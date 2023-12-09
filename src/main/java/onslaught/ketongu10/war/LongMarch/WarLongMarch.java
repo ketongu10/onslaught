@@ -7,6 +7,7 @@ import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.Util;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
+import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
@@ -16,6 +17,7 @@ import onslaught.ketongu10.capabilities.ModCapabilities;
 import onslaught.ketongu10.capabilities.world.WarData;
 import onslaught.ketongu10.network.packets.NetworkManager;
 import onslaught.ketongu10.network.packets.StartClientWar;
+import onslaught.ketongu10.network.packets.WarTimerUpdate;
 import onslaught.ketongu10.util.NBTHelpers;
 import onslaught.ketongu10.war.Battle;
 import onslaught.ketongu10.war.War;
@@ -28,8 +30,7 @@ import java.util.Set;
 import java.util.UUID;
 import java.util.function.Consumer;
 
-import static onslaught.ketongu10.util.handlers.ConfigHandler.TIME_TO_PATROL;
-import static onslaught.ketongu10.util.handlers.ConfigHandler.print;
+import static onslaught.ketongu10.util.handlers.ConfigHandler.*;
 
 public class WarLongMarch extends War {
     protected int start_x;
@@ -39,7 +40,7 @@ public class WarLongMarch extends War {
     protected float speed = 1;
     public float progress;
     public Chunk dislocation;
-    public WarLongMarch(World w, EntityPlayer player, String faction, @Nullable String subfaction, UUID warId,
+    public WarLongMarch(World w, @Nullable EntityPlayer player, String faction, @Nullable String subfaction, UUID warId,
                          int delay, int x1, int z1, int x2, int z2, boolean sameDim) {
         super(w, player,faction, subfaction,  warId,  WarType.LONGMARCH, delay, player.dimension == 0);
         this.start_x = x1;
@@ -63,6 +64,33 @@ public class WarLongMarch extends War {
 
     public WarLongMarch(World w) {
         super(w);
+    }
+
+    public void update() {
+
+        this.timer++;
+        if (timer % 200 == 0) {
+            printWarInfo();
+        }
+        for (Battle battle : this.presentBattles) {
+            if (!battle.finished) {
+                battle.update();
+            } else {
+                this.finishedBattles.add(battle);
+            }
+        }
+        for (Battle fbattle : this.finishedBattles) {
+            this.presentBattles.remove(fbattle);
+        }
+        this.plot.accept(this.startAfter);
+        finishedBattles.clear();
+
+        if (this.timer > BREAK_TIME) {
+            stopWar();
+        }
+
+
+
     }
 
     @Override
@@ -126,7 +154,7 @@ public class WarLongMarch extends War {
             Chunk prev_loc = dislocation;
             this.dislocation = world.getChunkFromChunkCoords(x, z);
             if (this.dislocation.isLoaded()) {
-                //this.siegeStarted = true;
+                this.siegeStarted = true;
             }
 
             WarData cap = world.getCapability(ModCapabilities.WAR_DATA, null);
@@ -157,6 +185,7 @@ public class WarLongMarch extends War {
         BlockPos mellon = new BlockPos(dislocation.x*16+8, 120, dislocation.z*16+8);
         world.setBlockState(mellon, Blocks.MELON_BLOCK.getDefaultState());
         System.out.println("!=!=!=!=!=!=!=!=!DEPLOYED AT"+dislocation.x+"  "+dislocation.z+"AT!=!=!=!=!=!=!=!=!");
+        startNewBattle();
     }
 
     protected void removeForces() {
@@ -166,6 +195,23 @@ public class WarLongMarch extends War {
             System.out.println("!=!=!=!=!=!=!=!=!REMOVED AT"+dislocation.x+"  "+dislocation.z+"AT!=!=!=!=!=!=!=!=!");
         }
 
+
+    }
+
+    protected void startNewBattle() {
+        print("--------TRYING TO START NEW BATTLE-------------");
+        WarData cap = world.getCapability(ModCapabilities.WAR_DATA, null);
+        System.out.println("------cap==null: "+cap==null);
+        if (cap != null && cap instanceof WarsManager) {
+            print("------cap is WarMan: "+(cap instanceof WarsManager));
+            print("------player is in List: "+((WarsManager)cap).players.contains(player));
+            if (((WarsManager)cap).players.contains(player)) {
+
+                print("===============NEW BATTLE CREATED==============");
+                Vec3d direct = new Vec3d(end_x-start_x, 0, end_z-start_z).normalize();
+                this.presentBattles.add(new BattleMarch(this, Battle.BattleType.MARCH, direct));
+            }
+        }
     }
 
     protected boolean checkNearPlayers() {

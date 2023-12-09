@@ -75,7 +75,7 @@ public class War implements INBTSerializable<NBTTagCompound> {
         this.world = w;
     }
 
-    public War(World w, EntityPlayer player, String faction, @Nullable String subfaction, UUID warId, WarType wtype, int delay, boolean sameDim) {
+    public War(World w, @Nullable EntityPlayer player, String faction, @Nullable String subfaction, UUID warId, WarType wtype, int delay, boolean sameDim) {
         this.icon ="minecraft:textures/items/bone.png";
         this.faction = faction;
         this.subfaction = subfaction;
@@ -83,12 +83,12 @@ public class War implements INBTSerializable<NBTTagCompound> {
         this.bossName = "TestName";
         this.startAfter = delay;
         this.player = player;
-        this.playerUUID = player.getUniqueID();
+        this.playerUUID = player != null ? player.getUniqueID() : null;
         this.warUUID = warId;
         this.world = w;
         this.plot = getPlot();
         this.timer = 0L;
-        if (!this.finished && warType!=WarType.AMBUSH) {
+        if (!this.finished && warType!=WarType.AMBUSH && player != null) {
             if (sameDim) {NetworkManager.sendToPlayer(new StartClientWar(this.serializeNBT(), this.warUUID), (EntityPlayerMP) player);}
             player.sendMessage(new TextComponentTranslation(TextFormatting.RED + this.bossName + " " + "declared war on" + " " + player.getGameProfile().getName()));
         }

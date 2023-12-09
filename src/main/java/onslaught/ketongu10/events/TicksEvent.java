@@ -32,7 +32,7 @@ public class TicksEvent {
         if ( !w.isRemote) {
             WarData cap = w.getCapability(ModCapabilities.WAR_DATA, null);
             if (cap != null && cap instanceof WarsManager) {
-               ((WarsManager) cap).deployForces(event.getChunkInstance(), true);
+               ((WarsManager) cap).deployForces(event.getChunkInstance(), event.getPlayer(), true);
             }
         }
 
@@ -44,7 +44,7 @@ public class TicksEvent {
         if ( !w.isRemote) {
             WarData cap = w.getCapability(ModCapabilities.WAR_DATA, null);
             if (cap != null && cap instanceof WarsManager) {
-               ((WarsManager) cap).deployForces(event.getChunkInstance(), false);
+               ((WarsManager) cap).deployForces(event.getChunkInstance(), event.getPlayer(), false);
             }
         }
 

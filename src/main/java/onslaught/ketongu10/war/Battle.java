@@ -475,7 +475,7 @@ public class Battle implements INBTSerializable<NBTTagCompound>{
         //WAVES.add(new Wave(8, 4, 0, 8, 0, 1, 0));
     }
 
-    private static class Wave {
+    protected static class Wave {
         public Map<FactionUnits.UnitType, Integer> map = new HashMap<>();
         Wave(int troops, int elite, int demolishers, int cavalry, int archers, int sentries, int hq, int hs) {
             map.put(FactionUnits.UnitType.TROOPS, troops);
@@ -496,7 +496,7 @@ public class Battle implements INBTSerializable<NBTTagCompound>{
     }
 
     public enum BattleType {
-        PATROL(0), AMBUSH(1), SIEGE(2), APOCALYPSE(3);
+        PATROL(0), AMBUSH(1), SIEGE(2), APOCALYPSE(3), MARCH(4);
         final int id;
 
         BattleType(int id)
@@ -516,6 +516,7 @@ public class Battle implements INBTSerializable<NBTTagCompound>{
             searchByName.put("AMBUSH", BattleType.AMBUSH);
             searchByName.put("SIEGE", BattleType.SIEGE);
             searchByName.put("APOCALYPSE", BattleType.APOCALYPSE);
+            searchByName.put("MARCH", BattleType.MARCH);
         }
 
         public static BattleType findByName(String name) {

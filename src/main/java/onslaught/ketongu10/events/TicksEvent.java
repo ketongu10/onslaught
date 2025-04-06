@@ -8,6 +8,7 @@ import onslaught.ketongu10.war.WarsManager;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
+import static onslaught.ketongu10.util.handlers.ConfigHandler.print;
 
 public class TicksEvent {
 
@@ -32,7 +33,7 @@ public class TicksEvent {
         if ( !w.isRemote) {
             WarData cap = w.getCapability(ModCapabilities.WAR_DATA, null);
             if (cap != null && cap instanceof WarsManager) {
-               ((WarsManager) cap).deployForces(event.getChunkInstance(), event.getPlayer(), true);
+               //((WarsManager) cap).deployForces(event.getChunkInstance(), true);
             }
         }
 
@@ -44,7 +45,7 @@ public class TicksEvent {
         if ( !w.isRemote) {
             WarData cap = w.getCapability(ModCapabilities.WAR_DATA, null);
             if (cap != null && cap instanceof WarsManager) {
-               ((WarsManager) cap).deployForces(event.getChunkInstance(), event.getPlayer(), false);
+               //((WarsManager) cap).deployForces(event.getChunkInstance(), false);
             }
         }
 

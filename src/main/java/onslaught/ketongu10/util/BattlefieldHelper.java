@@ -1,6 +1,6 @@
 package onslaught.ketongu10.util;
 
-import net.minecraft.world.chunk.Chunk;
+import net.minecraft.util.math.Vec3d;
 import onslaught.ketongu10.war.Battle;
 import funwayguy.epicsiegemod.config.props.CfgProps;
 import net.minecraft.block.Block;
@@ -12,7 +12,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.gen.structure.StructureBoundingBox;
 import net.minecraftforge.fml.common.Loader;
-import onslaught.ketongu10.war.LongMarch.WarLongMarch;
+import onslaught.ketongu10.war.LongMarch.LongMarchUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -97,16 +97,7 @@ public final class BattlefieldHelper {
     }
 
     public static void chooseSpawnPoint(Battle battle, World world) {
-        if (battle.battleType == Battle.BattleType.MARCH) {
-            Chunk ch = ((WarLongMarch)battle.partOfWar).dislocation;
-            BlockPos pos = new BlockPos(ch.x*16+8, ch.getLowestHeight(), ch.z*16+8);
-            BlockPos newpos = BlockUtils.findNearbyFloorSpace(world, pos, 32, 8, true);
-            battle.spawnPoint = newpos != null ? newpos : pos;
-        } else if (battle.battleType == Battle.BattleType.AMBUSH) {
-            BlockPos pos = battle.partOfWar.player.getPosition();
-            BlockPos newpos = BlockUtils.findNearbyFloorSpace(world, pos, 32, 8, true);
-            battle.spawnPoint = newpos != null ? newpos : pos;
-        } else {
+        if (!(battle.battleType == Battle.BattleType.AMBUSH)) {
             int RANGE = 32;
             double rx = Math.random();
             int signX = Math.random() - 0.5D > 0 ? 1 : -1;
@@ -131,6 +122,10 @@ public final class BattlefieldHelper {
             BlockPos newpos = BlockUtils.findNearbyFloorSpace(world, pos, 16, 32, false);
             battle.spawnPoint = newpos != null ? newpos : pos;
             //world.setBlockState(battle.spawnPoint, Blocks.BEACON.getDefaultState());
+        } else {
+            BlockPos pos = battle.partOfWar.player.getPosition();
+            BlockPos newpos = BlockUtils.findNearbyFloorSpace(world, pos, 32, 8, true);
+            battle.spawnPoint = newpos != null ? newpos : pos;
         }
 
     }
@@ -163,4 +158,45 @@ public final class BattlefieldHelper {
             }
         }
     }
+
+
+    public static void replaceBlocksAlongDirection(World world, BlockPos startPos, Vec3d direction, Block targetBlock, int width) {
+
+
+        // Нормализуем направление (длина = 1)
+        Vec3d dirNormalized = direction.normalize();
+
+        // Перпендикулярный вектор (для ширины)
+        Vec3d perpendicular = new Vec3d(-dirNormalized.z, 0, dirNormalized.x);
+
+        // Проходим 16 блоков в направлении и 16 против (+ стартовая точка = 33 блока)
+        for (int i = -24; i <= 24; i++) {
+            // Центральная точка линии
+            Vec3d linePoint = new Vec3d(
+                    startPos.getX() + dirNormalized.x * i,
+                    startPos.getY(),
+                    startPos.getZ() + dirNormalized.z * i
+            );
+
+            // Добавляем перпендикулярную "ширину" (3 блока: -1, 0, +1)
+            for (int j = -width; j <= width; j++) {
+                Vec3d blockPosVec = linePoint.add(new Vec3d(perpendicular.x * j,0, perpendicular.z * j));
+
+                // Округляем координаты и создаём BlockPos
+                int _x = (int)Math.round(blockPosVec.x);
+                int _z = (int)Math.round(blockPosVec.z);
+                BlockPos pos = new BlockPos(
+                        _x,
+                        world.getHeight(_x, _z)-1,
+                        _z
+                );
+
+                // Заменяем блок (если он не воздух)
+                if (world.rand.nextFloat() < 0.8 && !world.isAirBlock(pos) && !LongMarchUtils.TROPINKA_BLACKLIST.contains(world.getBlockState(pos).getBlock())) {
+                    world.setBlockState(pos, targetBlock.getDefaultState());
+                }
+            }
+        }
+    }
+
 }

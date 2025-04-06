@@ -26,6 +26,7 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 import net.minecraftforge.fml.common.network.simpleimpl.SimpleNetworkWrapper;
+import onslaught.ketongu10.war.LongMarch.LongMarchUtils;
 import org.apache.logging.log4j.Logger;
 
 @Mod(modid = Reference.MOD_ID, version = Reference.VERSION, name = Reference.NAME)//, dependencies="required-after:epicsiegemod")
@@ -77,6 +78,7 @@ public class Onslaught
 		RegistryHandler.postInitRegistries();
 		BossList.setBossList();
 		FactionUnits.fillMap();
+		LongMarchUtils.fill_blacklist();
 	}
 	
 	@EventHandler

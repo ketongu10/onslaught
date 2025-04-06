@@ -181,9 +181,11 @@ public class Battle implements INBTSerializable<NBTTagCompound>{
     }
 
     public void checkPlayer() {
-        BlockPos p = partOfWar.player.getPosition();
-        if (!playerTerritoty.intersectsWith(p.getX()-16, p.getZ()-16, p.getX()+16, p.getZ()+16)) {
-            partOfWar.player.sendMessage(new TextComponentTranslation(TextFormatting.RED+"Your home is under attack!!!"));
+        if (this.battleType != BattleType.AMBUSH) {
+            BlockPos p = partOfWar.player.getPosition();
+            if (!playerTerritoty.intersectsWith(p.getX()-16, p.getZ()-16, p.getX()+16, p.getZ()+16)) {
+                partOfWar.player.sendMessage(new TextComponentTranslation(TextFormatting.RED + "Your home is under attack!!!"));
+            }
         }
     }
 

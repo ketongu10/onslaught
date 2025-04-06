@@ -1,36 +1,42 @@
 package onslaught.ketongu10.war.LongMarch;
 
+import net.minecraft.block.Block;
+import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.init.Blocks;
 import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.server.management.PlayerChunkMap;
+import net.minecraft.server.management.PlayerChunkMapEntry;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.util.EnumFacing;
+import net.minecraft.util.Rotation;
 import net.minecraft.util.Util;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.MathHelper;
-import net.minecraft.util.math.Vec3d;
+import net.minecraft.util.math.*;
 import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
+import net.minecraft.world.WorldServer;
 import net.minecraft.world.chunk.Chunk;
 import net.minecraftforge.common.util.Constants;
 import onslaught.ketongu10.capabilities.ModCapabilities;
 import onslaught.ketongu10.capabilities.world.WarData;
 import onslaught.ketongu10.network.packets.NetworkManager;
 import onslaught.ketongu10.network.packets.StartClientWar;
-import onslaught.ketongu10.network.packets.WarTimerUpdate;
+import onslaught.ketongu10.util.BattlefieldHelper;
 import onslaught.ketongu10.util.NBTHelpers;
 import onslaught.ketongu10.war.Battle;
+import onslaught.ketongu10.war.FactionUnits;
 import onslaught.ketongu10.war.War;
 import onslaught.ketongu10.war.WarsManager;
 
+import java.util.*;
 import javax.annotation.Nullable;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
-import java.util.UUID;
 import java.util.function.Consumer;
 
-import static onslaught.ketongu10.util.handlers.ConfigHandler.*;
+import static onslaught.ketongu10.util.handlers.ConfigHandler.TIME_TO_PATROL;
+import static onslaught.ketongu10.util.handlers.ConfigHandler.print;
+import static onslaught.ketongu10.war.LongMarch.LongMarchUtils.*;
 
 public class WarLongMarch extends War {
     protected int start_x;
@@ -39,8 +45,11 @@ public class WarLongMarch extends War {
     protected int end_z;
     protected float speed = 1;
     public float progress;
+    public Vec3d direction;
+    public boolean forcesAreDefeated = false;
     public Chunk dislocation;
-    public WarLongMarch(World w, @Nullable EntityPlayer player, String faction, @Nullable String subfaction, UUID warId,
+
+    public WarLongMarch(World w, EntityPlayer player, String faction, @Nullable String subfaction, UUID warId,
                          int delay, int x1, int z1, int x2, int z2, boolean sameDim) {
         super(w, player,faction, subfaction,  warId,  WarType.LONGMARCH, delay, player.dimension == 0);
         this.start_x = x1;
@@ -66,33 +75,6 @@ public class WarLongMarch extends War {
         super(w);
     }
 
-    public void update() {
-
-        this.timer++;
-        if (timer % 200 == 0) {
-            printWarInfo();
-        }
-        for (Battle battle : this.presentBattles) {
-            if (!battle.finished) {
-                battle.update();
-            } else {
-                this.finishedBattles.add(battle);
-            }
-        }
-        for (Battle fbattle : this.finishedBattles) {
-            this.presentBattles.remove(fbattle);
-        }
-        this.plot.accept(this.startAfter);
-        finishedBattles.clear();
-
-        if (this.timer > BREAK_TIME) {
-            stopWar();
-        }
-
-
-
-    }
-
     @Override
     protected Consumer<Integer> getPlot() {
         return this::LongMarch;
@@ -103,30 +85,67 @@ public class WarLongMarch extends War {
             startMoving();
         }
 
-        if (timer>startAfter && presentBattles.isEmpty() && finishedBattles.isEmpty()) {
-            if (siegeStarted) {
+        this.siegeStarted = isChunkViewedByAnyPlayer();
+        if (timer>startAfter && siegeStarted) {
+            if (presentBattles.isEmpty() && finishedBattles.isEmpty()) {
                 deployForces();
-            } else {
+            }
+        }
+        if (timer>startAfter && !siegeStarted) {
+            if (presentBattles.isEmpty() && finishedBattles.isEmpty()) {
                 continueMoving();
             }
-            //return;
         }
 
-        if (!finishedBattles.isEmpty()) {
-            if (player.isDead && checkNearPlayers()) {
+        if (timer>startAfter && !siegeStarted) {
+            if (!presentBattles.isEmpty()) {
                 removeForces();
                 continueMoving();
+            }
+        }
+
+        if (timer>startAfter && siegeStarted) {
+            if (!finishedBattles.isEmpty()) {
                 siegeStarted = false;
-            } else {
                 stopWar();
             }
         }
+
+//
+//        if (!finishedBattles.isEmpty() && forcesAreDefeated) {
+//            if (player.isDead && checkNearPlayers()) {
+//                removeForces();
+//                continueMoving();
+//                siegeStarted = false;
+//            } else {
+//                stopWar();
+//            }
+//        }
         if (timer > startAfter && !siegeStarted && dislocation.x==end_x && dislocation.z==end_z) {
             stopWar();
         }
     }
+
+    protected boolean isChunkViewedByAnyPlayer() {
+
+        PlayerChunkMap chunkMap = ((WorldServer) world).getPlayerChunkMap();
+        if (chunkMap != null && dislocation != null) {
+            PlayerChunkMapEntry chunkEntry = chunkMap.getEntry(dislocation.x, dislocation.z);
+
+            if (chunkEntry == null) {
+                return false; // Чанк не загружен
+            }
+
+            // Получаем всех игроков, наблюдающих за чанком
+            List<EntityPlayerMP> players = chunkEntry.getWatchingPlayers();
+            return !players.isEmpty();
+        }
+        return false;
+
+    }
     protected void startMoving() {
         this.progress = 0;
+        this.direction = new Vec3d(end_x - start_x, 0, end_z - start_z);
         this.dislocation = this.world.getChunkFromChunkCoords(start_x, start_z);
 
         WarData cap = world.getCapability(ModCapabilities.WAR_DATA, null);
@@ -146,16 +165,17 @@ public class WarLongMarch extends War {
     protected void continueMoving() {
         if (timer % 40 == 0) {
             double distance = Math.sqrt((end_x-start_x)*(end_x-start_x) + (end_z-start_z)*(end_z-start_z));
-            this.progress += this.speed/distance;
-            int x =(int) (start_x + (end_x - start_x)*progress);
-            int z =(int) (start_z + (end_z - start_z)*progress);
-            x = x < end_x ? x: end_x;
-            z = z < end_z ? z: end_z;
+            progress += this.speed/distance;
+            progress = progress > 1 ? 1 : progress;
+            int x =(int) (start_x + direction.x*progress);
+            int z =(int) (start_z + direction.z*progress);
             Chunk prev_loc = dislocation;
-            this.dislocation = world.getChunkFromChunkCoords(x, z);
-            if (this.dislocation.isLoaded()) {
-                this.siegeStarted = true;
+            if ((x != prev_loc.x || z != prev_loc.z) && (x != end_x || z != end_z)) {
+                this.spawnCorpses();
             }
+            this.dislocation = world.getChunkFromChunkCoords(x, z);
+
+
 
             WarData cap = world.getCapability(ModCapabilities.WAR_DATA, null);
             if (cap != null && cap instanceof WarsManager) {
@@ -182,36 +202,70 @@ public class WarLongMarch extends War {
 
     protected void deployForces() {
         //dislocation.getHeightValue(dislocation.x*16+8, dislocation.z*16+8)+8
+
         BlockPos mellon = new BlockPos(dislocation.x*16+8, 120, dislocation.z*16+8);
         world.setBlockState(mellon, Blocks.MELON_BLOCK.getDefaultState());
         System.out.println("!=!=!=!=!=!=!=!=!DEPLOYED AT"+dislocation.x+"  "+dislocation.z+"AT!=!=!=!=!=!=!=!=!");
-        startNewBattle();
+
+        startNewBattle(Battle.BattleType.AMBUSH);
+
+
     }
 
     protected void removeForces() {
-        BlockPos mellon = new BlockPos(dislocation.x*16+8, dislocation.getHeightValue(dislocation.x*16+8, dislocation.z*16+8)+8, dislocation.z*16+8);
-        if (world.getBlockState(mellon) == Blocks.MELON_BLOCK.getDefaultState()) {
-            world.setBlockState(mellon, Blocks.AIR.getDefaultState());
-            System.out.println("!=!=!=!=!=!=!=!=!REMOVED AT"+dislocation.x+"  "+dislocation.z+"AT!=!=!=!=!=!=!=!=!");
+//        BlockPos mellon = new BlockPos(dislocation.x*16+8, dislocation.getHeightValue(dislocation.x*16+8, dislocation.z*16+8)+8, dislocation.z*16+8);
+//        if (world.getBlockState(mellon) == Blocks.MELON_BLOCK.getDefaultState()) {
+//            world.setBlockState(mellon, Blocks.AIR.getDefaultState());
+//            ;
+//        }
+        System.out.println("!=!=!=!=!=!=!=!=!REMOVED AT"+dislocation.x+"  "+dislocation.z+"AT!=!=!=!=!=!=!=!=!");
+        for (Battle bat : this.presentBattles) {
+            bat.stopBattle();
         }
-
 
     }
 
-    protected void startNewBattle() {
-        print("--------TRYING TO START NEW BATTLE-------------");
-        WarData cap = world.getCapability(ModCapabilities.WAR_DATA, null);
-        System.out.println("------cap==null: "+cap==null);
-        if (cap != null && cap instanceof WarsManager) {
-            print("------cap is WarMan: "+(cap instanceof WarsManager));
-            print("------player is in List: "+((WarsManager)cap).players.contains(player));
-            if (((WarsManager)cap).players.contains(player)) {
+    protected void spawnCorpses() {
+        System.out.println(dislocation.x+"_"+dislocation.z);
+        int h = world.getHeight( (dislocation.x<<4)+8,  (dislocation.z<<4)+8);
+        BlockPos mellon = new BlockPos((dislocation.x<<4)+8, h-1, (dislocation.z<<4)+8);
+        System.out.println("!=!=!=!=!=!=!=!=!SPAWNED AT"+mellon.getX()+"  "+mellon.getY()+"  "+mellon.getZ()+"AT!=!=!=!=!=!=!=!=!");
+        BattlefieldHelper.replaceBlocksAlongDirection(world, mellon, direction, Blocks.GRASS_PATH, TROPINKA_WIDTH);
+        if (TROPINKA_CORPSES != null && TROPINKA_CORPSES.size() > 0) {
+            if (world.rand.nextFloat() < 0.2) {
+                int size = LongMarchUtils.TROPINKA_CORPSES.size();
+                Map.Entry<Block, List<NBTTagCompound>> special = LongMarchUtils.TROPINKA_CORPSES.get(world.rand.nextInt(size));
+                Block block = special.getKey();
+                NBTTagCompound tag = special.getValue().get(world.rand.nextInt(special.getValue().size()));
+                int howmany = world.rand.nextInt(TROPINKA_CORPSES_MAX_NUM) + 1;
+                for (int i = 0; i < howmany; i++) {
+                    int x_sh = world.rand.nextInt(2 * TROPINKA_CORPSES_WIDTH + 1) - TROPINKA_CORPSES_WIDTH;
+                    int z_sh = world.rand.nextInt(2 * TROPINKA_CORPSES_WIDTH + 1) - TROPINKA_CORPSES_WIDTH;
+                    int _x = (dislocation.x << 4) + 8 + x_sh;
+                    int _z = (dislocation.z << 4) + 8 + z_sh;
+                    h = world.getHeight(_x, _z);
+                    BlockPos spe_pos = new BlockPos(_x,  h, _z);
+                    BlockPos spe_pos_down = new BlockPos(_x,h-1, _z);
+                    if (world.isAirBlock(spe_pos) && !LongMarchUtils.TROPINKA_BLACKLIST.contains(world.getBlockState(spe_pos_down).getBlock())) {
+                        Rotation[] rotations = Rotation.values(); // 4 варианта: NONE, CLOCKWISE_90, etc.
+                        Rotation randomRotation = rotations[world.rand.nextInt(rotations.length)];
+                        IBlockState blockstate = block.getDefaultState();
+                        blockstate = blockstate.withRotation(randomRotation);
+                        world.setBlockState(spe_pos,blockstate);
 
-                print("===============NEW BATTLE CREATED==============");
-                Vec3d direct = new Vec3d(end_x-start_x, 0, end_z-start_z).normalize();
-                this.presentBattles.add(new BattleMarch(this, Battle.BattleType.MARCH, direct));
+                        TileEntity tile = world.getTileEntity(spe_pos);
+                        if (tile != null) {
+                            print("CHANGING TAGS!!!");
+                            // Применяем NBT-теги
+                            tile.readFromNBT(tag);
+                            tile.markDirty();
+                        }
+                    }
+                }
             }
         }
+
+
     }
 
     protected boolean checkNearPlayers() {
@@ -229,6 +283,7 @@ public class WarLongMarch extends War {
         tag.setInteger("end_z", this.end_z);
         tag.setFloat("speed", this.speed);
         tag.setFloat("progress", this.progress);
+        tag.setBoolean("forcesAreDefeated", this.forcesAreDefeated);
         return tag;
     }
 
@@ -255,11 +310,12 @@ public class WarLongMarch extends War {
         this.end_z = tag.getInteger("end_z");
         this.speed = tag.getFloat("speed");
         this.progress = tag.getFloat("progress");
+        this.forcesAreDefeated = tag.getBoolean("forcesAreDefeated");
 
-        int x =(int) (start_x + (end_x - start_x)*progress);
-        int z =(int) (start_z + (end_z - start_z)*progress);
-        x = x < end_x ? x: end_x;
-        z = z < end_z ? z: end_z;
+        this.direction = new Vec3d(end_x - start_x, 0, end_z - start_z);
+        progress = progress > 1 ? 1 : progress;
+        int x =(int) (start_x + direction.x*progress);
+        int z =(int) (start_z + direction.z*progress);
         this.dislocation = world.getChunkFromChunkCoords(x, z);
 
         WarData cap = world.getCapability(ModCapabilities.WAR_DATA, null);

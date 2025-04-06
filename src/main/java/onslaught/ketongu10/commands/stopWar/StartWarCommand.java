@@ -133,7 +133,7 @@ public class StartWarCommand extends CommandBase {
     public String getUsage(ICommandSender sender)
     {
         return "startwar [warType] [faction] <subfaction> [delay] <player>\n" +
-                "startwar longmarch [x_from] [z_from] [x_to] [y_to] [faction] <subfaction> [delay] <player>";
+                "startwar longmarch [x_from] [z_from] [x_to] [z_to] [faction] <subfaction> [delay] <player>";
     }
 
     @Override

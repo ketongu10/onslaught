@@ -3,6 +3,7 @@ package onslaught.ketongu10.network.packets;
 import onslaught.ketongu10.capabilities.ModCapabilities;
 import onslaught.ketongu10.capabilities.world.WarData;
 import onslaught.ketongu10.war.ClientWar;
+import onslaught.ketongu10.war.War;
 import onslaught.ketongu10.war.WarsManager;
 import io.netty.buffer.ByteBuf;
 import net.minecraft.client.Minecraft;
@@ -45,7 +46,9 @@ public class StartClientWar implements IMessage {
         if (cap != null) {
             w.deserializeNBT(this.nbt);
             w.setTotalTime();
-            ((WarsManager)cap).playersWars.put(warId,w);
+            if (w.warType != War.WarType.AMBUSH) {
+                ((WarsManager) cap).playersWars.put(warId, w);
+            }
         }
 
     }

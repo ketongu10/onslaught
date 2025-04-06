@@ -8,6 +8,7 @@ import onslaught.ketongu10.util.Reference;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import org.lwjgl.Sys;
 
 public class ConfigHandler 
 {
@@ -66,11 +67,11 @@ public class ConfigHandler
 
 		category = "PERFORMANCE";
 		config.addCustomCategoryComment(category, "Usually Minecraft loads only a small number of chunks near to player. This mod uses chunk forceloading so some chunks update even if there is not any players nearby. Large number of wars can overload server side of Minecraft.");
-		SHOW_BI = config.getBoolean("Should use chunk forceloading?", category, true, "Set false to cancel forceloading.");
+		USE_CHUNKLOADING = config.getBoolean("Should use chunk forceloading?", category, true, "Set false to cancel forceloading.");
 
 		category = "For developers";
 		config.addCustomCategoryComment(category, "You can turn on showing battle info to cmd.");
-		USE_CHUNKLOADING = config.getBoolean("Show battle info", category, false, "Only to check how mod works");
+		SHOW_BI = config.getBoolean("Show battle info", category, false, "Only to check how mod works");
 
 		config.save();
 	}
@@ -80,5 +81,6 @@ public class ConfigHandler
 		Onslaught.config = new File(event.getModConfigurationDirectory().getPath() /**+ "/" + Reference.MOD_ID**/);
 		Onslaught.config.mkdirs();
 		init(new File(Onslaught.config.getPath(), Reference.NAME +" General"+ ".cfg"));
+
 	}
 }

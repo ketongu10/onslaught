@@ -183,29 +183,29 @@ public class BattleMarch extends Battle{
         this.partOfWar = null;
     }
 
-    protected void prepareWave(int waveNum) {
-        World world = partOfWar.player.getEntityWorld();
-        //if (!world.isRemote) {
-        BlockPos curpos = null;
-        int n=0;
-        for (int i = 0; i <= 7; i++) {
-            FactionUnits.UnitType unitType = FactionUnits.UnitType.getTypeById(i);
-            int unitNum = WAVES.get(waveNum).map.get(unitType);
-            for (int num = 0; num < unitNum; num++) {
-                curpos = new BlockPos(
-                        this.spawnPoint.getX() + this.direction.x * Math.pow(-1, n)*(int)((n+1)/2)*8,
-                        0,
-                        this.direction.x * Math.pow(-1, n)*(int)((n+1)/2)*8);
-                n++;
-                BlockPos spawnpoint = BlockUtils.findNearbyFloorSpace(world, curpos, 8, 4, false);
-                //this.arrivingUNITS.add(new Unit(world, unitType, partOfWar.faction, partOfWar.subfaction, spawnpoint, unitType == FactionUnits.UnitType.HQ, this));
-                this.arrivingUNITS.add(getUnit(world, unitType, partOfWar.faction, partOfWar.subfaction, spawnpoint, unitType == FactionUnits.UnitType.HQ || partOfWar.warType == War.WarType.PATROL, this));
-                print("--------------------NEW " + partOfWar.faction + " UNIT CREATED------------");
-            }
-        }
-        //}
-
-    }
+//    protected void prepareWave(int waveNum) {
+//        World world = partOfWar.player.getEntityWorld();
+//        //if (!world.isRemote) {
+//        BlockPos curpos = null;
+//        int n=0;
+//        for (int i = 0; i <= 7; i++) {
+//            FactionUnits.UnitType unitType = FactionUnits.UnitType.getTypeById(i);
+//            int unitNum = WAVES.get(waveNum).map.get(unitType);
+//            for (int num = 0; num < unitNum; num++) {
+//                curpos = new BlockPos(
+//                        this.spawnPoint.getX() + this.direction.x * Math.pow(-1, n)*(int)((n+1)/2)*8,
+//                        0,
+//                        this.direction.x * Math.pow(-1, n)*(int)((n+1)/2)*8);
+//                n++;
+//                BlockPos spawnpoint = BlockUtils.findNearbyFloorSpace(world, curpos, 8, 4, false);
+//                //this.arrivingUNITS.add(new Unit(world, unitType, partOfWar.faction, partOfWar.subfaction, spawnpoint, unitType == FactionUnits.UnitType.HQ, this));
+//                this.arrivingUNITS.add(getUnit(world, unitType, partOfWar.faction, partOfWar.subfaction, spawnpoint, unitType == FactionUnits.UnitType.HQ || partOfWar.warType == War.WarType.PATROL, this));
+//                print("--------------------NEW " + partOfWar.faction + " UNIT CREATED------------");
+//            }
+//        }
+//        //}
+//
+//    }
 
 
 
